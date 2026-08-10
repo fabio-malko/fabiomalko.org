@@ -1,8 +1,6 @@
 ---
 title: "Brandizzi e Rodrigues (2025): o contencioso do MEI em 57 mil ementas"
 description: "Modelagem de tópicos sobre ementas para mapear o litígio gerado por uma política pública brasileira, com rotulagem por modelo de linguagem e validação por juiz automático."
-date: 2026-08-09
-author: "Fábio André Malko"
 categories: [IA e Direito, Método de pesquisa]
 ---
 

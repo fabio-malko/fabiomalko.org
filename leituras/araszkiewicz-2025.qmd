@@ -1,8 +1,6 @@
 ---
 title: "Araszkiewicz (2025): precedente como recurso interpretativo"
 description: "Como uma metarregra hermenêutica do Supremo Tribunal polonês migra do direito penal para o administrativo, e o que o autor deixou de medir ao usar modelo de linguagem para montar as próprias tabelas."
-date: 2026-08-10
-author: "Fábio André Malko"
 categories: [IA e Direito, Método de pesquisa]
 ---
 

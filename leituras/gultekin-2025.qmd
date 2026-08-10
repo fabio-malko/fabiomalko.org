@@ -1,8 +1,6 @@
 ---
 title: "Gultekin e outros (2025): a resposta certa pelo caminho errado"
 description: "Separa a correção da resposta jurídica da solidez do raciocínio que a sustenta, sobre 91 processos de proteção internacional julgados em Palermo."
-date: 2026-08-06
-author: "Fábio André Malko"
 categories: [IA e Direito, Método de pesquisa, Replicabilidade]
 ---
 

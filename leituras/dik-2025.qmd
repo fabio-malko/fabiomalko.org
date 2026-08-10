@@ -1,8 +1,6 @@
 ---
 title: "Dik (2025): a justificação do juiz é logicamente compatível com o que ele decidiu?"
 description: "Converte os fatos e a fundamentação de um caso de guarda em programação lógica e testa se o conjunto é satisfatível. A justificação de primeiro grau não era."
-date: 2026-08-08
-author: "Fábio André Malko"
 categories: [IA e Direito, Método de pesquisa]
 ---
 

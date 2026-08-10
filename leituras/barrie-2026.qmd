@@ -1,8 +1,6 @@
 ---
 title: "Barrie, Palaiologou e Törnberg (2026): medir a estabilidade de um prompt"
 description: "Trata execuções repetidas e paráfrases do mesmo comando como avaliadores distintos e mede a concordância entre elas. É a origem da métrica de estabilidade que adoto na tese."
-date: 2026-08-05
-author: "Fábio André Malko"
 categories: [IA e Direito, Método de pesquisa, Replicabilidade]
 ---
 

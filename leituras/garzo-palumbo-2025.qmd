@@ -1,8 +1,6 @@
 ---
 title: "Garzo e Palumbo (2025): o GPT-4o diante do homicídio viário italiano"
 description: "Testa sessenta conceitos do art. 589-bis do Código Penal italiano e dez acórdãos da Corte de Cassação, com avaliação por perito jurídico e taxonomia do erro cometido pelo modelo."
-date: 2026-08-07
-author: "Fábio André Malko"
 categories: [IA e Direito, Direito Penal, Método de pesquisa]
 ---
 
