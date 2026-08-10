@@ -145,3 +145,11 @@ footer.footer {
   font-size: 0.85rem;
   color: #6a6a72;
 }
+
+/* Listagem sem coluna de metadados: o corpo ocupa a largura inteira. */
+.quarto-listing-default .quarto-post {
+  display: block;
+}
+.quarto-listing-default .quarto-post .body {
+  padding-left: 0;
+}
