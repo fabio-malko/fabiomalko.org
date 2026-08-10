@@ -22,7 +22,7 @@ listing:
 ## Fábio André Malko {#perfil}
 
 ::: {.perfil-papel}
-Advogado, contador e professor universitário · Doutorando em Direito, IDP
+Advogado, contabilista e professor. Mestre e Doutorando em Direito pelo IDP.
 :::
 
 ::: {.perfil-links}
@@ -33,23 +33,34 @@ Advogado, contador e professor universitário · Doutorando em Direito, IDP
 :::
 :::
 
-Este endereço reúne o que escrevo e o que leio em direito tributário, penal econômico
-e societário, com atenção particular ao uso de inteligência artificial na pesquisa
-jurídica.
+Este endereço reúne o que escrevo e o que leio em direito tributário, penal econômico,
+empresarial e no uso de IA para pesquisa jurídica.
 
-A pergunta que orienta a minha pesquisa nasceu da dupla formação. Quem trabalha com
-matéria tributária pelo lado jurídico e pelo lado contábil convive diariamente com a
-distância entre o que uma decisão judicial afirma e o que dela se consegue extrair de
-forma sistemática. Foi essa distância que me levou à pesquisa empírica assistida por
-computador, e dela ao problema que hoje ocupa a minha [linha de
+## O que faço
+
+Advogo desde 2019, como titular de Fábio André Malko & Advogados Associados, banca
+sediada em Quatro Barras, no Paraná, com atuação nacional em direito tributário, penal
+econômico, empresarial e imobiliário. A prática se concentra no contencioso tributário
+administrativo e judicial, na defesa em crimes contra a ordem tributária e na
+responsabilidade penal de administradores, em reorganização societária e em desenho de
+programas de conformidade.
+
+Sou também contabilista titular da Radar Contabilidade, desde 2019, com atuação em
+contabilidade pública e privada, e antes disso fui diretor financeiro da Malko
+Consultoria Contábil, de 2009 a 2018. A dupla habilitação é o que sustenta o trabalho
+com prova contábil e escritural em matéria fiscal e penal.
+
+Na docência, presido o Instituto Brasileiro de Ensino, Pesquisa e Amparo ao Trabalhador
+e Consumidor desde 2022, onde sou professor titular. Comecei a lecionar em 2001, na rede
+estadual paranaense, com Física, Química e Matemática.
+
+Na pesquisa, defendi em julho de 2026 a dissertação de mestrado profissional no IDP e
+sigo no doutorado na mesma instituição. A pergunta que orienta o trabalho nasceu da dupla
+formação. Quem trabalha com matéria tributária pelo lado jurídico e pelo lado contábil
+convive diariamente com a distância entre o que uma decisão judicial afirma e o que dela
+se consegue extrair de forma sistemática. Foi essa distância que me levou à pesquisa
+empírica assistida por computador, e dela ao problema que hoje ocupa a minha [linha de
 pesquisa](pesquisa.qmd).
-
-::: {.callout-warning collapse="true"}
-## Pendências desta página, antes de publicar
-Graduações com instituição e ano. Instituição em que leciona e disciplinas.
-Conferência dos identificadores ORCID e Lattes, que não puderam ser verificados por
-acesso automatizado.
-:::
 
 ## O que há aqui
 
@@ -61,8 +72,9 @@ Em [leituras](leituras.qmd) ficam as fichas analíticas de trabalhos de outros a
 Cada ficha registra o que o trabalho faz, o que ele sustenta com dado próprio e onde
 ele para, com remissão ao original pelo identificador digital.
 
-A [linha de pesquisa](pesquisa.qmd) apresenta o programa em curso no doutorado, sobre
-mensuração de replicabilidade em pesquisa jurídica assistida por modelos de linguagem.
+A [linha de pesquisa](pesquisa.qmd) apresenta o programa em curso, registrado como
+«Inteligência artificial e pesquisa empírica em Direito: aplicações ao contencioso
+tributário e ao Direito Penal Econômico».
 
 ## Publicado recentemente
 

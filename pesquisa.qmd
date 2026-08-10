@@ -1,12 +1,12 @@
 ---
 title: "Linha de pesquisa"
-subtitle: "Mensuração de replicabilidade em pesquisa jurídica assistida por modelos de linguagem"
+subtitle: "Inteligência artificial e pesquisa empírica em Direito: aplicações ao contencioso tributário e ao Direito Penal Econômico"
 ---
 
-## Onde a pesquisa está
+Esta é a linha registrada no Currículo Lattes e conduzida no doutorado em curso no IDP.
+Ela parte de um resultado já defendido e avança para a pergunta que ele deixou em aberto.
 
-O programa parte de um resultado já defendido e avança para a pergunta que ele deixou
-em aberto.
+## Onde a pesquisa está
 
 A dissertação de mestrado desenvolveu e aplicou um método replicável de extração
 automatizada e tratamento semântico de decisões judiciais, sobre precedentes
@@ -23,7 +23,7 @@ critério. Uma variação dessa ordem torna insuficiente qualquer afirmação gl
 a reprodutibilidade do estudo, e impõe que a medida seja feita e declarada campo a
 campo.
 
-Daí decorre o conceito que dá nome ao programa.
+Daí decorre o conceito central da linha, a replicabilidade funcional por campo.
 
 ## A lacuna
 
@@ -60,13 +60,10 @@ clássicas superam arquiteturas recentes em tarefas dessa natureza.
 O braço opcional reúne modelos abertos de domínio jurídico, e mede se a especialização
 compensa a distância de jurisdição e de língua.
 
-::: {.callout-important}
-## Decisão metodológica em aberto
-A escolha do corpus do experimento, entre decisão pública, corpus sintético e peça
-real anonimizada, é anterior à escolha dos modelos e permanece em aberto. Ela é
-condicionada pela disciplina de proteção de dados e pela regulação do uso de
-inteligência artificial no Judiciário.
-:::
+A definição do corpus precede a escolha dos modelos e é condicionada pela disciplina de
+proteção de dados e pela regulação do uso de inteligência artificial no Judiciário. A
+opção entre decisão pública, corpus sintético e peça real anonimizada, com a
+justificativa que a sustenta, integra o pré-registro do experimento.
 
 ## Publicação em curso
 
