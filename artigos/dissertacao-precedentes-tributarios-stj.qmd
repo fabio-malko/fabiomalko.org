@@ -1,7 +1,8 @@
 ---
 title: "Extração automatizada e tratamento semântico de decisões judiciais com inteligência artificial"
 subtitle: "Um método replicável aplicado a pesquisa de precedentes tributários do STJ"
-description: "Dissertação de mestrado profissional defendida no IDP em 2026. Desenvolve e aplica método replicável de coleta, extração e classificação semântica sobre 62.383 decisões do STJ em ICMS, ISS, ITBI e ITCMD, com validação adjudicada por amostragem e medição de concordância campo a campo."
+description: "Dissertação de mestrado profissional defendida no IDP em 27 de julho de 2026. Desenvolve e aplica método replicável de coleta, extração e classificação semântica sobre 62.383 decisões do STJ em ICMS, ISS, ITBI e ITCMD, com validação adjudicada por amostragem e medição de concordância campo a campo."
+date: 2026-07-27
 author: "Fábio André Malko"
 categories: [Direito Tributário, Método de pesquisa, IA e Direito, Replicabilidade]
 ---
@@ -12,18 +13,15 @@ MALKO, Fábio André. **Extração automatizada e tratamento semântico de decis
 com inteligência artificial**: um método replicável aplicado a pesquisa de precedentes
 tributários do STJ. 2026. Dissertação (Mestrado Profissional em Direito) — Instituto
 Brasileiro de Ensino, Desenvolvimento e Pesquisa, Brasília, 2026. Orientador:
-Prof. Dr. Luís Felipe Perdigão de Castro.
-
-Data exata da defesa: `a confirmar`. Identificador digital: `a confirmar`.
+Prof. Dr. Luís Felipe Perdigão de Castro. Defesa em 27 de julho de 2026.
 
 ## Onde encontrar o texto integral
 
-O depósito institucional está em curso. Em consulta ao
-[repositório do IDP](https://repositorio.idp.edu.br) realizada em 10 de agosto de 2026,
-por colheita de metadados no protocolo OAI-PMH sobre as coleções de mestrado do
-programa, o registro ainda não constava, embora outros trabalhos defendidos em 2026 já
-estivessem publicados. Esta página passa a indicar o endereço permanente assim que o
-repositório atribuir o identificador.
+O trabalho foi depositado no [repositório institucional do
+IDP](https://repositorio.idp.edu.br) e aguarda publicação do registro. Em consulta feita
+em 10 de agosto de 2026, por colheita de metadados no protocolo OAI-PMH sobre as coleções
+de mestrado do programa, o item ainda não aparecia. Esta página passa a indicar o endereço
+permanente assim que o repositório atribuir o identificador.
 
 Até lá, o texto integral pode ser solicitado por mensagem para
 [malko@malko.adv.br](mailto:malko@malko.adv.br).
