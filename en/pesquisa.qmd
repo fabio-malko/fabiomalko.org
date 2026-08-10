@@ -1,0 +1,64 @@
+---
+title: "Research line"
+subtitle: "Measuring replicability in legal research assisted by language models"
+lang: en
+---
+
+## Point of departure
+
+The programme starts from a defended result and moves to the question it left open.
+
+My master's dissertation developed and applied a replicable method for automated
+extraction and semantic treatment of judicial decisions, applied to tax precedents of
+the Brazilian Superior Court of Justice. The corpus comprised **62,383 unique
+decisions** on four state and municipal taxes, from May 2022 to December 2025, of
+which 58,460 were classified. Validation was adjudicated over 401 decisions, with the
+acceptance criterion set at a lower bound of the 95% confidence interval at or above
+0.75.
+
+The finding that drives the subsequent research lies in **dispersion across fields**.
+One field reached 0.97 while another stalled at 0.17, on the same corpus, with the
+same model, on the same day, and four of ten fields passed the criterion. Variation of
+that magnitude makes any global statement about the reproducibility of a study
+insufficient, and requires the measure to be taken and reported field by field.
+
+Hence the concept that names the programme.
+
+## The gap
+
+A systematic review of the literature corpus, recording a verbatim excerpt and source
+page for every mention, reached a negative conclusion that opens the space for the
+doctoral thesis:
+
+**No examined study submits the same legal protocol, in Portuguese, to a panel of both
+open and proprietary models with formal measurement of stability.**
+
+Each of the closest works falls short of one condition. Some compare open models while
+scoring them with a proprietary automatic judge and no stability metric. Others
+compare six models across three providers within data analysis, outside legal text. A
+third group supplies an appropriate stability metric, applied to political science.
+
+## Design in progress
+
+The doctoral experiment submits the dissertation's method to a four-arm panel, with an
+optional fifth.
+
+The **proprietary reference** uses a frontier model from each of two distinct
+providers, at pinned versions and through programmatic interfaces, with express
+exclusion of chat windows. The **open, self-hosted** arm runs one model family at two
+scales on local hardware, which also addresses professional secrecy, since no data
+leaves the machine. The **open second-provider** arm has a different origin from the
+previous one, separating the effect of architecture from the effect of provider. The
+**non-generative baseline** uses TF-IDF and a Portuguese encoder, a choice justified by
+evidence that classical approaches outperform more recent architectures on tasks of
+this kind.
+
+The optional arm covers open domain-specific legal models, and measures whether
+specialisation offsets distance in jurisdiction and language.
+
+::: {.callout-important}
+## Open methodological decision
+The choice of corpus for the experiment, among public decisions, a synthetic corpus
+and anonymised real filings, precedes the choice of models and remains open. It is
+constrained by data protection law and by regulation of AI use in the judiciary.
+:::

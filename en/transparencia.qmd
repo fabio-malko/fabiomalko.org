@@ -1,0 +1,35 @@
+---
+title: "Declaration on the use of artificial intelligence"
+lang: en
+---
+
+This programme studies the use of language models in legal research, and coherence
+requires declaring how they are used in producing this site.
+
+## In producing this site
+
+Structure, drafting and revision are assisted by a language model, under full review
+by the responsible researcher, who answers for all published content. No text is
+published without complete human reading.
+
+Model, version and purpose are stated at the foot of any page produced with material
+assistance.
+
+## In the research itself
+
+Published work declares, in each case, the model used, the pinned version, execution
+parameters and date. That declaration is a condition of
+replicability, and its absence in the work of others is an object of criticism in this
+programme.
+
+## What is not done
+
+No reference, citation, judicial decision, statutory provision or figure is produced
+by automatic generation without verification against the primary source. Every discrepancy found on verification is
+declared in the text itself, including where it corrects my own earlier work.
+
+## Third-party data
+
+No client data, case filings or information under professional secrecy is used,
+processed or referred to in this research programme, under any circumstances, pursuant
+to article 7, II, of Brazilian Federal Law 8.906/1994.

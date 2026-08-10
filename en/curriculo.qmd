@@ -1,0 +1,64 @@
+---
+title: "Research CV"
+lang: en
+---
+
+## Identification
+
+**Fábio André Malko**
+
+Doctoral candidate in Law at IDP (Instituto Brasileiro de Ensino, Desenvolvimento e
+Pesquisa), Brazil, since 2026. Master of Laws, IDP, 2026. Attorney and accountant.
+University lecturer.
+
+::: {.callout-warning}
+## To be completed before publication
+Undergraduate degrees with institution and year; doctoral programme and research line
+as recorded at enrolment; teaching institution and courses. None of these should be filled in by inference.
+:::
+
+## Persistent identifiers
+
+| | |
+|---|---|
+| ORCID | [0009-0006-5975-9603](https://orcid.org/0009-0006-5975-9603) |
+| Lattes | [6791025189749226](https://lattes.cnpq.br/6791025189749226) |
+
+## Education
+
+**PhD in Law** — IDP, Brasília. In progress since 2026.
+
+**Master of Laws** — IDP, Brasília, 2026.
+Dissertation: *Automated extraction and semantic treatment of judicial decisions with
+artificial intelligence: a replicable method applied to research on tax precedents of
+the Superior Court of Justice* (original in Portuguese).
+Supervisor: Prof. Dr. Luís Felipe Perdigão de Castro.
+
+## Output
+
+### Dissertation
+
+MALKO, Fábio André. *Extração automatizada e tratamento semântico de decisões
+judiciais com inteligência artificial: um método replicável aplicado a pesquisa de
+precedentes tributários do STJ*. 2026. Master's dissertation (Law) — Instituto
+Brasileiro de Ensino, Desenvolvimento e Pesquisa, Brasília, 2026.
+
+The full text is deposited in IDP's institutional repository, and this site holds the
+bibliographic record with a pointer to the official source.
+
+### In preparation
+
+An article on functional replicability in empirical legal research assisted by
+language models, mapping available instruments and proposing a verification protocol.
+
+## Citing this site
+
+> MALKO, Fábio André. *Replicability in AI-Assisted Legal Research*.
+> Available at: https://fabiomalko.org. Accessed: [date].
+
+## Academic contact
+
+[malko@malko.adv.br](mailto:malko@malko.adv.br)
+
+This address is for academic correspondence. Requests for professional services or
+legal advice are neither received nor answered through this site.

@@ -1,0 +1,60 @@
+---
+title: "Fábio André Malko"
+subtitle: "Tax law, white-collar crime, corporate law and research method"
+lang: en
+toc: false
+---
+
+## About
+
+Attorney, accountant and university lecturer. Doctoral candidate in Law at IDP, Brazil,
+since 2026. This site gathers what I write and what I read in tax law, white-collar
+crime and corporate law, with particular attention to the use of artificial
+intelligence in legal research.
+
+The Portuguese version carries the full contents, including all articles, notes and
+reading files. This page summarises the research line for readers outside Brazil.
+
+## The research problem
+
+Methodological literature prescribes reproducibility for empirical research assisted
+by large language models: open-weight models, self-hosting, pinned versions, declared
+parameters, and verification of the same prompt across several models. The empirical
+literature that classifies legal text at scale meets little of that prescription, for
+reasons of feasibility, so that the two bodies of work seldom intersect.
+
+## The claim
+
+**I argue that reproducibility is a measurable property of each variable of the
+instrument, to be measured and reported field by field.**
+
+I call this *functional replicability by field*. A single study may be fully
+replicable in some variables while failing in others, so that a blanket statement
+about a study being reproducible says little about what can actually be reused.
+
+The supporting evidence is my own. On the same corpus, with the same model, on the
+same day, agreement between automated classification and human adjudication ranged
+from **0.97 in one field to 0.17 in another**, and only four of ten fields met the
+adopted acceptance criterion. I publish the lowest figure alongside the highest,
+because the value of the measure lies in showing where the instrument fails.
+
+## The gap
+
+A systematic review of the literature, recording a verbatim excerpt and source page
+for every mention, found no study that submits the same legal protocol, in
+Portuguese, to a panel of both open and proprietary models with formal measurement of
+stability. Each of the nearest works falls short of one of those three conditions.
+
+## Contents
+
+The [research line](pesquisa.qmd) in progress. A reading index in which each work
+receives an analytical note of my own authorship. A research
+[curriculum vitae](curriculo.qmd) with persistent identifiers and citation format.
+
+Replication material, DOI-registered datasets and interactive panels follow in later
+phases, as each clears the review that open publication requires.
+
+::: {.callout-note}
+The Portuguese version of this site is the version of record.
+[Ir para a versão em português](../index.qmd).
+:::
