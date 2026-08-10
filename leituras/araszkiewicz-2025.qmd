@@ -1,0 +1,101 @@
+---
+title: "Araszkiewicz (2025): precedente como recurso interpretativo"
+description: "Aplica a análise por case frames a precedentes do Supremo Tribunal polonês e mostra como uma metarregra hermenêutica migra entre ramos do Direito. Executa extração assistida por modelo de linguagem sem medir a concordância com a revisão humana."
+date: 2026-08-10
+author: "Fábio André Malko"
+categories: [IA e Direito, Método de pesquisa]
+draft: true
+---
+
+## Referência
+
+ARASZKIEWICZ, Michał. Precedent as interpretive resource: a case frame analysis of
+statutory reasoning. In: MARKOVICH, R. *et al.* (ed.). **Legal Knowledge and
+Information Systems** (JURIX 2025). IOS Press, 2025. Paginação: `a confirmar`.
+DOI: [10.3233/FAIA251572](https://doi.org/10.3233/FAIA251572). Acesso aberto sob
+licença CC BY-NC 4.0. Autor vinculado ao Departamento de Teoria do Direito da
+Universidade Jaguelônica de Cracóvia.
+
+## O que o trabalho faz
+
+Aplica o método de *case frames*, que representa a decisão em campos discretos como
+dispositivo interpretado, interpretações concorrentes, argumentos, metarregra e
+decisão final, à análise de como precedentes operam na interpretação de lei escrita em
+sistema de tradição continental. O objeto empírico é o acórdão V KK 74/08 do Supremo
+Tribunal polonês e o conjunto de decisões posteriores que o citam. O desenho é
+analítico e qualitativo, sem experimento controlado.
+
+## O que sustenta com dado próprio
+
+O corpus é de 33 acórdãos citantes do caso-fonte, escolhido de forma aleatória dentro
+do universo de decisões com mais de vinte citações. Toda a identificação e a análise
+das citações foram feitas por um único advogado experiente.
+
+Sobre esse corpus o autor isola padrões de recepção documentados com exemplos
+nominados. A transferência entre domínios aparece quando a metarregra hermenêutica
+migra do direito penal para o direito administrativo e para o contencioso de reparação
+a perseguidos políticos. A extração de *holdings* distintos da mesma decisão gera três
+linhas processuais penais autônomas, relativas ao padrão de prova indiciária, à
+proibição de *reformatio in peius* e à correção de erro material. A aplicação
+modificadora, por sua vez, preserva a autoridade do precedente e reduz a força
+operativa do cânone.
+
+Há um dado metodológico de interesse direto para quem usa modelos de linguagem em
+pesquisa: todas as tabelas do artigo, exceto a primeira, foram geradas com auxílio do
+ChatGPT-5 a partir do texto bruto dos acórdãos, mediante comandos que explicavam o
+método, e depois verificadas por advogado especialista.
+
+O que o artigo argumenta sem medir é distinto disso. A afirmação de que os *case
+frames* oferecem via transparente, sistemática e replicável de estudo permanece no
+plano da sustentação teórica, sem contagem, sem distribuição percentual e sem teste.
+
+## Onde para
+
+O autor declara o limite e se abstém de propor modelo formal, qualificando a pesquisa
+como primariamente analítica.
+
+A leitura identifica limites adicionais que o texto não declara. O corpus de 33
+acórdãos não é reportado com distribuição por padrão, de modo que não se sabe quantas
+decisões se enquadram em cada categoria; das 33, apenas seis aparecem nominadas nas
+tabelas. A anotação foi conduzida por um único analista, sem dupla codificação e sem
+índice de concordância. A acurácia da extração assistida pelo ChatGPT-5 não é medida:
+o artigo informa que houve verificação humana e omite a taxa de correção e o tipo de
+erro corrigido, que é precisamente a informação capaz de tornar o fluxo auditável. Os
+comandos usados, elemento central da reprodutibilidade, dependem de documento
+hospedado em serviço de terceiro. Registro ainda divergência interna quanto à data do
+acórdão V KK 74/08, indicada como 18 de novembro no corpo do texto e 19 de novembro na
+primeira tabela.
+
+## Relação com o que pesquiso
+
+O trabalho é caso comparável e, no ponto que interessa ao eixo metodológico, objeto de
+crítica produtiva. Não fixa norma metodológica nem fornece métrica, já que inexiste no
+texto coeficiente de concordância ou taxa de acerto por campo.
+
+O valor está na unidade de anotação. O *case frame* decompõe a decisão em campos
+semanticamente delimitados, estrutura transponível ao contencioso tributário
+administrativo e ao penal econômico, em que a controvérsia recai sobre a interpretação
+do dispositivo e sobre a hierarquia entre cânones, com escassa relevância da analogia
+fática. Um esquema equivalente aplicado a acórdãos do CARF permitiria medir
+replicabilidade campo a campo, e é plausível esperar concordância alta nos campos de
+baixa discricionariedade e baixa nos campos de reconstrução argumentativa.
+
+A crítica é simétrica ao valor. Araszkiewicz executa exatamente o fluxo que esta
+pesquisa se propõe a mensurar, extração estruturada por modelo seguida de validação
+por jurista, e o descreve como demonstração de viabilidade sem produzir medida da
+concordância. A lacuna delimita a contribuição: onde o artigo apresenta o fluxo como
+praticável, cabe apresentá-lo como quantificado.
+
+## Como citar esta ficha
+
+> MALKO, Fábio André. Ficha analítica de ARASZKIEWICZ (2025). *Fábio André Malko*, 10 ago. 2026.
+> Disponível em: https://fabiomalko.org/leituras/araszkiewicz-2025. Acesso em: [data].
+
+::: {.callout-note collapse="true"}
+## Método
+Ficha redigida a partir da leitura integral do trabalho, com assistência de modelo de
+linguagem na organização do texto e revisão do autor. Números conferidos contra o
+original. Campos assinalados como «a confirmar» aguardam conferência na versão
+publicada.
+:::
+
