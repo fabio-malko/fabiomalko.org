@@ -1,0 +1,139 @@
+/*-- scss:defaults --*/
+
+// Tipografia sóbria, legível em tela e adequada a texto acadêmico longo.
+// Pilhas de sistema por decisão deliberada: nenhuma requisição a servidor de fontes
+// de terceiro, portanto nenhum IP de visitante transmitido a quem não é o titular.
+$font-family-sans-serif: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif !default;
+$font-family-serif: Georgia, "Iowan Old Style", "Palatino Linotype", "Times New Roman", serif !default;
+$font-size-root: 18px !default;
+$line-height-base: 1.65 !default;
+
+// Paleta contida. Um único acento, usado com parcimônia.
+$body-color: #1c1c1e !default;
+$body-bg: #ffffff !default;
+$link-color: #1a4d7a !default;
+$link-hover-color: #0f3355 !default;
+
+$navbar-bg: #ffffff !default;
+$navbar-fg: #1c1c1e !default;
+
+$toc-color: #5c5c62 !default;
+
+/*-- scss:rules --*/
+
+// Largura de leitura: linha longa demais cansa e reduz retenção.
+main {
+  max-width: 46rem;
+}
+
+// A página inicial usa layout de duas colunas (retrato à esquerda, texto à direita).
+// Ali o limite acima comprime demais a coluna de texto: libera-se a largura e
+// controla-se a medida na própria coluna.
+// Cabeçalho de identificação da página inicial. Retrato à esquerda, identificação e
+// vínculos à direita, empilhando em tela estreita.
+.perfil {
+  display: flex;
+  gap: 1.75rem;
+  align-items: flex-start;
+  margin: 0 0 2rem 0;
+  padding-bottom: 1.75rem;
+  border-bottom: 1px solid #e4e4e8;
+
+  img {
+    width: 9.5rem !important;
+    height: 9.5rem !important;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border-radius: 6px;
+    flex-shrink: 0;
+    background: #e4e4e8;
+    margin: 0;
+  }
+
+  .perfil-texto {
+    flex: 1 1 auto;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+    margin: 0 0 0.15rem 0;
+  }
+
+  .perfil-papel {
+    color: #5c5c62;
+    font-size: 0.95rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .perfil-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    font-size: 0.85rem;
+
+    a {
+      border: 1px solid #d4d4d8;
+      border-radius: 4px;
+      padding: 0.2rem 0.6rem;
+      text-decoration: none;
+    }
+
+    a:hover {
+      border-color: #1a4d7a;
+      background: #f4f7fa;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .perfil {
+    flex-direction: column;
+  }
+}
+
+h1, h2, h3, h4 {
+  font-family: $font-family-serif;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+}
+
+h1.title {
+  font-size: 2.1rem;
+  line-height: 1.2;
+}
+
+.subtitle {
+  font-family: $font-family-serif;
+  font-style: italic;
+  color: #5c5c62;
+  font-size: 1.15rem;
+}
+
+// O nome do programa no cabeçalho é longo; impedir que quebre mal em telas médias.
+.navbar-title {
+  font-size: 0.95rem;
+  font-weight: 600;
+  line-height: 1.2;
+  max-width: 22rem;
+  white-space: normal;
+}
+
+blockquote {
+  border-left: 3px solid #d4d4d8;
+  color: #3c3c42;
+  font-style: normal;
+}
+
+// Números e métricas no corpo do texto ganham leitura tabular.
+strong {
+  font-variant-numeric: tabular-nums;
+}
+
+.quarto-title-block .description {
+  color: #5c5c62;
+}
+
+footer.footer {
+  font-size: 0.85rem;
+  color: #5c5c62;
+}

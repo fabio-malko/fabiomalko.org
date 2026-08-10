@@ -1,0 +1,67 @@
+---
+title: "Currículo de pesquisa"
+---
+
+## Identificação
+
+**Fábio André Malko**
+
+Advogado, contador e professor universitário. Doutorando em Direito no Instituto
+Brasileiro de Ensino, Desenvolvimento e Pesquisa (IDP) desde 2026, com mestrado
+concluído na mesma instituição em 2026.
+
+::: {.callout-warning}
+## A completar antes de publicar
+Graduações com instituição e ano; programa e linha do doutorado conforme consta da
+matrícula; instituição e disciplinas em que leciona. Nada aqui deve ser preenchido por
+inferência.
+:::
+
+## Identificadores persistentes
+
+| | |
+|---|---|
+| ORCID | [0009-0006-5975-9603](https://orcid.org/0009-0006-5975-9603) |
+| Lattes | [6791025189749226](https://lattes.cnpq.br/6791025189749226) |
+
+## Formação
+
+**Doutorado em Direito** — IDP, Brasília. Em curso desde 2026.
+
+**Mestrado em Direito** — IDP, Brasília, 2026.
+Dissertação: *Extração automatizada e tratamento semântico de decisões judiciais com
+inteligência artificial: um método replicável aplicado a pesquisa de precedentes
+tributários do STJ*. Orientador: Prof. Dr. Luís Felipe Perdigão de Castro.
+
+## Produção
+
+### Dissertação
+
+MALKO, Fábio André. **Extração automatizada e tratamento semântico de decisões
+judiciais com inteligência artificial**: um método replicável aplicado a pesquisa de
+precedentes tributários do STJ. 2026. Dissertação (Mestrado em Direito) — Instituto
+Brasileiro de Ensino, Desenvolvimento e Pesquisa, Brasília, 2026.
+
+O texto integral está depositado no repositório institucional do IDP, e este sítio
+mantém o registro bibliográfico com encaminhamento à fonte oficial.
+
+### Em elaboração
+
+Artigo sobre replicabilidade funcional na pesquisa jurídica empírica assistida por
+modelos de linguagem, com mapeamento de instrumentos e protocolo de verificação, cuja
+submissão está prevista a periódico brasileiro.
+
+## Como citar este site
+
+> MALKO, Fábio André. *Replicabilidade em Pesquisa Jurídica Assistida por IA*.
+> Disponível em: https://fabiomalko.org. Acesso em: [data].
+
+Cada artigo, nota e ficha de leitura traz autoria nominal e forma própria de citação
+na respectiva página.
+
+## Contato acadêmico
+
+[malko@malko.adv.br](mailto:malko@malko.adv.br)
+
+Este endereço destina-se a correspondência acadêmica. Consultas profissionais e
+pedidos de atendimento jurídico não são recebidos nem respondidos por este sítio.

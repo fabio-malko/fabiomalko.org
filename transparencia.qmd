@@ -1,0 +1,34 @@
+---
+title: "Declaração de uso de inteligência artificial"
+---
+
+Este programa pesquisa o uso de modelos de linguagem na pesquisa jurídica, e a
+coerência exige declarar como eles são empregados na produção do próprio site.
+
+## Na produção deste site
+
+A estrutura, a redação e a revisão do conteúdo contam com assistência de modelo de
+linguagem, sob revisão integral do pesquisador responsável, que responde por todo o
+conteúdo publicado. Nenhum texto vai ao ar sem leitura humana completa.
+
+Modelo utilizado, versão e finalidade constam ao pé de cada página que tenha sido
+produzida com assistência relevante.
+
+## Na pesquisa
+
+Os trabalhos publicados aqui declaram, em cada caso, o modelo empregado, a versão
+fixada, os parâmetros de execução e a data. A declaração é condição de replicabilidade,
+e sua ausência em trabalho alheio constitui objeto de crítica neste programa.
+
+## O que não é feito
+
+Nenhuma referência, citação, julgado, dispositivo legal ou dado numérico é produzido
+por geração automática sem conferência contra a fonte primária. Toda divergência
+apurada em conferência é declarada no próprio texto, inclusive quando corrige trabalho
+meu anterior.
+
+## Dados de terceiros
+
+Nenhum dado de cliente, peça processual de caso patrocinado ou informação sob sigilo
+profissional é utilizado, processado ou mencionado neste programa de pesquisa, em
+hipótese alguma, conforme o art. 7º, II, da Lei 8.906/1994.

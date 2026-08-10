@@ -1,0 +1,32 @@
+---
+title: "Leituras"
+subtitle: "Fichas analíticas de trabalhos de outros autores"
+listing:
+  id: fichas
+  contents: leituras
+  type: default
+  sort: "date desc"
+  fields: [date, title, description, categories]
+  categories: true
+  feed: true
+  filter-ui: true
+  sort-ui: [date, title]
+  date-format: "D [de] MMMM [de] YYYY"
+---
+
+Cada item abaixo é uma ficha autoral, escrita a partir da leitura integral do
+trabalho, em substituição ao resumo do editor. A ficha registra o que o trabalho faz,
+o que ele sustenta com dado próprio, onde para, e como se relaciona com o que pesquiso.
+
+O acesso ao texto original se dá pelo identificador digital do próprio trabalho.
+Nenhum conteúdo de terceiro é reproduzido além do estritamente necessário à crítica,
+na forma do art. 46, III, da Lei 9.610/1998.
+
+**Regra de inventário adotada:** sistema ou trabalho citado por outro pesquisador sem
+execução entra no levantamento marcado como «apenas referido», ficando a filtragem
+reservada à etapa de recomendação. A regra nasceu de um erro próprio, quando a
+primeira versão de um levantamento omitiu onze sistemas por descartar o que aparecia
+apenas em citação bibliográfica.
+
+::: {#fichas}
+:::

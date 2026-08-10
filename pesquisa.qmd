@@ -1,0 +1,79 @@
+---
+title: "Linha de pesquisa"
+subtitle: "Mensuração de replicabilidade em pesquisa jurídica assistida por modelos de linguagem"
+---
+
+## Onde a pesquisa está
+
+O programa parte de um resultado já defendido e avança para a pergunta que ele deixou
+em aberto.
+
+A dissertação de mestrado desenvolveu e aplicou um método replicável de extração
+automatizada e tratamento semântico de decisões judiciais, sobre precedentes
+tributários do Superior Tribunal de Justiça. O corpus reuniu **62.383 decisões
+únicas** em ICMS, ISS, ITBI e ITCMD, entre maio de 2022 e dezembro de 2025, das quais
+58.460 foram classificadas. A validação foi adjudicada sobre 401 decisões, com
+critério de aprovação fixado no limite inferior do intervalo de confiança de 95% igual
+ou superior a 0,75.
+
+O achado que orienta a pesquisa seguinte está na **dispersão entre campos**. A multa
+alcançou 0,97 de concordância enquanto o precedente determinante ficou em 0,17, no
+mesmo corpus, com o mesmo modelo, no mesmo dia, e quatro dos dez campos passaram no
+critério. Uma variação dessa ordem torna insuficiente qualquer afirmação global sobre
+a reprodutibilidade do estudo, e impõe que a medida seja feita e declarada campo a
+campo.
+
+Daí decorre o conceito que dá nome ao programa.
+
+## A lacuna
+
+O levantamento sistemático do acervo, com trecho literal e página de origem de cada
+menção, examinou os trabalhos que nomeiam ou executam sistemas de inteligência
+artificial em pesquisa jurídica. O resultado foi negativo, e é ele que abre espaço
+para a tese em curso:
+
+**Nenhum dos trabalhos examinados submete o mesmo protocolo jurídico, em português, a
+um painel de modelos abertos e proprietários, com medição formal de estabilidade.**
+
+Os trabalhos mais próximos param antes de reunir as três condições. Há quem compare
+modelos abertos usando juiz automático proprietário, sem métrica de estabilidade. Há
+quem compare seis modelos de três provedores em análise de dados, fora do texto
+jurídico. Há quem forneça a métrica de estabilidade adequada, aplicada à ciência
+política. A interseção das três condições permanece vazia, e é nela que a tese se
+instala.
+
+## O desenho em curso
+
+O experimento do doutorado submete o método do mestrado a um painel de quatro braços,
+com um quinto opcional.
+
+A **referência proprietária** emprega um modelo de topo de cada um de dois provedores
+distintos, em versão fixada e por interface programática, com vedação expressa ao uso
+de janela de conversa. O braço **aberto e auto-hospedado** executa uma mesma família
+de modelos em duas escalas, em máquina local, o que atende também ao sigilo
+profissional, já que nenhum dado sai do equipamento. O braço **aberto de segundo
+provedor** tem origem distinta da do anterior, para separar o efeito da arquitetura do
+efeito do provedor. A **linha de base sem modelo generativo** usa TF-IDF e um
+codificador em português, escolha justificada pela evidência de que abordagens
+clássicas superam arquiteturas recentes em tarefas dessa natureza.
+
+O braço opcional reúne modelos abertos de domínio jurídico, e mede se a especialização
+compensa a distância de jurisdição e de língua.
+
+::: {.callout-important}
+## Decisão metodológica em aberto
+A escolha do corpus do experimento, entre decisão pública, corpus sintético e peça
+real anonimizada, é anterior à escolha dos modelos e permanece em aberto. Ela é
+condicionada pela disciplina de proteção de dados e pela regulação do uso de
+inteligência artificial no Judiciário.
+:::
+
+## Publicação em curso
+
+Está em elaboração o artigo que consolida o mapeamento de instrumentos e propõe o
+protocolo de verificação de replicabilidade funcional. O experimento multimodelo é
+nele desenhado e pré-registrado, ficando a execução para o doutorado.
+
+A dissertação entra como caso de referência declarado, com publicação dos piores
+números, o que serve ao propósito de demonstrar o método de medição em condições
+adversas.

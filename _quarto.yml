@@ -1,0 +1,66 @@
+project:
+  type: website
+  output-dir: _site
+  render:
+    - "*.qmd"
+    - "artigos/*.qmd"
+    - "leituras/*.qmd"
+    - "en/*.qmd"
+
+# Congela os resultados de computação: o Python roda na máquina do titular e nunca na
+# publicação. Versionar o diretório _freeze junto com o repositório.
+execute:
+  freeze: auto
+
+website:
+  title: "Fábio André Malko"
+  description: "Artigos, notas e fichas de leitura em direito tributário, penal econômico, societário e uso de inteligência artificial na pesquisa jurídica."
+  site-url: "https://fabiomalko.org"
+
+  open-graph: true
+  twitter-card: false
+
+  navbar:
+    title: "Fábio André Malko"
+    left:
+      - href: index.qmd
+        text: Início
+      - href: artigos.qmd
+        text: Artigos e notas
+      - href: leituras.qmd
+        text: Leituras
+      - href: pesquisa.qmd
+        text: Linha de pesquisa
+      - href: curriculo.qmd
+        text: Currículo
+    right:
+      - href: en/index.qmd
+        text: "EN"
+
+  page-footer:
+    left: |
+      **Fábio André Malko**<br>
+      Doutorando em Direito, IDP, desde 2026
+    center: |
+      Conteúdo sob [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/deed.pt-br),
+      salvo indicação em contrário
+    right: |
+      [ORCID](https://orcid.org/0009-0006-5975-9603) ·
+      [Lattes](https://lattes.cnpq.br/6791025189749226) ·
+      [Declaração de uso de IA](transparencia.qmd)
+
+format:
+  html:
+    theme:
+      - cosmo
+      - estilo.scss
+    toc: true
+    toc-title: "Nesta página"
+    css: estilo.css
+    link-external-newwindow: true
+    link-external-icon: false
+    citations-hover: true
+    lang: pt-BR
+
+bibliography: referencias.bib
+# csl: definir arquivo CSL da ABNT antes de usar citações
