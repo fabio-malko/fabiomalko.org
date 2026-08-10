@@ -126,12 +126,13 @@ MALKO, Fábio André. **Extração automatizada e tratamento semântico de decis
 com inteligência artificial**: um método replicável aplicado a pesquisa de precedentes
 tributários do STJ. 2026. Dissertação (Mestrado Profissional em Direito) — Instituto
 Brasileiro de Ensino, Desenvolvimento e Pesquisa, Brasília, 2026. Orientador:
-Prof. Dr. Luís Felipe Perdigão de Castro.
+Prof. Dr. Luís Felipe Perdigão de Castro. Defesa em 27 de julho de 2026.
 [Página no sítio](artigos/dissertacao-precedentes-tributarios-stj.qmd).
 
-O depósito no [repositório institucional do IDP](https://repositorio.idp.edu.br) está em
-curso, e o endereço permanente será indicado aqui assim que o registro for publicado.
-Até lá, o texto integral pode ser solicitado pelo endereço de contato acadêmico.
+O trabalho está depositado no [repositório institucional do
+IDP](https://repositorio.idp.edu.br) e aguarda publicação do registro, cujo endereço
+permanente será indicado aqui. Até lá, o texto integral pode ser solicitado pelo endereço
+de contato acadêmico.
 
 ### Em elaboração
 
