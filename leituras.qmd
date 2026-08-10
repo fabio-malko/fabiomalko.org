@@ -3,14 +3,20 @@ title: "Leituras"
 subtitle: "Notas curtas sobre trabalhos de outros autores"
 listing:
   id: fichas
-  contents: leituras
+  contents:
+    - leituras/araszkiewicz-2025.qmd
+    - leituras/brandizzi-rodrigues-2025.qmd
+    - leituras/dik-2025.qmd
+    - leituras/garzo-palumbo-2025.qmd
+    - leituras/gultekin-2025.qmd
+    - leituras/barrie-2026.qmd
   type: default
-  sort: "date desc"
+  sort: false
   fields: [title, description, categories]
   categories: true
-  feed: true
+  feed: false
   filter-ui: true
-  sort-ui: [title]
+  sort-ui: false
 ---
 
 Registro aqui o que ando lendo e o que me chamou atenção em cada trabalho. Cada nota traz
