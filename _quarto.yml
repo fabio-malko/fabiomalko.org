@@ -14,7 +14,7 @@ execute:
 
 website:
   title: "Fábio André Malko"
-  description: "Artigos, notas e fichas de leitura em direito tributário, penal econômico, societário e uso de inteligência artificial na pesquisa jurídica."
+  description: "Artigos, notas e fichas de leitura em direito tributário, penal econômico e empresarial, e no uso de inteligência artificial para pesquisa jurídica. Fábio André Malko, mestre e doutorando em Direito pelo IDP."
   site-url: "https://fabiomalko.org"
 
   open-graph: true
@@ -47,7 +47,7 @@ website:
     right: |
       [ORCID](https://orcid.org/0009-0006-5975-9603) ·
       [Lattes](https://lattes.cnpq.br/6791025189749226) ·
-      [Declaração de uso de IA](transparencia.qmd)
+      [Declaração de uso de IA](/transparencia.qmd)
 
 format:
   html:

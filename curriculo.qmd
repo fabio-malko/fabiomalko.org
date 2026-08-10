@@ -1,45 +1,130 @@
 ---
 title: "Currículo de pesquisa"
+subtitle: "Atualizado a partir do Currículo Lattes de 31 de julho de 2026"
 ---
 
 ## Identificação
 
 **Fábio André Malko**
 
-Advogado, contador e professor universitário. Doutorando em Direito no Instituto
-Brasileiro de Ensino, Desenvolvimento e Pesquisa (IDP) desde 2026, com mestrado
-concluído na mesma instituição em 2026.
+Advogado, contabilista e professor. Mestre e doutorando em Direito pelo Instituto
+Brasileiro de Ensino, Desenvolvimento e Pesquisa (IDP).
 
-::: {.callout-warning}
-## A completar antes de publicar
-Graduações com instituição e ano; programa e linha do doutorado conforme consta da
-matrícula; instituição e disciplinas em que leciona. Nada aqui deve ser preenchido por
-inferência.
-:::
-
-## Identificadores persistentes
+Nome em citações bibliográficas: MALKO, F. A.; MALKO, Fábio André.
 
 | | |
 |---|---|
 | ORCID | [0009-0006-5975-9603](https://orcid.org/0009-0006-5975-9603) |
 | Lattes | [6791025189749226](https://lattes.cnpq.br/6791025189749226) |
 
-## Formação
+## Formação acadêmica
 
-**Doutorado em Direito** — IDP, Brasília. Em curso desde 2026.
+**Doutorado em Direito**, em andamento desde 2026.
+Instituto Brasileiro de Ensino, Desenvolvimento e Pesquisa (IDP), Brasília.
 
-**Mestrado em Direito** — IDP, Brasília, 2026.
+**Mestrado Profissional em Direito**, 2024 a 2026.
+Instituto Brasileiro de Ensino, Desenvolvimento e Pesquisa (IDP), Brasília.
 Dissertação: *Extração automatizada e tratamento semântico de decisões judiciais com
 inteligência artificial: um método replicável aplicado a pesquisa de precedentes
 tributários do STJ*. Orientador: Prof. Dr. Luís Felipe Perdigão de Castro.
+Palavras-chave: precedentes judiciais; Superior Tribunal de Justiça; tributos estaduais
+e municipais; pesquisa empírica em Direito; inteligência artificial; jurimetria.
 
-## Produção
+**Especialização em Direito Penal Econômico**, 2021.
+Faculdade Ágora (FAEEC).
+
+**Especialização em Direito Penal e Processo Penal**, 2019.
+Faculdade Unibf (UNIBF).
+
+**Graduação em Direito**, 2013 a 2018.
+Universidade do Sul de Santa Catarina (UNISUL).
+Monografia: *Sociedades de propósito específico e as empresas optantes pelo Simples
+Nacional: aspectos práticos de sua formalização*. Orientador: Hernani Luiz Sobierajski.
+
+**Graduação em Matemática**, cursada de 2001 a 2005, sem conclusão.
+Universidade Federal do Paraná (UFPR).
+
+**Técnico em Contabilidade**, 2015. Instituto Monitor.
+
+## Linha de pesquisa
+
+**Inteligência artificial e pesquisa empírica em Direito: aplicações ao contencioso
+tributário e ao Direito Penal Econômico.**
+
+A linha investiga o emprego de métodos empírico-computacionais e de inteligência
+artificial na análise da decisão jurídica. No plano metodológico, que é o eixo central,
+desenvolve e testa procedimentos replicáveis de coleta, extração determinística,
+classificação semântica e consolidação de decisões judiciais e administrativas em larga
+escala, acessíveis ao jurista sem formação prévia em programação, com salvaguardas
+contra alucinação e instabilidade de modelos de linguagem e validação humana por
+amostragem.
+
+No plano substantivo, examina a uniformidade na aplicação de precedentes pelos tribunais
+de origem e pelos órgãos de julgamento administrativo, a distribuição dos óbices de
+admissibilidade no acesso ao mérito e os focos persistentes de divergência em matéria de
+tributos estaduais e municipais, além da interseção entre as esferas penal e tributária.
+
+A [página da linha de pesquisa](pesquisa.qmd) detalha o desenho em curso.
+
+## Docência
+
+**Instituto Brasileiro de Ensino, Pesquisa e Amparo ao Trabalhador e Consumidor
+(INBRACON)**, desde 2022. Presidente e professor titular, com atuação em direção,
+pesquisa e ensino.
+
+**Escola Terceira Dimensão**, 2005 a 2008. Coordenador pedagógico e professor.
+
+**Secretaria de Estado da Educação do Paraná (SEED/PR)**, 2001 a 2004. Professor de
+Física, Química e Matemática, em regime de dedicação exclusiva.
+
+## Atuação profissional
+
+**Fábio André Malko & Advogados Associados**, desde 2019. Advogado titular e diretor
+executivo. Atuação em direito tributário, penal econômico, empresarial e imobiliário.
+Sítio institucional: [malko.adv.br](https://malko.adv.br).
+
+**Radar Contabilidade**, desde 2019. Contabilista titular, com atuação em contabilidade
+pública e privada.
+
+**Malko Consultoria Contábil**, 2009 a 2018. Diretor financeiro.
+
+## Produção bibliográfica
+
+### Artigos completos publicados em periódicos
+
+MALKO, Fábio André; FERNANDES, Tarsila Ribeiro Marques. Análise crítica do PLC 108/2024
+referente a incidência de ITCMD na distribuição desproporcional de dividendos.
+**Scientia Iuris**, Londrina, v. 28, n. 3, p. 155-170, 2024.
+DOI: [10.5433/2178-8189.2024v28n3p155-170](https://doi.org/10.5433/2178-8189.2024v28n3p155-170).
+[Página no sítio](artigos/plc-108-2024-itcmd-dividendos-desproporcionais.qmd).
+
+MALKO, Fábio André; LARA, Alessandra Alieve de. Direito e economia: a integração dos
+direitos fundamentais no contexto brasileiro. **Observatorio de la Economía
+Latinoamericana**, v. 22, n. 9, p. e6710, 2024.
+DOI: [10.55905/oelv22n9-101](https://doi.org/10.55905/oelv22n9-101).
+[Página no sítio](artigos/direito-economia-direitos-fundamentais.qmd).
+
+MALKO, Fábio André. A nova tributação sobre o consumo: uma análise crítica da Emenda
+Constitucional 132/2023 e de seus impactos no ambiente empresarial brasileiro.
+**Contribuciones a las Ciencias Sociales**, v. 17, n. 7, p. e8822, 2024.
+DOI: [10.55905/revconv.17n.7-390](https://doi.org/10.55905/revconv.17n.7-390).
+[Página no sítio](artigos/reforma-tributaria-consumo-ec-132-2023.qmd).
+
+### Textos de opinião
+
+Cinco textos publicados no Jusbrasil em 2024, conforme registro no Currículo Lattes:
+«Os impactos do crime organizado e corrupção no ambiente empresarial: desafios para os
+advogados criminalistas»; «A importância da integração entre as áreas jurídica e
+contábil no meio empresarial»; «IA e o futuro do trabalho: desafios, oportunidades e um
+novo horizonte para o potencial humano»; «Opinião: STF confirma que o Fisco estadual
+pode acessar dados bancários dos contribuintes sem ordem judicial»; «Opinião: a crise do
+controle quando as instituições enfrentam o mundo digital».
 
 ### Dissertação
 
-MALKO, Fábio André. **Extração automatizada e tratamento semântico de decisões
-judiciais com inteligência artificial**: um método replicável aplicado a pesquisa de
-precedentes tributários do STJ. 2026. Dissertação (Mestrado em Direito) — Instituto
+MALKO, Fábio André. **Extração automatizada e tratamento semântico de decisões judiciais
+com inteligência artificial**: um método replicável aplicado a pesquisa de precedentes
+tributários do STJ. 2026. Dissertação (Mestrado Profissional em Direito) — Instituto
 Brasileiro de Ensino, Desenvolvimento e Pesquisa, Brasília, 2026.
 
 O texto integral está depositado no repositório institucional do IDP, e este sítio
@@ -51,17 +136,26 @@ Artigo sobre replicabilidade funcional na pesquisa jurídica empírica assistida
 modelos de linguagem, com mapeamento de instrumentos e protocolo de verificação, cuja
 submissão está prevista a periódico brasileiro.
 
-## Como citar este site
+## Áreas de atuação acadêmica
 
-> MALKO, Fábio André. *Replicabilidade em Pesquisa Jurídica Assistida por IA*.
-> Disponível em: https://fabiomalko.org. Acesso em: [data].
+Direito Penal Econômico. Direito Tributário Empresarial. Direito Penal e Processo Penal.
+Contabilidade empresarial e pública. Perícias e avaliações.
 
-Cada artigo, nota e ficha de leitura traz autoria nominal e forma própria de citação
-na respectiva página.
+## Idiomas
+
+Inglês e espanhol, com leitura e compreensão em nível razoável.
+
+## Como citar este sítio
+
+> MALKO, Fábio André. *Fábio André Malko*. Disponível em: https://fabiomalko.org.
+> Acesso em: [data].
+
+Cada artigo, nota e ficha de leitura traz autoria nominal e forma própria de citação na
+respectiva página.
 
 ## Contato acadêmico
 
 [malko@malko.adv.br](mailto:malko@malko.adv.br)
 
-Este endereço destina-se a correspondência acadêmica. Consultas profissionais e
-pedidos de atendimento jurídico não são recebidos nem respondidos por este sítio.
+Este endereço destina-se a correspondência acadêmica. Consultas profissionais e pedidos
+de atendimento jurídico não são recebidos nem respondidos por este sítio.
