@@ -17,13 +17,9 @@ Prof. Dr. Luís Felipe Perdigão de Castro. Defesa em 27 de julho de 2026.
 
 ## Onde encontrar o texto integral
 
-O trabalho foi depositado no [repositório institucional do
-IDP](https://repositorio.idp.edu.br) e aguarda publicação do registro. Em consulta feita
-em 10 de agosto de 2026, por colheita de metadados no protocolo OAI-PMH sobre as coleções
-de mestrado do programa, o item ainda não aparecia. Esta página passa a indicar o endereço
-permanente assim que o repositório atribuir o identificador.
-
-Até lá, o texto integral pode ser solicitado por mensagem para
+O trabalho está depositado no [repositório institucional do
+IDP](https://repositorio.idp.edu.br), e o endereço permanente do registro será indicado
+nesta página. O texto integral também pode ser solicitado por mensagem para
 [malko@malko.adv.br](mailto:malko@malko.adv.br).
 
 ## Síntese
