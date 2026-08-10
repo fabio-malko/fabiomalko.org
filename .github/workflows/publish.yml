@@ -1,0 +1,51 @@
+name: Publicar o site
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Uma publicação de cada vez; não cancela a que estiver em curso.
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Obter o repositório
+        uses: actions/checkout@v4
+
+      - name: Instalar o Quarto
+        uses: quarto-dev/quarto-actions/setup@v2
+        with:
+          version: 1.6.40
+
+      # Nenhum ambiente Python é montado aqui de propósito: com freeze: auto,
+      # os resultados das computações vêm versionados em _freeze e a publicação
+      # apenas monta o HTML. Se algum dia for preciso executar código na
+      # publicação, é aqui que entra a instalação das dependências.
+      - name: Compilar o site
+        run: quarto render
+
+      - name: Preparar o artefato
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.publicacao.outputs.page_url }}
+    steps:
+      - name: Publicar no GitHub Pages
+        id: publicacao
+        uses: actions/deploy-pages@v4
