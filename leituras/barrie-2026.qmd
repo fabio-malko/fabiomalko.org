@@ -17,9 +17,10 @@ parafraseadas do comando, que testam a fragilidade da anotação à redação es
 por outro pesquisador. Os autores distribuem uma implementação em Python.
 
 Este é o trabalho de origem da métrica que uso na tese, e o que dele aproveito é o
-núcleo inteiro. A transposição para o Direito em português exige três adaptações,
-porque o parafraseador empregado não atende ao português, porque a minha unidade
-de anotação é o conjunto de campos extraídos de cada julgado, e porque acórdão do
+núcleo inteiro. A transposição para o Direito em português exige três adaptações, e
+nenhuma delas é enfrentada pelos autores, que trabalham apenas com corpora em inglês. A
+geração de variantes terá de recorrer a parafraseador treinado em português, a minha
+unidade de anotação é o conjunto de campos extraídos de cada julgado, e o acórdão do
 CARF é ordens de grandeza mais longo do que os textos que eles testaram.
 
 ::: {.nota-metodo}

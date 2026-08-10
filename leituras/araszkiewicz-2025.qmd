@@ -10,9 +10,9 @@ of statutory reasoning. In: MARKOVICH, Réka; DI CARO, Luigi; RAPP, Amon; SCHIFA
 p. 2-13. (Frontiers in Artificial Intelligence and Applications, v. 416).
 DOI: [10.3233/FAIA251572](https://doi.org/10.3233/FAIA251572).
 
-Araszkiewicz decompõe a decisão judicial em campos discretos, o dispositivo
-interpretado, as interpretações concorrentes, os argumentos, a metarregra e o
-resultado, e aplica esse esquema a um acórdão penal do Supremo Tribunal polonês e
+Araszkiewicz decompõe a decisão judicial em seis campos discretos, o nome do caso, o
+dispositivo interpretado, as interpretações concorrentes, os argumentos, a metarregra e
+a decisão final, e aplica esse esquema a um acórdão penal do Supremo Tribunal polonês e
 aos trinta e três julgados que o citam. O que ele mostra é a migração de uma
 metarregra hermenêutica entre ramos do Direito, do penal para o administrativo e
 para o contencioso de reparação a perseguidos políticos, e a extração de três
@@ -21,9 +21,9 @@ teses processuais autônomas de uma mesma decisão.
 O que me interessa é a unidade de anotação. Um esquema de campos assim é
 transponível a acórdãos do CARF, em que a controvérsia também recai sobre a
 interpretação do dispositivo e sobre a hierarquia entre cânones. Interessa também
-o que o artigo revela sem examinar: as tabelas foram geradas com auxílio de modelo
-de linguagem e conferidas por advogado, e o autor não informa a taxa de correção,
-que é justamente o número capaz de tornar o procedimento auditável.
+o que o artigo revela sem examinar: todas as tabelas, salvo a primeira, foram geradas
+com auxílio do ChatGPT-5 e conferidas por advogado, e o autor não informa a taxa de
+correção, que é justamente o número capaz de tornar o procedimento auditável.
 
 ::: {.nota-metodo}
 Nota escrita a partir da leitura integral do trabalho, com assistência de modelo de

@@ -8,7 +8,7 @@ BRANDIZZI, Loreane; RODRIGUES, Guilherme. JuriDiscovery: automated analysis of
 legal dispute triggered by public policies using artificial intelligence. A case
 study applied to the Individual Microentrepreneur. In: MARKOVICH, Réka; DI CARO, Luigi; RAPP, Amon; SCHIFANELLA, Claudio (org.).
 **Legal Knowledge and Information Systems: JURIX 2025**. Amsterdam: IOS Press, 2025.
-p. 14-25. (Frontiers in Artificial Intelligence and Applications, v. 416).
+p. 14-26. (Frontiers in Artificial Intelligence and Applications, v. 416).
 DOI: [10.3233/FAIA251573](https://doi.org/10.3233/FAIA251573).
 
 Os autores partem de dezenas de milhares de ementas para reconstruir o mapa do
