@@ -1,0 +1,44 @@
+---
+title: "Sobrenome (ano): título abreviado do trabalho"
+description: "Uma frase com o que o trabalho sustenta e por que ele importa para esta pesquisa."
+date: 2026-08-10
+author: "Fábio André Malko"
+categories: [IA e Direito, Método de pesquisa]
+draft: true
+---
+
+::: {.callout-warning}
+## Modelo, não publicável
+Esta página fixa a estrutura das fichas e serve para testar o índice. O conteúdo de
+cada ficha real precisa ser escrito a partir da releitura do original, com indicação
+de página para cada afirmação.
+:::
+
+## Referência
+
+SOBRENOME, Nome. **Título**. Veículo, volume, páginas, ano. DOI: `a completar`.
+
+## O que o trabalho faz
+
+Objeto e desenho, em uma a três frases, sem adjetivação.
+
+## O que sustenta com dado próprio
+
+O que o trabalho demonstra, separado do que ele apenas argumenta. Esta distinção é o
+núcleo da ficha e o que a torna útil meses depois.
+
+## Onde para
+
+Limite declarado pelo autor e limite que a leitura identifica. Constatação negativa
+também é achado e entra aqui.
+
+## Relação com o que pesquiso
+
+Se o trabalho fixa norma metodológica, fornece métrica, serve de caso comparável ou
+constitui objeto de crítica.
+
+## Como citar esta ficha
+
+> MALKO, Fábio André. Ficha analítica de SOBRENOME (ano).
+> *Fábio André Malko*, 10 ago. 2026.
+> Disponível em: https://fabiomalko.org/leituras/modelo-ficha. Acesso em: [data].
