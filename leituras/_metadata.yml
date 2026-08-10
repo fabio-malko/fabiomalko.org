@@ -1,7 +1,0 @@
-# As notas de leitura não exibem autoria nem data de publicação: a data no arquivo serve
-# apenas para ordenar a listagem, e a autoria é a do próprio sítio.
-format:
-  html:
-    include-in-header:
-      text: |
-        <style>.quarto-title-meta { display: none; }</style>
