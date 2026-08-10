@@ -4,14 +4,22 @@ description: "Separa a correção da resposta da solidez do raciocínio que a su
 date: 2026-08-10
 author: "Fábio André Malko"
 categories: [IA e Direito, Método de pesquisa, Replicabilidade]
-draft: true
 ---
 
 ## Referência
 
-GULTEKIN, Sinan; ROSSI REICH, Matteo; GALLONI, Francesca; LAGIOIA, Francesca; CONSIGLIO, Elena; SARTOR, Giovanni; BAGNATO, Sara. A Two-Dimensional Evaluation Framework for Factual and Reasoning Assessment of LLMs in Legal Question Answering. In: MARKOVICH, R. *et al.* (org.). **Legal Knowledge and Information Systems: JURIX 2025**. Amsterdam: IOS Press, 2025. p. 86-97. DOI: 10.3233/FAIA251579. Licença CC BY-NC 4.0.
-
-Coleção e número do volume: `a confirmar`. Data de acesso e ISBN: `a confirmar`. Vínculos institucionais declarados: CIRSFID Alma-AI (Universidade de Bolonha), Universidade de Palermo, Universidade de Roma LUMSA e Instituto Universitário Europeu. Consulta feita pela tradução interna integral (versão 1, de 31 de julho de 2026), que veda a citação por ela e remete ao original em inglês para cotejo.
+GULTEKIN, Sinan; ROSSI REICH, Matteo; GALLONI, Francesca; LAGIOIA, Francesca;
+CONSIGLIO, Elena; SARTOR, Giovanni; BAGNATO, Sara. A two-dimensional evaluation
+framework for factual and reasoning assessment of LLMs in legal question
+answering. In: MARKOVICH, Réka; DI CARO, Luigi; RAPP, Amon; SCHIFANELLA, Claudio (org.).
+**Legal Knowledge and Information Systems: JURIX 2025**: the thirty-eighth annual
+conference, Turim, 9 a 11 de dezembro de 2025. Amsterdam: IOS Press, 2025. p. 86-97.
+(Frontiers in Artificial Intelligence and Applications, v. 416). E-ISBN
+978-1-64368-638-7. DOI: [10.3233/FAIA251579](https://doi.org/10.3233/FAIA251579). Acesso aberto sob licença
+CC BY-NC 4.0.
+Autores vinculados ao CIRSFID Alma-AI da Universidade de Bolonha, à
+Universidade de Palermo, à Universidade de Roma LUMSA e ao Instituto
+Universitário Europeu.
 
 ## O que o trabalho faz
 
@@ -53,7 +61,6 @@ O artigo não fixa norma metodológica de replicabilidade campo a campo. A conco
 ::: {.callout-note collapse="true"}
 ## Método
 Ficha redigida a partir da leitura integral do trabalho, com assistência de modelo de
-linguagem na organização do texto e revisão do autor. Números conferidos contra o
-original. Campos assinalados como «a confirmar» aguardam conferência na versão
-publicada.
+linguagem na organização do texto e revisão do autor. Os números foram conferidos
+contra o original, e os dados bibliográficos contra o registro do editor.
 :::

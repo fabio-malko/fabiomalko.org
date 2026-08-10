@@ -4,14 +4,19 @@ description: "Protocolo de duas fases com 180 interações sobre glossário conc
 date: 2026-08-10
 author: "Fábio André Malko"
 categories: [IA e Direito, Método de pesquisa, Direito Penal]
-draft: true
 ---
 
 ## Referência
 
-GARZO, Grazia; PALUMBO, Alessandro. Does ChatGPT understand the law? A case study on road homicide in Italy. In: MARKOVICH, R. et al. (org.). **Legal Knowledge and Information Systems**. [S. l.]: IOS Press, 2025. p. 74-85. DOI: 10.3233/FAIA251578. Publicação em acesso aberto sob licença CC BY-NC 4.0. Afiliações: Universidade de Siena (Itália) e CentraleSupélec, Inria, CNRS, IRISA (França). Autora correspondente: Grazia Garzo (g.garzo@student.unisi.it).
-
-Campos com dado ausente no texto extraído: local de publicação `a confirmar`; prenomes dos organizadores do volume `a confirmar`; indicação da série e do número de volume (a numeração do DOI sugere a coleção *Frontiers in Artificial Intelligence and Applications*, sem confirmação no corpo) `a confirmar`; menção expressa ao evento JURIX 2025 `a confirmar` (a atribuição consta do nome do arquivo de origem, sem correspondência no texto, que identifica apenas o volume e os organizadores).
+GARZO, Grazia; PALUMBO, Alessandro. Does ChatGPT understand the law? A case study
+on road homicide in Italy. In: MARKOVICH, Réka; DI CARO, Luigi; RAPP, Amon; SCHIFANELLA, Claudio (org.).
+**Legal Knowledge and Information Systems: JURIX 2025**: the thirty-eighth annual
+conference, Turim, 9 a 11 de dezembro de 2025. Amsterdam: IOS Press, 2025. p. 74-85.
+(Frontiers in Artificial Intelligence and Applications, v. 416). E-ISBN
+978-1-64368-638-7. DOI: [10.3233/FAIA251578](https://doi.org/10.3233/FAIA251578). Acesso aberto sob licença
+CC BY-NC 4.0.
+Autores vinculados à Universidade de Siena e ao consórcio CentraleSupélec,
+Inria, CNRS e IRISA.
 
 ## O que o trabalho faz
 
@@ -61,7 +66,6 @@ Como objeto de crítica, o artigo delimita com precisão a lacuna que a linha de
 ::: {.callout-note collapse="true"}
 ## Método
 Ficha redigida a partir da leitura integral do trabalho, com assistência de modelo de
-linguagem na organização do texto e revisão do autor. Números conferidos contra o
-original. Campos assinalados como «a confirmar» aguardam conferência na versão
-publicada.
+linguagem na organização do texto e revisão do autor. Os números foram conferidos
+contra o original, e os dados bibliográficos contra o registro do editor.
 :::

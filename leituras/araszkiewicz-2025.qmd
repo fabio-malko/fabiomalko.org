@@ -4,17 +4,19 @@ description: "Aplica a análise por case frames a precedentes do Supremo Tribuna
 date: 2026-08-10
 author: "Fábio André Malko"
 categories: [IA e Direito, Método de pesquisa]
-draft: true
 ---
 
 ## Referência
 
-ARASZKIEWICZ, Michał. Precedent as interpretive resource: a case frame analysis of
-statutory reasoning. In: MARKOVICH, R. *et al.* (ed.). **Legal Knowledge and
-Information Systems** (JURIX 2025). IOS Press, 2025. Paginação: `a confirmar`.
-DOI: [10.3233/FAIA251572](https://doi.org/10.3233/FAIA251572). Acesso aberto sob
-licença CC BY-NC 4.0. Autor vinculado ao Departamento de Teoria do Direito da
-Universidade Jaguelônica de Cracóvia.
+ARASZKIEWICZ, Michał. Precedent as interpretive resource: a case frame analysis
+of statutory reasoning. In: MARKOVICH, Réka; DI CARO, Luigi; RAPP, Amon; SCHIFANELLA, Claudio (org.).
+**Legal Knowledge and Information Systems: JURIX 2025**: the thirty-eighth annual
+conference, Turim, 9 a 11 de dezembro de 2025. Amsterdam: IOS Press, 2025. p. 2-13.
+(Frontiers in Artificial Intelligence and Applications, v. 416). E-ISBN
+978-1-64368-638-7. DOI: [10.3233/FAIA251572](https://doi.org/10.3233/FAIA251572). Acesso aberto sob licença
+CC BY-NC 4.0.
+Autor vinculado ao Departamento de Teoria do Direito da Universidade
+Jaguelônica de Cracóvia.
 
 ## O que o trabalho faz
 
@@ -94,8 +96,7 @@ praticável, cabe apresentá-lo como quantificado.
 ::: {.callout-note collapse="true"}
 ## Método
 Ficha redigida a partir da leitura integral do trabalho, com assistência de modelo de
-linguagem na organização do texto e revisão do autor. Números conferidos contra o
-original. Campos assinalados como «a confirmar» aguardam conferência na versão
-publicada.
+linguagem na organização do texto e revisão do autor. Os números foram conferidos
+contra o original, e os dados bibliográficos contra o registro do editor.
 :::
 
