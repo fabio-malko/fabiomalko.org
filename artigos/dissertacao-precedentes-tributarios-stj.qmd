@@ -1,0 +1,70 @@
+---
+title: "Extração automatizada e tratamento semântico de decisões judiciais com inteligência artificial"
+subtitle: "Um método replicável aplicado a pesquisa de precedentes tributários do STJ"
+description: "Dissertação de mestrado profissional defendida no IDP em 2026. Desenvolve e aplica método replicável de coleta, extração e classificação semântica sobre 62.383 decisões do STJ em ICMS, ISS, ITBI e ITCMD, com validação adjudicada por amostragem e medição de concordância campo a campo."
+author: "Fábio André Malko"
+categories: [Direito Tributário, Método de pesquisa, IA e Direito, Replicabilidade]
+---
+
+## Referência
+
+MALKO, Fábio André. **Extração automatizada e tratamento semântico de decisões judiciais
+com inteligência artificial**: um método replicável aplicado a pesquisa de precedentes
+tributários do STJ. 2026. Dissertação (Mestrado Profissional em Direito) — Instituto
+Brasileiro de Ensino, Desenvolvimento e Pesquisa, Brasília, 2026. Orientador:
+Prof. Dr. Luís Felipe Perdigão de Castro.
+
+Data exata da defesa: `a confirmar`. Identificador digital: `a confirmar`.
+
+## Onde encontrar o texto integral
+
+O depósito institucional está em curso. Em consulta ao
+[repositório do IDP](https://repositorio.idp.edu.br) realizada em 10 de agosto de 2026,
+por colheita de metadados no protocolo OAI-PMH sobre as coleções de mestrado do
+programa, o registro ainda não constava, embora outros trabalhos defendidos em 2026 já
+estivessem publicados. Esta página passa a indicar o endereço permanente assim que o
+repositório atribuir o identificador.
+
+Até lá, o texto integral pode ser solicitado por mensagem para
+[malko@malko.adv.br](mailto:malko@malko.adv.br).
+
+## Síntese
+
+O trabalho parte de um problema prático de quem pesquisa contencioso tributário em
+escala. A consulta jurisprudencial convencional recupera decisões uma a uma e não
+permite afirmar nada sobre a distribuição dos fundamentos, dos óbices de
+admissibilidade ou dos focos de divergência no conjunto. A extração assistida por
+modelo de linguagem promete resolver isso, e traz consigo um risco próprio, que é a
+produção de campos plausíveis sem correspondência no texto de origem.
+
+O método desenvolvido percorre coleta, extração determinística, classificação semântica
+e consolidação, e foi desenhado para ser executável por jurista sem formação prévia em
+programação. O corpus reuniu **62.383 decisões únicas** do Superior Tribunal de Justiça
+em ICMS, ISS, ITBI e ITCMD, entre maio de 2022 e dezembro de 2025, das quais **58.460**
+foram classificadas.
+
+A validação foi adjudicada sobre **401 decisões**, com critério de aprovação fixado no
+limite inferior do intervalo de confiança de 95% igual ou superior a 0,75, e quatro dos
+dez campos passaram nesse critério. O achado que interessa ao método está na dispersão
+entre eles: a multa alcançou **0,97** de concordância, e o precedente determinante ficou
+em **0,17**, no mesmo corpus, com o mesmo modelo, no mesmo dia. Uma variação dessa ordem
+torna insuficiente qualquer afirmação global sobre a reprodutibilidade de um estudo
+dessa natureza, e impõe que a medida seja feita e declarada campo a campo, do que decorre
+o conceito que hoje organiza a [linha de pesquisa do doutorado](../pesquisa.qmd), a
+replicabilidade funcional por campo.
+
+Os números acima são os piores do trabalho, e estão publicados de propósito, porque o
+objeto da dissertação é o método de medição, e um método de medição só se demonstra em
+condições adversas.
+
+## Palavras-chave
+
+Precedentes judiciais; Superior Tribunal de Justiça; tributos estaduais e municipais;
+pesquisa empírica em Direito; inteligência artificial; jurimetria.
+
+## Como citar
+
+> MALKO, Fábio André. *Extração automatizada e tratamento semântico de decisões
+> judiciais com inteligência artificial*: um método replicável aplicado a pesquisa de
+> precedentes tributários do STJ. 2026. Dissertação (Mestrado Profissional em Direito) —
+> Instituto Brasileiro de Ensino, Desenvolvimento e Pesquisa, Brasília, 2026.
