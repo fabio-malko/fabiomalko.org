@@ -1,66 +1,32 @@
 ---
-title: "Gultekin e outros (2025): avaliação em dois eixos de respostas jurídicas de modelos"
-description: "Separa a correção da resposta da solidez do raciocínio que a sustenta, sobre 91 processos de proteção internacional julgados em Palermo. A concordância entre especialistas é reportada em taxa bruta, sem correção para acaso e sem abertura por campo."
-date: 2026-08-10
+title: "Gultekin e outros (2025): a resposta certa pelo caminho errado"
+description: "Separa a correção da resposta jurídica da solidez do raciocínio que a sustenta, sobre 91 processos de proteção internacional julgados em Palermo."
+date: 2026-08-06
 author: "Fábio André Malko"
 categories: [IA e Direito, Método de pesquisa, Replicabilidade]
 ---
-
-## Referência
 
 GULTEKIN, Sinan; ROSSI REICH, Matteo; GALLONI, Francesca; LAGIOIA, Francesca;
 CONSIGLIO, Elena; SARTOR, Giovanni; BAGNATO, Sara. A two-dimensional evaluation
 framework for factual and reasoning assessment of LLMs in legal question
 answering. In: MARKOVICH, Réka; DI CARO, Luigi; RAPP, Amon; SCHIFANELLA, Claudio (org.).
-**Legal Knowledge and Information Systems: JURIX 2025**: the thirty-eighth annual
-conference, Turim, 9 a 11 de dezembro de 2025. Amsterdam: IOS Press, 2025. p. 86-97.
-(Frontiers in Artificial Intelligence and Applications, v. 416). E-ISBN
-978-1-64368-638-7. DOI: [10.3233/FAIA251579](https://doi.org/10.3233/FAIA251579). Acesso aberto sob licença
-CC BY-NC 4.0.
-Autores vinculados ao CIRSFID Alma-AI da Universidade de Bolonha, à
-Universidade de Palermo, à Universidade de Roma LUMSA e ao Instituto
-Universitário Europeu.
+**Legal Knowledge and Information Systems: JURIX 2025**. Amsterdam: IOS Press, 2025.
+p. 86-97. (Frontiers in Artificial Intelligence and Applications, v. 416).
+DOI: [10.3233/FAIA251579](https://doi.org/10.3233/FAIA251579).
 
-## O que o trabalho faz
+A proposta é avaliar a saída do modelo em dois eixos independentes. Um classifica
+a resposta em correta, parcial, errada ou omitida. O outro classifica a
+justificativa em ancorada no documento, inferida, alucinada ou incoerente. O
+cruzamento expõe a combinação que as métricas de eixo único registram como acerto,
+que é a resposta juridicamente correta obtida por raciocínio inventado.
 
-Propõe arcabouço de avaliação de saídas de modelos de linguagem em resposta a perguntas jurídicas que separa a correção da resposta da qualidade da justificativa que a acompanha, e o operacionaliza por meio de um sistema de LLM como juiz. O desenho aplica-se a corpus de 91 casos italianos de proteção internacional recorridos ao Tribunal de Palermo, decididos entre 2014 e 2023, com padrão-ouro construído por quatro especialistas jurídicos. A cadeia percorre desenho de perguntas e diretrizes, construção da verdade de referência, extração de informação pelos modelos, avaliação das respostas por especialistas e por modelos-juízes, e comparação entre umas e outras.
+A distinção entre inferir e alucinar incide exatamente sobre a fronteira que me
+importa, a que separa o que o auto de infração ou o acórdão efetivamente diz do
+que o modelo supõe dito. Os autores registram ainda que todos os modelos testados
+acertam mais ao julgar a resposta do que ao auditar a cadeia que a produziu, o que
+é coerente com o que venho observando.
 
-## O que sustenta com dado próprio
-
-O eixo de Veracidade classifica a resposta em Correta, Parcial, Errada, Verdadeiro Negativo (quando a informação de fato inexiste no documento) e Resposta Omitida (quando existe e o modelo respondeu "N/A"). O eixo de Solidez do Raciocínio classifica a justificativa em Sólido, Inferência, Alucinação e Incoerente, conforme esteja ancorada no documento-fonte, extrapole o texto sem contrariá-lo, incorpore informação inventada ou perca o objeto. O cruzamento dos dois eixos expõe a resposta juridicamente correta obtida por raciocínio alucinado ou inconsistente, combinação que as métricas de eixo único registram como acerto.
-
-A concordância entre os especialistas no lote de alinhamento de 939 itens de pergunta, resposta e raciocínio ficou em 75,7%, patamar que os autores reputam satisfatório diante da formulação aberta das perguntas. A composição do corpus é de 19 concessões de asilo, 31 de proteção humanitária, 21 de proteção subsidiária e 20 rejeições integrais.
-
-Na etapa de extração, o o4-mini com o segundo prompt registrou 74,36% de razão de correspondência exata, 87,88% de exatidão de veracidade e 83,53% de exatidão de raciocínio; o Gemma 3 27B, no mesmo prompt, ficou em 65,64%, 87,95% e 73,85%. A média do segundo prompt superou a do primeiro em raciocínio (78,69% contra 75,83%) e ficou abaixo em veracidade (87,92% contra 89,81%), e os autores escolheram o segundo prompt pela primazia atribuída ao eixo de raciocínio.
-
-Entre os modelos-juízes, o Gemini 2.5 Flash alcançou 90,5% de exatidão de veracidade e 77,8% de exatidão de raciocínio, com 26'45" médios por caso, contra 89,8% e 82,6% do GPT-5 Nano, este a 132'31" por caso. A vantagem aparente do GPT-5 Nano no eixo de raciocínio é desqualificada pela própria matriz de confusão: o modelo concentra predições na classe majoritária "sound" e identifica corretamente apenas 6,2% das alucinações. Todos os modelos testados apresentaram exatidão superior em veracidade do que em raciocínio, resultado que os autores leem como indício de que julgar a resposta é tarefa menos exigente do que auditar a cadeia que a produziu.
-
-O custo computacional foi medido com precisão. O juiz baseado no gemini-2.5-flash-preview-05-20 consumiu 5,13 segundos por pergunta; cada caso consome, em média, 7,9 milhões de tokens de entrada e 3,8 milhões de saída, cifra que os autores apontam como impeditiva do emprego de modelos de ponta como o Gemini 2.5 Pro. Habilitar o modo de raciocínio multiplicou por até cinco o tempo médio de processamento por caso.
-
-## Onde para
-
-Os autores declaram a limitação de representatividade do corpus: só decisões de Comissões Territoriais da Sicília Ocidental, apenas as rejeitadas ou insatisfatórias, obtidas por escritórios cooperantes depois de negado acesso mais amplo pelas autoridades, com predominância de requerentes do sexo masculino. Declaram também que a avaliação da solidez do raciocínio permanece o ponto fraco, que o juiz automatizado confunde com frequência "inference" e "hallucination", e que o rótulo "Partial" carrega subjetividade porque depende de juízo sobre o que seja informação crucial faltante.
-
-A leitura acrescenta que a concordância de 75,7% é reportada como taxa bruta, sem coeficiente que corrija concordância ao acaso e sem abertura por pergunta ou por campo, o que impede aferir onde a anotação humana é estável e onde não é. A comparação entre modelos-juízes roda sobre subconjunto estratificado de 20 casos, e a generalização se apoia em domínio único, jurisdição única e língua única, com texto obtido por OCR sobre digitalizações. O padrão-ouro provém de quatro especialistas em quantidade não discriminada por caso.
-
-O bloco de observações de conferência da tradução registra divergências internas do artigo publicado, todas preservadas no corpo traduzido. Na Tabela 3 (p. 92), duas linhas ostentam o mesmo rótulo "P.2 Overall", e os valores da terceira linha (68,75%; 89,81%; 75,83%) correspondem à média do primeiro prompt, devendo ler-se "P.1 Overall". O texto da p. 91 afirma superioridade do segundo prompt em F1 "0,94 contra 0,93", enquanto a Tabela 3 registra 0,94 nas duas linhas de média. O texto da seção 5 atribui 6,2% de acerto do GPT-5 Nano em alucinações, e a matriz (c) da Figura 3 registra 9,3 na célula correspondente, sem explicação da diferença. A Tabela 4 traz duas linhas do mesmo modelo, "Gem. 2.5 F. Full" e "Gem. 2.5 F.", com métricas distintas e tempo médio idêntico, sem indicar qual corresponde ao conjunto integral e qual ao subconjunto. A referência [7] é citada como METEOR na p. 87, mas a entrada é o artigo do COMET, idêntica à entrada [12], e a referência de METEOR não consta da lista. Somam-se defeitos tipográficos e gramaticais do original preservados na tradução, entre eles "evalution", "Section 6concludes", "in batches,increase efficiency", "Mistal 7B" nas duas subtabelas da Tabela 2, o caractere "¿" onde o contexto pede sinal de comparação, e a repetição de oração ao fim da subseção 4.1.
-
-## Relação com o que pesquiso
-
-O trabalho fornece métrica e serve de caso comparável direto. A métrica aproveitável é a decomposição da avaliação em eixo de correção e eixo de justificativa, com taxonomia fechada em cada eixo, que permite isolar a resposta certa por caminho errado. Transposta ao contencioso tributário e ao penal econômico, a distinção entre "Inferência" e "Alucinação" incide justamente sobre a fronteira entre o que o auto de infração, o acórdão do CARF ou o termo de declarações efetivamente diz e o que o modelo supõe dito, fronteira que constitui o risco central da anotação assistida em matéria sancionadora.
-
-A condição de caso comparável decorre da estrutura do experimento: corpus real de processos, padrão-ouro humano por especialistas, mensuração de concordância entre anotadores, comparação entre modelo e humano campo a campo dentro de cada pergunta. Trata-se do mesmo desenho adotado nesta linha de pesquisa, aplicado a outro objeto empírico.
-
-O artigo não fixa norma metodológica de replicabilidade campo a campo. A concordância é reportada em agregado, sem estatística por campo e sem correção para acaso, e o critério de estabilidade da anotação fica implícito no juízo dos autores sobre o que seja taxa satisfatória. Nesse ponto, o trabalho comporta crítica produtiva e abre espaço para contribuição própria da linha, que é converter a avaliação bidimensional em medida de replicabilidade por campo, com coeficiente declarado e critério de corte explícito. A observação dos autores de que a divergência entre especialistas reflete a riqueza da avaliação jurídica, afastada a hipótese de inconsistência entre anotadores, é afirmação argumentativa sem sustentação empírica no próprio texto, e merece exame no aproveitamento.
-
-## Como citar esta ficha
-
-> MALKO, Fábio André. Ficha analítica de GULTEKIN e outros (2025). *Fábio André Malko*, 10 ago. 2026.
-> Disponível em: https://fabiomalko.org/leituras/gultekin-2025. Acesso em: [data].
-
-::: {.callout-note collapse="true"}
-## Método
-Ficha redigida a partir da leitura integral do trabalho, com assistência de modelo de
-linguagem na organização do texto e revisão do autor. Os números foram conferidos
-contra o original, e os dados bibliográficos contra o registro do editor.
+::: {.nota-metodo}
+Nota escrita a partir da leitura integral do trabalho, com assistência de modelo de
+linguagem na redação e revisão do autor.
 :::

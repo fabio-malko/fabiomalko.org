@@ -1,59 +1,32 @@
 ---
-title: "Dik (2025): auditar a coerência da decisão discricionária com Answer Set Programming"
-description: "Converte fatos e justificação em programação lógica por meio do GPT-4o e verifica a satisfatibilidade do conjunto. A base empírica é um caso húngaro de guarda com duas justificações, e a etapa de formalização por modelo de linguagem não recebe medida de acerto."
-date: 2026-08-10
+title: "Dik (2025): a justificação do juiz é logicamente compatível com o que ele decidiu?"
+description: "Converte os fatos e a fundamentação de um caso de guarda em programação lógica e testa se o conjunto é satisfatível. A justificação de primeiro grau não era."
+date: 2026-08-08
 author: "Fábio André Malko"
 categories: [IA e Direito, Método de pesquisa]
 ---
 
-## Referência
-
 DIK, Josephine. Explaining discretionary judicial decisions using answer set
 programming. In: MARKOVICH, Réka; DI CARO, Luigi; RAPP, Amon; SCHIFANELLA, Claudio (org.).
-**Legal Knowledge and Information Systems: JURIX 2025**: the thirty-eighth annual
-conference, Turim, 9 a 11 de dezembro de 2025. Amsterdam: IOS Press, 2025. p. 49-60.
-(Frontiers in Artificial Intelligence and Applications, v. 416). E-ISBN
-978-1-64368-638-7. DOI: [10.3233/FAIA251576](https://doi.org/10.3233/FAIA251576). Acesso aberto sob licença
-CC BY-NC 4.0.
-Autora vinculada à TU Wien. Código-fonte do experimento em
-<https://github.com/josephinedik/JURIX2025>.
+**Legal Knowledge and Information Systems: JURIX 2025**. Amsterdam: IOS Press, 2025.
+p. 49-60. (Frontiers in Artificial Intelligence and Applications, v. 416).
+DOI: [10.3233/FAIA251576](https://doi.org/10.3233/FAIA251576).
 
-## O que o trabalho faz
+A autora formaliza os fatos do caso e a avaliação declarada pelo magistrado em
+Answer Set Programming e pergunta ao solucionador se existe alguma atribuição de
+pesos que torne aquela fundamentação compatível com aquele resultado. Sobre um
+caso húngaro de guarda, a justificação de primeiro grau não admitiu nenhum modelo,
+o que o método lê como incoerência interna, ao passo que a do tribunal de apelação
+admitiu mais de cem mil.
 
-Propõe método para auditar a consistência interna da justificação apresentada por juiz em decisão discricionária, representando os fatos do caso e a avaliação declarada pelo magistrado em Answer Set Programming e examinando os conjuntos-resposta resultantes por script em Python. O desenho tem três estágios encadeados: um componente GPT-4o converte o caso escrito e a justificação em codificação ASP; o solucionador clingo verifica satisfatibilidade e gera todas as atribuições de peso compatíveis; a análise em Python extrai os predicados presentes em todos os modelos e as relações numéricas entre pesos. A aplicação recai sobre guarda de menor no direito húngaro, campo em que a lei confia ao juiz a ponderação dos fatores segundo o melhor interesse da criança.
+O que me atrai é o tipo de pergunta, dirigida à coerência entre a fundamentação
+declarada e o resultado alcançado. Ela tem correspondente direto na aferição de
+motivação suficiente no contencioso tributário administrativo e na dosimetria
+penal. A etapa de formalização do texto em lógica é feita por
+modelo de linguagem, e a autora reconhece que a saída precisa de conferência sem
+medir quanto ela varia.
 
-## O que sustenta com dado próprio
-
-A demonstração empírica é a execução do modelo sobre um caso húngaro real de guarda, com seis propriedades atribuídas aos dois genitores (p. 7). A justificação do juiz de primeiro grau, que concedeu a guarda ao Genitor B, produziu zero modelos, resultado que o método interpreta como incoerência entre a avaliação declarada e a decisão tomada (p. 7). A remoção sucessiva de restrições localizou a origem da insatisfatibilidade nas linhas 31 e 29-30 do arquivo, correspondentes à qualificação de «bater na criança uma vez» como muito importante e à qualificação das propriedades de relacionamento como importantes (p. 7).
-
-Retirada a primeira restrição, todos os conjuntos-resposta passam a classificar «bater na criança uma vez» como pouco importante, com peso entre 1 e 3, enquanto «mudar-se sem consentimento» permanece entre 19 e 21 (p. 7-8). No subconjunto de modelos em que a agressão pesa mais do que o desejo da criança, o relatório registra limites multiplicativos como «mau relacionamento com a criança ≥ 2 · bater na criança uma vez», «bom relacionamento com a criança ≥ 7 · a criança quer viver com o genitor» e «mudar-se sem consentimento ≥ 19 · a criança quer viver com o genitor» (p. 8). Removidas as restrições de relacionamento e restaurada a da agressão, os limites de diferença ficam em 2 ≥ |desejo da criança − relacionamento| ≥ 0, indicando equivalência aproximada de peso entre esses fatores (p. 8). Comum às duas variantes, o resultado «mudar-se sem consentimento ≥ 6 · a criança quer viver com o genitor», com máximo 21 e mínimo 19 para a primeira propriedade e máximo 3 e mínimo 1 para a segunda (p. 8).
-
-A justificação do tribunal de apelação, que atribuiu a guarda ao Genitor A, mostrou-se logicamente consistente e gerou 117.649 modelos, com pesos da agressão e do desejo da criança situados entre 15 e 21 (p. 9). Os parâmetros de implementação estão declarados: pesos naturais de 1 a 21 (regra 7, p. 5), corte das categorias em 7 e em 15 (regras 18 a 21, p. 5), espaço de busca de n⁷ (p. 10), clingo 5.4.0 e Python 3.6.7 (p. 4).
-
-O restante do artigo opera no plano argumentativo. A escolha de 21 como teto é defendida pela divisibilidade em três faixas iguais e pela tratabilidade computacional diante de seis propriedades (p. 3), sem qualquer teste comparativo entre escalas. A afirmação de que a ferramenta torna a discricionariedade transparente e rastreável (p. 9) permanece como tese, sem medição de utilidade junto a usuários.
-
-## Onde para
-
-A autora declara os limites: a abstração numérica dos pesos funciona como metáfora matemática de avaliações qualitativas, e resta avaliar como esquemas ordinais, difusos ou baseados em casos afetariam a interpretabilidade (p. 10); o espaço de busca de n⁷ pede restrições que reduzam o número de explicações geradas (p. 10); a inconsistência foi atribuída, no exemplo, a erro de categorização, embora comporte explicações alternativas, entre elas a propriedade omitida de propósito pelo juiz, como raça ou gênero, ou a propriedade classificada como negativa apesar de efeito positivo sobre a criança (p. 10, e nota 4 na p. 7); a saída do GPT-4o ainda precisa de conferência humana quanto à correção da codificação ASP (p. 10); e o domínio testado limita-se à guarda de menor, cabendo generalização futura (p. 10).
-
-A leitura acrescenta limites não assumidos no texto. Não há amostra: a base empírica é um caso e duas justificações, o que impede qualquer inferência sobre frequência de justificações incoerentes na jurisdição. Não há medida de acerto do estágio de formalização, nem repetição de execução do GPT-4o sobre o mesmo caso, nem comparação entre a codificação gerada pelo modelo e uma codificação de referência produzida por humano, de modo que a única etapa não determinística de todo o encadeamento permanece sem avaliação. O contraste de 0 modelos contra 117.649 modelos entre as duas justificações também depende inteiramente daquela codificação não verificada. A contagem de modelos não recebe interpretação metodológica, embora varie com o teto de 21 e com o número de propriedades. Nada indica quem definiu a granularidade das seis propriedades a partir do texto do caso, nem se outra decomposição dos fatos alteraria o resultado de insatisfatibilidade.
-
-## Relação com o que pesquiso
-
-O trabalho não fixa norma metodológica para a linha nem oferece métrica de replicabilidade. Suas medidas incidem sobre pesos internos de um modelo lógico, ao passo que o eixo metodológico aqui adotado tem por objeto a estabilidade da anotação produzida por modelo de linguagem.
-
-Serve como caso comparável em dois pontos. Primeiro, pela arquitetura híbrida, na qual o modelo de linguagem cumpre função de extração estruturada a partir de texto jurídico corrido e entrega o produto a um componente simbólico verificável, desenho transponível para o contencioso tributário, onde auto de infração, impugnação e acórdão do CARF poderiam alimentar codificação de fatores e pesos. Segundo, pelo tipo de pergunta que formula, dirigida à coerência entre fundamentação declarada e resultado, questão que no contencioso tributário administrativo tem correspondente direto na aferição de motivação suficiente e, no direito penal econômico, na dosimetria e na ponderação de circunstâncias judiciais do art. 59 do Código Penal.
-
-Ao mesmo tempo é objeto de crítica produtiva, e talvez esse seja o uso mais rendoso para a tese. O artigo exibe, em forma clara, a lacuna que a linha de pesquisa se propõe a fechar: introduz um modelo de linguagem em posição estruturalmente crítica do encadeamento, reconhece por escrito que a saída precisa de conferência, e ainda assim não mede campo a campo se essa saída se repete. Uma seção de mensuração de replicabilidade da codificação ASP gerada pelo GPT-4o, com execuções repetidas e concordância por predicado, converteria a demonstração de viabilidade em evidência. A ausência dessa seção em artigo aceito no JURIX 2025 documenta o estado da prática que a linha pretende corrigir e pode ser citada exatamente nessa função.
-
-## Como citar esta ficha
-
-> MALKO, Fábio André. Ficha analítica de DIK (2025). *Fábio André Malko*, 10 ago. 2026.
-> Disponível em: https://fabiomalko.org/leituras/dik-2025. Acesso em: [data].
-
-::: {.callout-note collapse="true"}
-## Método
-Ficha redigida a partir da leitura integral do trabalho, com assistência de modelo de
-linguagem na organização do texto e revisão do autor. Os números foram conferidos
-contra o original, e os dados bibliográficos contra o registro do editor.
+::: {.nota-metodo}
+Nota escrita a partir da leitura integral do trabalho, com assistência de modelo de
+linguagem na redação e revisão do autor.
 :::

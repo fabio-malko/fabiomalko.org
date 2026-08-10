@@ -1,71 +1,32 @@
 ---
 title: "Garzo e Palumbo (2025): o GPT-4o diante do homicídio viário italiano"
-description: "Protocolo de duas fases com 180 interações sobre glossário conceitual e 150 avaliações sobre acórdãos da Corte de Cassação. A avaliação é feita por um único perito, sem segunda anotação e sem coeficiente de concordância, e a escala declarada no texto diverge da agregação efetiva das tabelas."
-date: 2026-08-10
+description: "Testa sessenta conceitos do art. 589-bis do Código Penal italiano e dez acórdãos da Corte de Cassação, com avaliação por perito jurídico e taxonomia do erro cometido pelo modelo."
+date: 2026-08-07
 author: "Fábio André Malko"
-categories: [IA e Direito, Método de pesquisa, Direito Penal]
+categories: [IA e Direito, Direito Penal, Método de pesquisa]
 ---
-
-## Referência
 
 GARZO, Grazia; PALUMBO, Alessandro. Does ChatGPT understand the law? A case study
 on road homicide in Italy. In: MARKOVICH, Réka; DI CARO, Luigi; RAPP, Amon; SCHIFANELLA, Claudio (org.).
-**Legal Knowledge and Information Systems: JURIX 2025**: the thirty-eighth annual
-conference, Turim, 9 a 11 de dezembro de 2025. Amsterdam: IOS Press, 2025. p. 74-85.
-(Frontiers in Artificial Intelligence and Applications, v. 416). E-ISBN
-978-1-64368-638-7. DOI: [10.3233/FAIA251578](https://doi.org/10.3233/FAIA251578). Acesso aberto sob licença
-CC BY-NC 4.0.
-Autores vinculados à Universidade de Siena e ao consórcio CentraleSupélec,
-Inria, CNRS e IRISA.
+**Legal Knowledge and Information Systems: JURIX 2025**. Amsterdam: IOS Press, 2025.
+p. 74-85. (Frontiers in Artificial Intelligence and Applications, v. 416).
+DOI: [10.3233/FAIA251578](https://doi.org/10.3233/FAIA251578).
 
-## O que o trabalho faz
+O desenho tem duas fases. Na primeira, o modelo define, exemplifica e reconhece
+sessenta conceitos ligados ao tipo penal do homicídio viário. Na segunda, recebe
+acórdãos íntegros da Corte de Cassação e deve sintetizar a decisão, reconstruir o
+raciocínio sobre os fatos e identificar a ratio decidendi. Um perito jurídico
+avalia cada saída em escala estruturada.
 
-Propõe um protocolo experimental de duas fases para avaliar empiricamente a compreensão e a argumentação jurídicas de modelos de linguagem, aplicando-o ao GPT-4o sobre o homicídio viário do art. 589-bis do Código Penal italiano. A primeira fase testa conceitos isolados por meio de prompts de definição, de exemplo e de identificação reversa; a segunda submete ao modelo acórdãos íntegros da Corte de Cassação italiana e pede síntese da decisão, reconstrução do raciocínio fático e identificação da *ratio decidendi*. Toda a avaliação das saídas foi feita manualmente por perito jurídico, com escala numérica estruturada.
+O achado que guardo é a tipologia do erro, e não o escore. O modelo fabrica ou
+atribui mal referências jurisprudenciais, apresenta hipóteses sem marcá-las como
+hipóteses, inventa expressões jurídicas e erra a norma aplicável, imputando a
+cooperação culposa ao artigo errado do Código Penal. É a lista de riscos concretos
+de quem usa esses modelos em matéria sancionadora. Registro que a avaliação
+repousa sobre um único perito, sem segunda anotação e sem coeficiente de
+concordância.
 
-## O que sustenta com dado próprio
-
-O desenho é declarado nas p. 6 e 7. Na Fase 1, o glossário reúne 60 conceitos vinculados ao art. 589-bis, cada um submetido a três prompts, o que perfaz 180 interações avaliadas. Na Fase 2, dez acórdãos, três prompts por acórdão, trinta saídas do modelo e 150 avaliações individuais, considerando as cinco dimensões de pontuação (cobertura conceitual em percentual, compreensão conceitual de 0 a 2, qualidade do raciocínio de 0 a 2, identificação da *ratio* de 0 a 2 e penalidade por erro jurídico de 0 a −2).
-
-Os resultados da Fase 1 (p. 7 e Tabela 1, p. 8-9) registram média 1,95 em definição, 1,00 em geração de exemplo e 1,97 em identificação reversa. A conferência item a item da Tabela 1 confirma a aritmética: em definição há 57 notas 2 e três notas 1 (negligência consciente, taxa alcoólica acima de 0,8 g/l e suspensão da habilitação), resultando em 117/60; em identificação reversa há duas notas 1 (uso de telefone celular e retorno perigoso), resultando em 118/60.
-
-Na Fase 2 (p. 8 e Tabela 2, p. 9), a cobertura conceitual média é de 91,97%. O prompt de síntese obtém 2,0 em compreensão e 2,0 em raciocínio, 1,8 em identificação da *ratio* e penalidade média de −0,2. O prompt de raciocínio fático atinge 2,0 nas quatro dimensões positivas, sem penalidade. O prompt de justificação jurídica cai para 1,9 em compreensão e 1,5 na *ratio*, com penalidade média de −0,2. O escore agregado médio por acórdão é 17,72, e a média dos dez valores da coluna final da Tabela 2 confere com esse número.
-
-A Discussão (p. 9-10) sustenta, com base na inspeção qualitativa das saídas, a recorrência de fabricação ou má atribuição de referências jurisprudenciais, a apresentação de cenários plausíveis sem marcação de hipoteticidade, a criação de expressões jurídicas inexistentes e a classificação normativa equivocada, com o exemplo concreto da imputação de cooperação culposa ao art. 110 do Código Penal italiano quando a norma pertinente seria o art. 113.
-
-O que permanece no plano argumentativo, sem dado próprio, é a tese central de que o desempenho decorre de reconhecimento de padrão linguístico, sem que disso resulte compreensão jurídica em sentido humano. Nada no desenho experimental discrimina uma hipótese da outra; a conclusão apoia-se na leitura interpretativa do padrão de erros. Também são argumentativas as afirmações sobre utilidade do modelo como ferramenta de apoio à decisão sob supervisão e sobre a generalidade do arcabouço para outros delitos e domínios.
-
-## Onde para
-
-Os autores declaram o escopo restrito ao GPT-4o e a um único tipo penal, afirmando que a metodologia é agnóstica ao modelo e transponível, sem demonstrá-lo. Reconhecem que os erros identificados podem ser específicos do domínio e que a supervisão humana permanece indispensável em uso forense.
-
-A leitura identifica limites adicionais. O trabalho se apresenta como arcabouço replicável e não mede replicabilidade: a avaliação é feita por um único perito jurídico, sem segunda anotação independente, sem protocolo de resolução de divergência e sem coeficiente de concordância entre anotadores. Sem isso, os escores das Tabelas 1 e 2 são leituras de um avaliador, e o próprio arcabouço fica sem a evidência que sua reivindicação central exigiria.
-
-Há inconsistência interna na definição da escala. A p. 7 afirma que o escore cumulativo de cada acórdão varia de −2 a um máximo teórico de 7, decompondo esse 7 em um ponto de cobertura mais três notas 2. A Tabela 2 registra escores de até 19 e média de 17,72. A reconstrução aritmética mostra que o 7 se refere a um prompt isolado, enquanto a tabela soma os três prompts, com teto efetivo de 19. O texto publicado não faz essa ressalva, e o leitor que tomar o parâmetro declarado interpretará todos os resultados fora de escala.
-
-A dimensão de geração de exemplo (E) apresenta variância próxima de zero: 54 dos 60 conceitos recebem exatamente a nota 1, com três zeros (condução com habilitação cassada, prisão obrigatória em flagrante e condução em condições perigosas) e três notas 2 (detenção do suspeito, agravante de taxa alcoólica elevada e desrespeito à sinalização). Um escore que quase não discrimina entre itens sinaliza aplicação rotineira da nota intermediária, e sobre ele repousa boa parte da tese qualitativa do artigo.
-
-O glossário de 60 conceitos contém redundância que afeta o denominador da cobertura conceitual. *Plea bargaining* e *sentence upon request* remetem ambos ao art. 444 do Código de Processo Penal italiano; retorno perigoso e conversão irregular remetem ambos ao art. 154 do Código da Estrada; desrespeito à sinalização e avanço de sinal vermelho remetem ambos ao art. 146; condução sob efeito de entorpecente, comprometimento psicofísico, condução em condições perigosas e exame toxicológico remetem todos ao art. 187. A cobertura de 91,97% depende de um conjunto cuja unidade de contagem não foi depurada, e o critério de quais conceitos seriam "relevantes" em cada acórdão nunca é explicitado, o que impede reconstruir denominadores como 92,86% ou 81,81%.
-
-Falta ainda o registro das condições de execução: texto integral dos prompts, data da consulta, versão exata do modelo, temperatura, número de execuções por prompt e tratamento da variação entre execuções. Os experimentos correram em italiano com tradução posterior para o inglês, sem descrição do procedimento de tradução nem verificação de fidelidade terminológica.
-
-## Relação com o que pesquiso
-
-O trabalho é caso comparável direto e fonte de métrica parcial, sem fixar norma metodológica.
-
-Como caso comparável, oferece o desenho mais próximo da linha entre a produção recente em anais de IA e Direito: domínio penal, tradição de *civil law*, corpus jurisprudencial real, anotação assistida por modelo com avaliação por especialista e taxonomia qualitativa de erro. A transposição para o contencioso tributário e para o Direito Penal Econômico é imediata quanto à arquitetura, substituindo o glossário do art. 589-bis por conceitos de acórdãos do CARF, da CSRF ou dos tribunais superiores.
-
-Como métrica, a decomposição em cobertura conceitual, compreensão conceitual, qualidade do raciocínio, identificação da *ratio* e penalidade por erro jurídico é aproveitável campo a campo, com duas correções necessárias antes de qualquer uso: escala explícita e coerente entre a definição declarada e a agregação efetiva, e critério documentado de pertinência conceitual por decisão analisada.
-
-Como objeto de crítica, o artigo delimita com precisão a lacuna que a linha de pesquisa se propõe a ocupar. Reivindicar replicabilidade sem dupla anotação independente e sem coeficiente de concordância descreve o estado corrente do campo, e a mensuração da concordância campo a campo, com anotadores independentes e critério de desempate registrado, é exatamente o que separa um protocolo replicável de um protocolo apenas declarado como tal. O ponto sustenta contraste metodológico direto em revisão de literatura, com a vantagem de que a crítica pode ser feita sobre dados publicados pelos próprios autores.
-
-## Como citar esta ficha
-
-> MALKO, Fábio André. Ficha analítica de GARZO e PALUMBO (2025). *Fábio André Malko*, 10 ago. 2026.
-> Disponível em: https://fabiomalko.org/leituras/garzo-palumbo-2025. Acesso em: [data].
-
-::: {.callout-note collapse="true"}
-## Método
-Ficha redigida a partir da leitura integral do trabalho, com assistência de modelo de
-linguagem na organização do texto e revisão do autor. Os números foram conferidos
-contra o original, e os dados bibliográficos contra o registro do editor.
+::: {.nota-metodo}
+Nota escrita a partir da leitura integral do trabalho, com assistência de modelo de
+linguagem na redação e revisão do autor.
 :::

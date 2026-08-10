@@ -1,72 +1,30 @@
 ---
-title: "Barrie, Palaiologou e Törnberg (2026): escore de estabilidade de prompt"
-description: "Mede a estabilidade da anotação por alfa de Krippendorff sobre execuções repetidas e sobre paráfrases do comando. É a origem da métrica de estabilidade adotada nesta linha de pesquisa, e reporta escore agregado por tarefa, sem decomposição por campo."
-date: 2026-08-10
+title: "Barrie, Palaiologou e Törnberg (2026): medir a estabilidade de um prompt"
+description: "Trata execuções repetidas e paráfrases do mesmo comando como avaliadores distintos e mede a concordância entre elas. É a origem da métrica de estabilidade que adoto na tese."
+date: 2026-08-05
 author: "Fábio André Malko"
 categories: [IA e Direito, Método de pesquisa, Replicabilidade]
 ---
 
-## Referência
-
 BARRIE, Christopher; PALAIOLOGOU, Elli; TÖRNBERG, Petter. **Prompt stability
 scoring for text annotation with large language models**. Ithaca: arXiv, 2026.
-39 p. Preprint, arXiv:2407.02039v3 [cs.CL], versão de 15 de maio de 2026.
+Preprint, arXiv:2407.02039v3 [cs.CL].
 DOI: [10.48550/arXiv.2407.02039](https://doi.org/10.48550/arXiv.2407.02039).
-Licença CC BY 4.0. O trabalho circula como preprint, sem publicação em periódico
-até a data desta ficha. Autores vinculados ao Departamento de Sociologia da
-Universidade de Nova York, ao Institute for Logic, Language and Computation da
-Universidade de Amsterdã, e uma das autoras atua como pesquisadora independente.
 
-## O que o trabalho faz
+A ideia é simples e resolve um problema prático. Se o mesmo comando é executado
+trinta vezes sobre os mesmos textos, cada execução funciona como um avaliador
+distinto, e a concordância entre elas pode ser medida pelo alfa de Krippendorff,
+coeficiente consagrado na análise de conteúdo. O mesmo vale para variantes
+parafraseadas do comando, que testam a fragilidade da anotação à redação escolhida
+por outro pesquisador. Os autores distribuem uma implementação em Python.
 
-O trabalho propõe um diagnóstico automatizado de estabilidade para rotinas de anotação de texto executadas por modelos de linguagem mediante prompt, batizado de Prompt Stability Score (PSS), e o demonstra sobre seis conjuntos de dados com doze operacionalizações de desfecho. O desenho consiste em tratar execuções repetidas de um mesmo prompt e variantes parafraseadas de um prompt de referência como se fossem avaliadores distintos, medindo a concordância entre eles por coeficiente de confiabilidade consagrado. Os autores acompanham a proposta de uma implementação de código aberto em Python e de um manual de interpretação dos escores.
+Este é o trabalho de origem da métrica que uso na tese, e o que dele aproveito é o
+núcleo inteiro. A transposição para o Direito em português exige três adaptações,
+porque o parafraseador empregado não atende ao português, porque a minha unidade
+de anotação é o conjunto de campos extraídos de cada julgado, e porque acórdão do
+CARF é ordens de grandeza mais longo do que os textos que eles testaram.
 
-## O que sustenta com dado próprio
-
-O PSS é o α de Krippendorff (KA) computado sobre matrizes de anotação em que a coluna de "avaliador" é induzida por desenho experimental. A fórmula empregada é a canônica, α = 1 − D₀/Dₑ, com D₀ igual à discordância observada e Dₑ igual à discordância esperada sob concordância ao acaso, dada a distribuição marginal de rótulos. A função de distância varia conforme a natureza do desfecho: nominal, d_kl = I[k ≠ l], nos casos categóricos e binários, e intervalar, baseada em diferenças quadráticas, no desfecho de ideologia medido em escala de 1 a 10. A incerteza é estimada por bootstrap não paramétrico com reamostragem dos registros de anotação, e nos gráficos de execuções adjacentes o extremo superior do intervalo é truncado em 1, máximo lógico do coeficiente.
-
-A distinção entre as duas famílias de escore está no que varia e no que permanece fixo. Na estabilidade intraprompt (intra-PSS), o prompt e as configurações de decodificação ficam constantes e o mesmo prompt é reexecutado sobre os mesmos itens ao longo de trinta execuções independentes; cada execução funciona como avaliador. O trabalho reporta duas leituras desse escore: o intra-PSS cumulativo, que recomputa o KA após cada execução j usando todas as execuções observadas até ali, e o intra-PSS de execuções adjacentes, que computa o KA apenas sobre as execuções j−1 e j, capturando volatilidade local. Da trajetória cumulativa deriva a estatística Stable@, definida como a execução a partir da qual a estimativa pontual passa a permanecer dentro de 0,01 do valor final, indicador de convergência da estimativa que não se confunde com o estreitamento do intervalo de confiança.
-
-Na estabilidade interprompt (inter-PSS), o modelo de anotação e suas configurações ficam constantes e o que varia é a redação do prompt. As variantes são geradas por modelo externo de paráfrase, o PEGASUS (Zhang et al., 2019), escolha justificada pela redução de endogeneidade em relação ao uso do próprio anotador como parafraseador. A diversidade das paráfrases é controlada pela temperature do parafraseador, grandeza distinta da temperature do modelo de anotação: temperatures baixas produzem reformulações próximas, que emulam escolhas alternativas plausíveis de redação, e temperatures altas produzem teste de esforço deliberado. Um sufixo constante, o `prompt_postfix`, fixa o formato de saída exigido, de modo que o escore reflita sensibilidade à redação substantiva.
-
-Os parâmetros das demonstrações: prompt de referência fixo por par conjunto de dados-desfecho, trinta execuções para o intra-PSS, dez variantes de prompt por temperature, vinte e cinco temperatures de 0,1 a 5,0 para o inter-PSS, e até 500 itens por par, o que perfaz até 15.000 classificações por par no exercício intraprompt. O modelo de anotação dos resultados principais é o gpt-3.5-turbo, com temperature fixada em 0,1. O volume total declarado no apêndice é de 3.144.022 anotações e 306.390.955 tokens de entrada, com custo total de aproximadamente US$ 157,91 em preços de agosto de 2025; subamostras de 2% recuperam as tendências principais por cerca de US$ 3,16, o que sustenta o argumento de viabilidade do diagnóstico como etapa preliminar.
-
-Os resultados intraprompt são altos na quase totalidade das tarefas. Manifestos Multi atinge intra-PSS cumulativo final de 0,975, com largura de intervalo de 0,005 e Stable@ na terceira execução; Tweets (Rep. Dem.) chega a 0,952; News a 0,951; MII (Long) a 0,919. O ponto fraco é Synthetic (Short), com 0,820 e proporção de 0,17 das estimativas adjacentes abaixo de 0,8, e há convergência lenta em News (Short), estável apenas na décima quarta execução, e em Tweets (Populism), na décima segunda. O padrão interprompt é de degradação conforme sobe a temperature do parafraseador, com queda abaixo de 0,8 ou oscilação substancial já em temperatures baixas para Stance, Stance (Long), MII, MII (Long), News, News (Short) e Synthetic (Short).
-
-A comparação entre modelos, feita sobre a tarefa Manifestos, separa nitidamente o gpt-4o do deepseek-r1:8b. O primeiro registra intra-PSS final de 0,979, com estabilização na oitava execução e média adjacente de 0,988, e inter-PSS médio de 0,924, com mínimo de 0,802 na temperature 5,0. O segundo registra intra-PSS final de 0,605, média adjacente de 0,581 e a totalidade das estimativas adjacentes abaixo de 0,8, e inter-PSS médio de 0,386, com mínimo de 0,045 na temperature 4,0. Reestimativas com gpt-4o-mini sobre os quatro piores pares pós-filtragem produzem médias de inter-PSS de 0,83 em News (Short), 0,82 em News, 0,75 em Stance (Long) e 0,50 em Synthetic (Short).
-
-Um achado metodológico secundário tem valor operacional imediato. Diante de PSS baixo, os autores propõem como primeiro passo diagnóstico filtrar as anotações que não respeitam o formato de saída exigido e balancear a amostra entre iterações ou temperatures pelo menor subconjunto válido. Em MII e MII (Long), a filtragem eleva acentuadamente os dois escores e aplaina as trajetórias, o que atribui a instabilidade aparente a saída malformada; em Synthetic (Short), a filtragem quase nada altera, o que localiza o problema na própria tarefa de classificação. O patamar de 0,8, importado da prática de análise de conteúdo humana (Krippendorff, 2004), é adotado como parâmetro heurístico de leitura, sem função de aprovação ou reprovação.
-
-O pacote que acompanha o trabalho chama-se **promptstability**, distribuído em https://pypi.org/project/promptstability/, com código e dados de replicação em https://github.com/cjbarrie/promptstability_replication. O pacote é declarado agnóstico quanto ao modelo de anotação, admite variantes de prompt editadas manualmente e emite o conjunto completo de variantes com os respectivos escores, para que se possa inspecionar quais reformulações coincidem com baixa concordância.
-
-## Onde para
-
-Os autores declaram que o PSS mede estabilidade e nada afirma sobre acurácia: um classificador estável pode estar sistematicamente errado, de modo que a estabilidade é exigida pela reprodutibilidade sem bastar para assegurá-la. Declaram também que não reproduziram o desenho de prompt dos artigos de origem dos dados, de modo que os testes não constituem exame de replicabilidade daqueles achados publicados. Reconhecem que paráfrases geradas em temperature alta podem afastar-se do construto pretendido, e tratam esse afastamento como questão interpretativa a ser resolvida pela inspeção das variantes. As extensões que apontam como pendentes envolvem o mapeamento sistemático da interação entre parâmetros de decodificação e estabilidade, a diversificação da geração de variantes para além de um único motor de paráfrase e a ampliação das comparações entre modelos.
-
-A leitura identifica limites adicionais. As demonstrações foram feitas integralmente no domínio da ciência social computacional, com ênfase em ciência política anglófona: tuítes de senadores norte-americanos, programas partidários britânicos, artigos do New York Times, tuítes de posicionamento sobre política norte-americana, respostas abertas do British Election Study e perfis de eleitores do American National Election Study. Todo o material anotado está em inglês, e o parafraseador empregado é treinado em inglês, o que deixa aberta a transposição para outras línguas. Os resultados principais repousam sobre o gpt-3.5-turbo, modelo já superado à data do depósito, e os próprios autores registram que modelos mais recentes melhoram parcialmente os escores sem eliminar a instabilidade das tarefas de sinal fraco.
-
-Há um limite de granularidade relevante para uso aplicado: o PSS é reportado como escore agregado por par conjunto de dados-desfecho, e cada item recebe um rótulo único. O trabalho não decompõe a estabilidade por categoria de rótulo, por subgrupo de itens nem por campo em tarefas de extração multicampo, e não oferece procedimento para agregar escores de campos heterogêneos em um índice de replicabilidade da rotina inteira. A analogia com avaliadores humanos também tem custo: execuções repetidas do mesmo modelo compartilham pesos e vieses, de modo que a concordância elevada entre elas indica consistência interna sem qualquer independência entre os "avaliadores". Por fim, o α de Krippendorff é sensível à distribuição marginal de rótulos, o que tende a deprimir o coeficiente em conjuntos com classes muito desbalanceadas, situação frequente em corpora jurídicos, sem que o trabalho ofereça correção ou advertência específica sobre isso.
-
-## Relação com o que pesquiso
-
-Este é o trabalho de origem da métrica de estabilidade adotada na linha, e o que dele se aproveita é o núcleo conceitual e operacional. A distinção entre estabilidade intraprompt e interprompt organiza dois riscos distintos da anotação jurídica assistida: a variabilidade estocástica da inferência sobre o mesmo comando e a fragilidade do comando à reformulação por outro pesquisador. A operacionalização por α de Krippendorff, com execuções e variantes ocupando a posição de avaliadores, permite reaproveitar toda a tradição de confiabilidade entre codificadores da análise de conteúdo sem depender de recrutamento de codificadores adicionais, o que resolve o gargalo prático de aferir replicabilidade em anotação de acórdãos e autos de infração com equipe reduzida. São diretamente transportáveis o intra-PSS cumulativo com a estatística Stable@, o intra-PSS de execuções adjacentes como medida de volatilidade, o bootstrap não paramétrico para intervalos, o manual de conduta conforme o escore fique acima, próximo ou abaixo do patamar de 0,8, o diagnóstico de filtragem por formato de saída como discriminador entre falha de formatação e instabilidade genuína da tarefa, e o argumento de custo, que autoriza rodar a verificação sobre subamostra reduzida antes de comprometer orçamento com codificação manual por jurista. O pacote promptstability serve como implementação de referência a ser estendida.
-
-As adaptações necessárias para texto jurídico em português são de quatro ordens. A primeira é linguística: o PEGASUS não atende ao português, e a geração de variantes semanticamente equivalentes precisará recorrer a parafraseador treinado em português, a perturbação baseada em regras ou a variantes redigidas e documentadas manualmente por juristas, com registro da lista editada como etapa de pré-processamento, conforme a própria recomendação dos autores. A escolha do gerador de variantes precisa ser validada quanto à preservação do sentido técnico, já que a paráfrase de um comando que contenha termos como lançamento, glosa, decadência ou dolo específico pode alterar o construto sem alterar a aparência de equivalência semântica.
-
-A segunda é estrutural. O artigo trabalha com rótulo único por documento, ao passo que a unidade de anotação nesta linha é o conjunto de campos extraídos de cada julgado ou peça: tribunal ou órgão julgador, tese adotada, dispositivo legal invocado, resultado, existência de voto de qualidade, tratamento da multa qualificada, tipificação penal correlata, valor do crédito. O PSS terá de ser computado campo a campo, com função de distância escolhida conforme a natureza de cada um, nominal para campos categóricos e ordinal ou intervalar para campos como grau de provimento e escalas de gravidade, e depois agregado em um perfil de estabilidade da rotina, extensão que o trabalho de origem não realiza e que constitui contribuição própria da tese. Os pares MII e MII (Long) do artigo são o análogo mais próximo do problema jurídico, porque mostram degradação da estabilidade quando o conjunto de rótulos se torna granular e as categorias se sobrepõem, exatamente o que ocorre em taxonomias de tese tributária.
-
-Há ainda a questão da escala e do formato do insumo. Os textos do artigo são curtos, com média de 483 tokens de entrada por chamada no maior conjunto e valores de dois dígitos na maioria; acórdãos do CARF, da CSRF e dos Tribunais de Impostos e Taxas, denúncias e sentenças em matéria penal econômica operam em ordem de grandeza superior, o que altera a economia do diagnóstico e exige recalcular a viabilidade de custo com a curva de subamostragem proposta na Figura 4 antes de dimensionar o corpus. Convém verificar se a degradação por complexidade de dados observada em News, com textos longos, se acentua em peças processuais extensas.
-
-Resta a adaptação de conformidade. As chamadas de API sobre material de cliente estão sujeitas ao sigilo profissional do art. 7º, II, do Estatuto da OAB e à disciplina da Lei 13.709/2018, de modo que a replicação do desenho depende de corpus público de julgados ou de infraestrutura homologada, com modelos de pesos abertos executados localmente. A comparação entre gpt-4o e deepseek-r1:8b feita no artigo tem valor prático direto nessa decisão, porque quantifica quanto se perde em estabilidade ao migrar para um modelo pequeno de pesos abertos, e o intra-PSS de 0,605 do modelo aberto testado desaconselha adotá-lo sem verificação prévia. Sobre o patamar de referência, a linha deve fixar limiar próprio: 0,8 é heurística importada da análise de conteúdo em ciências sociais, e anotação destinada a sustentar afirmação empírica sobre comportamento decisório de tribunal, com repercussão em estratégia processual ou em parecer entregue a cliente, comporta exigência mais severa, a ser justificada metodologicamente na tese.
-
-## Como citar esta ficha
-
-> MALKO, Fábio André. Ficha analítica de BARRIE, PALAIOLOGOU e TÖRNBERG (2026). *Fábio André Malko*, 10 ago. 2026.
-> Disponível em: https://fabiomalko.org/leituras/barrie-2026. Acesso em: [data].
-
-::: {.callout-note collapse="true"}
-## Método
-Ficha redigida a partir da leitura integral do trabalho, com assistência de modelo de
-linguagem na organização do texto e revisão do autor. Os números foram conferidos
-contra o original, e os dados bibliográficos contra o registro do editor.
+::: {.nota-metodo}
+Nota escrita a partir da leitura integral do trabalho, com assistência de modelo de
+linguagem na redação e revisão do autor.
 :::

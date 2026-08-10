@@ -1,107 +1,31 @@
 ---
-title: "Brandizzi e Rodrigues (2025): JuriDiscovery e o contencioso do MEI"
-description: "Converte 57 mil ementas em tópicos rotulados por modelo de linguagem e mapeia o litígio do Microempreendedor Individual. Afirma reprodutibilidade sem medir estabilidade entre execuções e substitui validação humana por juiz automático."
-date: 2026-08-10
+title: "Brandizzi e Rodrigues (2025): o contencioso do MEI em 57 mil ementas"
+description: "Modelagem de tópicos sobre ementas para mapear o litígio gerado por uma política pública brasileira, com rotulagem por modelo de linguagem e validação por juiz automático."
+date: 2026-08-09
 author: "Fábio André Malko"
 categories: [IA e Direito, Método de pesquisa]
 ---
 
-## Referência
-
 BRANDIZZI, Loreane; RODRIGUES, Guilherme. JuriDiscovery: automated analysis of
 legal dispute triggered by public policies using artificial intelligence. A case
 study applied to the Individual Microentrepreneur. In: MARKOVICH, Réka; DI CARO, Luigi; RAPP, Amon; SCHIFANELLA, Claudio (org.).
-**Legal Knowledge and Information Systems: JURIX 2025**: the thirty-eighth annual
-conference, Turim, 9 a 11 de dezembro de 2025. Amsterdam: IOS Press, 2025. p. 14-25.
-(Frontiers in Artificial Intelligence and Applications, v. 416). E-ISBN
-978-1-64368-638-7. DOI: [10.3233/FAIA251573](https://doi.org/10.3233/FAIA251573). Acesso aberto sob licença
-CC BY-NC 4.0.
-Ambos os autores vinculados à Universidade de Brasília.
+**Legal Knowledge and Information Systems: JURIX 2025**. Amsterdam: IOS Press, 2025.
+p. 14-25. (Frontiers in Artificial Intelligence and Applications, v. 416).
+DOI: [10.3233/FAIA251573](https://doi.org/10.3233/FAIA251573).
 
-## O que o trabalho faz
+Os autores partem de dezenas de milhares de ementas para reconstruir o mapa do
+litígio gerado pela política do Microempreendedor Individual, agrupando as
+decisões por tópico e pedindo a um modelo de linguagem que nomeie cada
+agrupamento. O resultado é uma fotografia de onde a política produz conflito, em
+escala que a leitura manual não alcança.
 
-Propõe e executa um encadeamento automatizado que converte ementas judiciais
-brasileiras não estruturadas em tópicos semanticamente rotulados, aplicando-o ao
-contencioso relacionado ao regime do Microempreendedor Individual instituído pela Lei
-Complementar 128/2008. O desenho combina filtragem por comando, vetorização com
-BERTimbau, agrupamento com BERTopic sobre UMAP e HDBSCAN, rotulagem por modelo de
-linguagem e painel interativo. A validação interna se dá por estudo de ablação com
-quatro configurações, medidas por coerência NPMI.
+Guardo o trabalho por duas razões. É o exemplo brasileiro mais próximo do que
+faço, com corpus nacional e em português, e é também o exemplo do problema que a
+minha tese enfrenta: os autores afirmam reprodutibilidade sem repetir o
+procedimento, sem semente aleatória declarada e sem medida de concordância entre
+execuções, e substituem a conferência humana por outro modelo de linguagem.
 
-## O que sustenta com dado próprio
-
-O corpus é de 57.075 ementas que mencionam expressamente «Microempreendedor
-Individual». A filtragem por comando confirmou envolvimento efetivo do MEI como parte
-em 11.775 casos, ou 20,65% do total.
-
-Do conjunto filtrado, o HDBSCAN classificou 3.779 casos como ruído, restando 7.996
-agrupados em 57 tópicos, consolidados em 40 após agrupamento por similaridade. A
-distribuição temática atribui 37,1% a vínculo de emprego, 13,9% a gratuidade da
-justiça, 9,1% a isenção tributária do MEI, 5,3% a contribuições e aposentadoria e 4,9%
-a fraude no registro empresarial. Justiça do Trabalho e Justiça Estadual respondem por
-mais de 82% dos casos.
-
-A ablação registra NPMI de 0,16 no experimento sem filtro sobre ementa integral, 0,11
-no experimento restrito ao MEI, 0,32 com os campos de descrição do caso e questões em
-discussão, e 0,43 acrescentando rotulagem por modelo de linguagem.
-
-Foram efetivamente executados o BERTimbau como codificador e quatro modelos testados
-pela interface do SERPRO sobre amostra de duzentos casos: codestral-22b, pixtral-12b,
-deepseek-r1-distill-qwen-14b e llama-3.1-8B-instruct. O Pixtral-12B foi o selecionado
-para extração, rotulagem e sumarização. O GPT-3.5 atuou como juiz automático da
-comparação inicial.
-
-Permaneceram apenas citados, sem execução, o LawGPT, o ChatLaw, o LexiLaw, o JurisLMs,
-o LegalBERT-pt, o JurisBERT, o CaseEncoder, o SAILER, o TopicGPT e o TNT-LLM. LDA, NMF
-e Top2Vec aparecem por remissão a estudos de terceiros. A distinção importa porque a
-superioridade do BERTopic sobre esses modelos clássicos é assumida por referência
-bibliográfica, sem revalidação.
-
-## Onde para
-
-Os autores declaram a sensibilidade do HDBSCAN, que descartou 31% dos casos como
-ruído, e a dependência da qualidade das ementas.
-
-Não há métrica de estabilidade entre execuções. O trabalho não reporta semente
-aleatória, não repete o encadeamento, não apresenta variância nem índice de
-concordância entre rodadas. O NPMI afere coerência lexical de um resultado único, o
-que deixa sem resposta a pergunta sobre reprodutibilidade da saída. A afirmação de que
-a ausência de validação manual assegura reprodutibilidade confunde ausência de
-intervenção humana com determinismo do procedimento, quando os componentes
-estocásticos do encadeamento permanecem não documentados.
-
-O juiz automático foi o GPT-3.5, aplicado exclusivamente à escolha do modelo
-sumarizador sobre a amostra de duzentos casos. Nenhum revisor humano validou rótulos,
-agrupamentos ou sumarizações em qualquer etapa, e inexiste padrão-ouro anotado contra
-o qual medir acerto. A precisão da filtragem que reduziu 57.075 a 11.775 casos,
-decisiva para todo o restante, não foi auditada por amostragem.
-
-## Relação com o que pesquiso
-
-Serve como caso comparável e como objeto de crítica metodológica.
-
-A arquitetura de extração campo a campo ancorada no Manual de Padronização de Ementas
-do CNJ, com os campos descrição do caso, questões em discussão, soluções propostas e
-tese, é diretamente transponível ao contencioso tributário e oferece unidade granular
-sobre a qual a métrica de replicabilidade pode ser calculada. A escala do corpus e a
-documentação pública do código permitem replicação externa.
-
-Como objeto de crítica, o artigo ilustra com nitidez a lacuna que esta pesquisa se
-propõe a preencher. Um trabalho publicado em veículo internacional revisado, que
-emprega modelo de linguagem em todas as etapas decisórias da anotação, afirma
-reprodutibilidade sem apresentar evidência de estabilidade da saída. A citação desse
-ponto sustenta a justificativa metodológica sem exigir polêmica com os autores, já que
-o próprio texto declara a ausência de validação manual e a apresenta como virtude.
-
-## Como citar esta ficha
-
-> MALKO, Fábio André. Ficha analítica de BRANDIZZI e RODRIGUES (2025). *Fábio André Malko*, 10 ago. 2026.
-> Disponível em: https://fabiomalko.org/leituras/brandizzi-rodrigues-2025. Acesso em: [data].
-
-::: {.callout-note collapse="true"}
-## Método
-Ficha redigida a partir da leitura integral do trabalho, com assistência de modelo de
-linguagem na organização do texto e revisão do autor. Os números foram conferidos
-contra o original, e os dados bibliográficos contra o registro do editor.
+::: {.nota-metodo}
+Nota escrita a partir da leitura integral do trabalho, com assistência de modelo de
+linguagem na redação e revisão do autor.
 :::
-
