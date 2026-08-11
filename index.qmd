@@ -45,10 +45,10 @@ pesquisa](pesquisa.qmd), que é medir campo a campo, em português, a estabilida
 anotação de decisões judiciais feita por modelos de linguagem.
 
 Defendi a dissertação de mestrado no IDP em julho de 2026 e sigo no doutorado na mesma
-instituição. O contencioso tributário e a defesa em matéria penal econômica, que exerço
-como advogado no Paraná, são o terreno de onde as perguntas vêm, e é o que mantém a
-pesquisa presa a problemas reais. O [currículo](curriculo.qmd) reúne a formação, a
-produção e o histórico profissional.
+instituição. A atuação profissional em contencioso tributário e em direito penal
+econômico, exercida em todos os estados da federação, é o terreno em que essas perguntas
+nascem e o que mantém a pesquisa presa a problemas reais. O [currículo](curriculo.qmd)
+reúne a formação, a produção e o histórico profissional.
 
 ## O que há aqui
 
