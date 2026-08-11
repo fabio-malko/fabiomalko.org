@@ -64,13 +64,3 @@ A definição do corpus precede a escolha dos modelos e é condicionada pela dis
 proteção de dados e pela regulação do uso de inteligência artificial no Judiciário. A
 opção entre decisão pública, corpus sintético e peça real anonimizada, com a
 justificativa que a sustenta, integra o pré-registro do experimento.
-
-## Publicação em curso
-
-Está em elaboração o artigo que consolida o mapeamento de instrumentos e propõe o
-protocolo de verificação de replicabilidade funcional. O experimento multimodelo é
-nele desenhado e pré-registrado, ficando a execução para o doutorado.
-
-A dissertação entra como caso de referência declarado, com publicação dos piores
-números, o que serve ao propósito de demonstrar o método de medição em condições
-adversas.
