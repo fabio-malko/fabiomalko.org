@@ -6,6 +6,10 @@ project:
     - "artigos/*.qmd"
     - "leituras/*.qmd"
     - "en/*.qmd"
+  # O arquivo CNAME precisa ir junto no artefato publicado, sob pena de o GitHub
+  # Pages perder o domínio personalizado a cada implantação.
+  resources:
+    - CNAME
 
 # Congela os resultados de computação: o Python roda na máquina do titular e nunca na
 # publicação. Versionar o diretório _freeze junto com o repositório.
