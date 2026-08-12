@@ -1,0 +1,34 @@
+---
+title: "Magalhães, Pozo e Machado (2022): rótulos criados por agrupamento servem para classificar acórdãos?"
+description: "Representa 430 mil acórdãos trabalhistas do TRT do Paraná com BERT, agrupa os vetores por K-Means e usa os grupos como rótulo para treinar três classificadores, com desvio padrão em 30 execuções."
+categories: [IA e Direito, Método de pesquisa, Replicabilidade]
+---
+
+MAGALHÃES, Dimmy; POZO, Aurora; MACHADO, Sidnei. Técnicas de aprendizado de
+máquinas aplicadas à classificação de decisões judiciais. **Revista de Estudos
+Empíricos em Direito**, v. 9, 2022.
+DOI: [10.19092/reed.v9.573](https://doi.org/10.19092/reed.v9.573).
+
+O corpus reúne 430 mil acórdãos do Tribunal Regional do Trabalho do Paraná
+proferidos entre 2006 e 2018, dos quais se sorteiam trinta subconjuntos de 5, 10,
+20 e 50 mil decisões. Cada texto é convertido em vetor pela média dos vetores do
+token [CLS] nas quatro últimas camadas do BERT multilíngue, o K-Means é executado
+com k entre 2 e 30 e o melhor índice silhouette, 0,689 no subconjunto de 5 mil
+decisões, fixa sete grupos que passam a servir de rótulo. Sobre esses rótulos
+correm MLP, Random Forest e SVM em 30 execuções independentes com validação
+cruzada de dez partições, e o SVM supera os demais, com diferença aferida por
+Kruskal-Wallis a p de 0,05.
+
+É o trabalho brasileiro mais próximo do meu no desenho experimental, e o que dele
+aproveito é o relato de dispersão. Os autores informam desvio padrão ao longo das
+30 execuções, o que oferece parâmetro de variabilidade em corpus nacional e em
+português, colhido antes da difusão dos modelos generativos. A validação dos
+agrupamentos coube a um único especialista, por amostragem, e os próprios autores
+apontam como ameaça à validade o vocabulário reduzido do acervo trabalhista e o
+caráter artificial dos rótulos, que não garante grupos semanticamente coesos em
+todas as instâncias.
+
+::: {.nota-metodo}
+Nota escrita a partir da leitura integral do trabalho, com assistência de modelo de
+linguagem na redação e revisão do autor.
+:::

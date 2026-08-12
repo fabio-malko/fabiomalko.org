@@ -1,0 +1,35 @@
+---
+title: "Farhadishad e outros (2023): o sentimento do texto do processo melhora a predição da pena?"
+description: "Onze algoritmos preveem a intensidade de três penas em seis mil processos criminais iranianos sobre entorpecentes. Acrescentar escores de sentimento às declarações das partes elevou a acurácia nas três."
+categories: [IA e Direito, Direito Penal, Método de pesquisa]
+---
+
+FARHADISHAD, Mohammad; KAZEMIFARD, Mohammad; REZAEI, Zahra. Predicting court
+judgment in criminal cases by text mining techniques. **Journal of Information
+Technology Management**, v. 15, n. 2, p. 204-222, 2023.
+DOI: [10.22059/jitm.2023.350464.3206](https://doi.org/10.22059/jitm.2023.350464.3206).
+
+Os autores reúnem 6.000 processos criminais iranianos por compra, posse, ocultação
+ou transporte de 500 gramas a 5 quilos de entorpecentes, faixa a que o código
+penal iraniano comina multa, açoite e prisão. Cada processo recebe rótulo binário
+de pena leve ou pesada nas três dimensões, e onze algoritmos de aprendizado de
+máquina são combinados com quatro esquemas de vetorização do texto persa, o
+TF-IDF, o Word2Vec nas variantes CBOW e Skip-gram, o FastText e o BERT. Em seguida
+os autores pontuam as declarações dos litigantes pela tradução persa do léxico NRC
+e acrescentam sentimento e emoção ao conjunto de entrada, com ganho de acurácia
+nas três penas e máximo de 93,49% na multa.
+
+O que dele aproveito é o recorte por campo. A decisão é decomposta em partes
+identificáveis, entre elas o objeto, o dispositivo, os fatos e provas, as
+declarações das partes e os preceitos legais citados, e a pontuação de sentimento
+incide sobre uma só delas. A anotação, porém, recai sobre o resultado sancionatório
+reduzido a duas classes, e os autores relatam apenas acurácia, sem partição
+declarada, sem número de execuções e sem medida de dispersão, de modo que a
+variância permanece desconhecida. O corpus é persa, e os próprios autores registram
+a escassez de ferramentas de processamento para a língua, dificuldade vizinha da
+que se enfrenta em português.
+
+::: {.nota-metodo}
+Nota escrita a partir da leitura integral do trabalho, com assistência de modelo de
+linguagem na redação e revisão do autor.
+:::

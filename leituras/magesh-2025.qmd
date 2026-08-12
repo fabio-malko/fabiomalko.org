@@ -1,0 +1,40 @@
+---
+title: "Magesh e outros (2025): ferramentas jurídicas com busca aumentada alucinam de 17% a 33% das vezes"
+description: "Avaliação pré-registrada de três ferramentas comerciais de pesquisa jurídica e do GPT-4 sobre 202 consultas de direito estadunidense, com tipologia que separa a correção da ancoragem da resposta."
+categories: [IA e Direito, Método de pesquisa, Replicabilidade]
+---
+
+MAGESH, Varun; SURANI, Faiz; DAHL, Matthew; SUZGUN, Mirac; MANNING, Christopher
+D.; HO, Daniel E. Hallucination-free? Assessing the reliability of leading AI
+legal research tools. **Journal of Empirical Legal Studies**, v. 22, n. 2,
+p. 216-242, 2025. DOI: [10.1111/jels.12413](https://doi.org/10.1111/jels.12413).
+
+Os autores submetem 202 consultas ao Lexis+ AI, ao Ask Practical Law AI e ao
+Westlaw AI-Assisted Research, todos apoiados em geração aumentada por recuperação,
+e comparam o resultado ao GPT-4 em configuração de livro fechado. Cada resposta é
+julgada em duas dimensões separadas, a correção e a ancoragem, esta última
+entendida como a relação entre a resposta e as fontes que ela cita, e desdobrada
+em ancorada, mal ancorada, quando a proposição é citada mas a fonte não a sustenta,
+e não ancorada, quando a proposição sequer é citada. Alucinação é a resposta
+incorreta ou mal ancorada, e a resposta correta porém não ancorada é classificada
+como incompleta. As taxas medidas foram de 0,17 no Lexis+ AI, 0,17 no Ask Practical
+Law AI, 0,33 no Westlaw e 0,43 no GPT-4.
+
+O desenho de avaliação é o que aproveito. Decompor o rótulo final em variáveis
+julgadas separadamente permite localizar em que dimensão a anotação se desloca, em
+lugar de registrar apenas um acerto global, e a concordância entre anotadores, com
+kappa de 0,77 sobre amostra de 48 respostas reetiquetadas às cegas por um quarto
+avaliador, fornece parâmetro comparável para trabalho equivalente em português. Os
+autores registram que o cenário não comporta avaliação automatizada e optam pela
+verificação manual, porque o juízo de ancoragem depende de apreciação juridicamente
+informada sobre o peso do texto invocado, que os modelos ainda não fazem, e porque
+em muitos casos o erro não estava no documento citado, e sim em circunstância
+externa a ele, como julgado superveniente, alteração da lei aplicável ou ausência
+de força vinculante. O objeto examinado é o direito estadunidense e produtos
+daquele mercado, e os próprios autores anotam que a mesma consulta pode gerar
+respostas distintas a cada execução.
+
+::: {.nota-metodo}
+Nota escrita a partir da leitura integral do trabalho, com assistência de modelo de
+linguagem na redação e revisão do autor.
+:::

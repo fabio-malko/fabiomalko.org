@@ -1,0 +1,38 @@
+---
+title: "Mozetic (2025): que salvaguardas o Judiciário precisa antes de deixar a IA minutar decisões?"
+description: "Pesquisa documental sobre a regulação do uso de inteligência artificial pelo Judiciário brasileiro, apoiada nas audiências públicas do CNJ, com proposta de salvaguardas para as aplicações de alto risco."
+categories: [IA e Direito, Regulação]
+---
+
+MOZETIC, Vinicius Almada. Inteligência artificial no Judiciário brasileiro:
+salvaguardas, riscos e novas fronteiras. **Revista do Tribunal Regional Federal da
+3ª Região**, São Paulo, v. 36, n. 161, p. 17-48, jan./jun. 2025.
+
+O percurso normativo examinado parte da Resolução 332/2020 e da Portaria 271/2020
+do Conselho Nacional de Justiça, passa pela Portaria 338/2023, que instituiu o
+grupo de trabalho encarregado de atualizar a norma de 2020 diante da IA
+generativa, e chega à Resolução 615, de 11 de março de 2025. Sobre esse material o
+autor constrói quatro categorias de contenção, os guardrails, as redlines, os kill
+switches e os circuit breakers, e as aplica às hipóteses de alto risco, entre elas
+a análise preditiva em matéria criminal e em direito de família. As redlines e os
+kill switches vêm do debate europeu sobre o AI Act, os guardrails de fonte
+norte-americana, e os circuit breakers chegam por analogia com as práticas de
+interrupção dos mercados financeiros.
+
+O interesse para a minha pesquisa está no retrato do ambiente institucional em que
+o corpus há de ser colhido. O texto reproduz o levantamento do CNJ segundo o qual
+o uso de IA no Judiciário cresceu 26% em relação a 2022, somando 140 projetos em
+desenvolvimento ou implementados, apurados em pesquisa que alcançou 94 órgãos, e
+situa esse crescimento em acervo de 84 milhões de processos distribuídos por 91
+tribunais. Registra ainda que o emprego de IA generativa por magistrados e
+servidores permanece pontual e experimental, com soluções privadas utilizadas sem
+acompanhamento ou informação aos órgãos correcionais, circunstância que o autor
+associa a riscos de proteção de dados e de perda de supervisão humana. Daí extraio,
+por conta própria, o que me importa, que é o comprometimento da rastreabilidade de
+qualquer anotação produzida nesse ambiente. O trabalho não mede desempenho nem
+concordância entre anotadores, e se detém no plano normativo.
+
+::: {.nota-metodo}
+Nota escrita a partir da leitura integral do trabalho, com assistência de modelo de
+linguagem na redação e revisão do autor.
+:::

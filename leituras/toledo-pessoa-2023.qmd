@@ -1,0 +1,39 @@
+---
+title: "Toledo e Pessoa (2023): o que os tribunais informam sobre os próprios sistemas de IA"
+description: "Mapeia os programas de inteligência artificial e de automação do STF, do STJ e dos tribunais de justiça, e confronta a documentação oficial com as respostas obtidas dos próprios tribunais."
+categories: [IA e Direito, Regulação, Replicabilidade]
+---
+
+TOLEDO, Cláudia; PESSOA, Daniel. O uso de inteligência artificial na tomada de
+decisão judicial. **Revista de Investigações Constitucionais**, Curitiba, v. 10,
+n. 1, e237, jan./abr. 2023.
+DOI: [10.5380/rinc.v10i1.86319](https://doi.org/10.5380/rinc.v10i1.86319).
+
+Os autores confrontam os 41 projetos em 32 tribunais registrados no painel do
+Conselho Nacional de Justiça com os 64 projetos em 47 tribunais reconhecidos pela
+FGV, número este retificado a partir dos 72 inicialmente contados, separam 25
+programas dos tribunais de justiça entre automação e aprendizado de máquina e
+descrevem o Victor, que no Supremo Tribunal Federal examina cinco peças dos autos
+segundo 27 temas de repercussão geral. Daí extraem a tese da incompatibilidade
+entre a padronização com que a máquina processa dados e a individualização exigida
+na aplicação da norma ao caso concreto, e defendem regulação com transparência,
+auditoria externa e informação às partes.
+
+O que me interessa está nas respostas obtidas dos tribunais. Em resposta a ofício
+sobre o Victor, a Secretaria de Tecnologia de Informação do STF informou amostragem
+de 80% de treino e 20% de teste, escolha do F1 em razão do desbalanceamento dos
+dados, ausência de registro do número de execuções e uso de árvore de decisão,
+dados que divergem da proporção de 70, 20 e 10 e da descrição de redes neurais
+constantes da produção acadêmica sobre o mesmo sistema. Pedido paralelo pelo canal
+de acesso à informação rendeu apenas o estágio de implantação do programa. Os
+autores consignam que a indisponibilidade de dados e de códigos impede simulação,
+testagem ou comparação das respostas das máquinas, obstáculo que alcança qualquer
+protocolo de replicabilidade. Registram ainda que o E-Juris, no Superior Tribunal
+de Justiça, classifica referências legislativas e jurisprudenciais em acórdãos como
+ratio decidendi ou obiter dictum, tarefa que reconheço vizinha da anotação que
+meço.
+
+::: {.nota-metodo}
+Nota escrita a partir da leitura integral do trabalho, com assistência de modelo de
+linguagem na redação e revisão do autor.
+:::

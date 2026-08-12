@@ -1,0 +1,41 @@
+---
+title: "Pinho e Almeida (2026): o split payment desloca a fraude para o crédito fictício?"
+description: "Examina como a EC 132/2023 e a LC 214/2025 alteram a persecução dos crimes da Lei 8.137/1990, e sustenta que o ilícito migra da omissão de receitas para a geração artificial de créditos."
+categories: [Direito Tributário, Direito Penal]
+---
+
+PINHO, Jackson Widmer de; ALMEIDA, Gustavo Tomaz de. O impacto da reforma
+tributária nas investigações de crimes contra a ordem tributária: split payment,
+prova digital e desafios do IVA Dual na Lei Complementar nº 214/2025.
+**Revista DCS**, v. 23, n. 90, p. 1-19, 2026.
+DOI: [10.54899/dcs.v23i90.5315](https://doi.org/10.54899/dcs.v23i90.5315).
+
+O trabalho examina de que modo a reforma da tributação do consumo, introduzida
+pela Emenda Constitucional 132/2023 e regulamentada pela Lei Complementar
+214/2025, altera a persecução dos crimes definidos na Lei 8.137/1990. A tese é a
+de que o recolhimento automático pelo split payment faz o núcleo típico do art.
+2º, II, que pune deixar de recolher no prazo legal tributo cobrado ou descontado
+de terceiro, perder relevância em parte expressiva das operações, restringindo o
+ilícito a hipóteses residuais, e desloca a racionalidade econômica do crime para a
+geração artificial de créditos, campo em que os autores apontam insuficiência da
+tipificação vigente e sugerem atualização legislativa. A remissão ao art. 1º, II e
+IV, dirige-se às fraudes por reclassificação fiscal no Imposto Seletivo. Para as
+fraudes estruturadas evidenciadas por trilhas digitais, os autores propõem leitura
+funcional da Súmula Vinculante 24 do Supremo Tribunal Federal, sobretudo para fins
+de medidas cautelares patrimoniais, reservando a incidência plena do enunciado às
+hipóteses de controvérsia tributária legítima.
+
+Guardo o texto pelo critério que oferece para separar controvérsia legítima de
+fraude estruturada, apoiado na ausência de substância econômica, na simulação
+seriada, no uso de interpostas pessoas e na incongruência sistêmica entre
+documento, pagamento e logística. Interessa também a exigência de que a prova
+digital se legitime pela reprodutibilidade do caminho que conduz da informação
+primária à inferência jurídica, requisito que dialoga de perto com o que investigo
+sobre replicabilidade. Os próprios autores advertem que os estudos de caso, todos
+hipotéticos e ambientados em 2027, têm função heurística, sem pretensão empírica,
+de sorte que as conclusões operam no plano dogmático e prospectivo.
+
+::: {.nota-metodo}
+Nota escrita a partir da leitura integral do trabalho, com assistência de modelo de
+linguagem na redação e revisão do autor.
+:::
