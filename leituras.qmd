@@ -4,6 +4,12 @@ subtitle: "Notas curtas sobre trabalhos de outros autores"
 listing:
   id: fichas
   contents:
+    - leituras/pinho-almeida-2026.qmd
+    - leituras/farhadishad-2023.qmd
+    - leituras/mozetic-2025.qmd
+    - leituras/toledo-pessoa-2023.qmd
+    - leituras/magalhaes-2022.qmd
+    - leituras/magesh-2025.qmd
     - leituras/araszkiewicz-2025.qmd
     - leituras/brandizzi-rodrigues-2025.qmd
     - leituras/dik-2025.qmd
