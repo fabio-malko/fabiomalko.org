@@ -1,0 +1,43 @@
+---
+title: "Hoza e Żabka (2018): as ferramentas de TI contra a lacuna do IVA, e por que os autores apostam na obrigatoriedade"
+description: "Descreve o arquivo padronizado JPK_VAT, o sistema de teleinformação STIR e o split payment como instrumentos poloneses contra a sonegação de IVA, e sustenta que só o que é obrigatório produz resultado apreciável."
+categories: [Direito Tributário, Regulação]
+---
+
+HOZA, Beata; ŻABKA, Adam. IT Tools Used to Reduce the VAT Loophole – JPK_VAT, STIR,
+Split Payment Mechanism. **ASEJ Scientific Journal of Bielsko-Biala School of Finance
+and Law**, Bielsko-Biała, v. 22, n. 3, p. 26-30, 2018.
+DOI: [10.5604/01.3001.0012.7775](https://doi.org/10.5604/01.3001.0012.7775).
+
+O artigo descreve três ferramentas de tecnologia da informação empregadas na Polônia
+para reduzir a lacuna do imposto sobre valor agregado: o arquivo padronizado de
+auditoria fiscal JPK_VAT, o STIR, sistema de teleinformação operado pela entidade
+central da infraestrutura de pagamentos do país, e o mecanismo de pagamento
+segmentado, o split payment. Com apoio em estatísticas da Comissão Europeia e do
+CASE, os autores registram perda de 150 bilhões de euros em receita de IVA pelos
+Estados-membros da União Europeia em 2016, com a lacuna variando de 35,9% na Romênia
+a 0,85% em Luxemburgo, e de 24,5% na Polônia. Detalham a implantação escalonada do
+JPK_VAT, obrigatório para grandes empresas desde julho de 2016 e para microempresas
+desde janeiro de 2018, e registram que o STIR analisou mais de cinco bilhões de
+transações bancárias entre março e o fim de setembro de 2018, sinalizando mais de
+vinte e seis mil contribuintes de risco elevado. Concluem que o split payment é
+provavelmente o menos eficaz do conjunto, precisamente por ser voluntário, e defendem
+sistema obrigatório que alcance a maior parte dos setores.
+
+Guardo o texto pela descrição concreta de um sistema de análise de risco fiscal em
+operação: os autores afirmam que o STIR recebe e analisa automaticamente dados
+transacionais bancários por algoritmos de software, que a vigilância alcança todas as
+entidades empresariais independentemente de haver procedimento instaurado, e que a
+seleção para auditoria passa a decorrer da análise de risco, embora o bloqueio de
+contas permaneça ato individual do chefe da administração de receita. Interessa-me
+sobretudo a advertência de que a legislação do STIR confere aos órgãos fiscais poderes
+discricionários decorrentes de critérios não especificados e inconsistentes,
+genericamente designados risk algorithm, e é ponto que quero cotejar com o debate
+brasileiro sobre o split payment do IBS e da CBS. A aproximação com inteligência
+artificial é leitura minha, feita sobre autores que trabalham apenas com a noção de
+algoritmo de controle.
+
+::: {.nota-metodo}
+Nota escrita a partir da leitura integral do trabalho, com assistência de modelo de
+linguagem na redação e revisão do autor.
+:::

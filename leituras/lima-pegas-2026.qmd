@@ -1,0 +1,41 @@
+---
+title: "Lima e Pêgas (2026): a opção do art. 487 nem sempre reduz a carga da locação não residencial"
+description: "Simulação contábil da locação não residencial sob CBS e IBS a partir de 2027, comparando o regime específico da LC 214/2025 com a opção do art. 487, e mostrando que o sinal do resultado depende de o locatário ser contribuinte regular ou final."
+categories: [Direito Tributário]
+---
+
+LIMA, Emanoel Marcos; PÊGAS, Paulo Henrique. Como fica a tributação na locação não
+residencial para empresas tributadas pelo lucro real, lucro presumido, Simples, ou
+entidades imunes/isentas, a partir de 2027. **Revista de Direito Contábil Fiscal**,
+São Paulo, v. 8, n. 15, p. 95-113, 2026.
+DOI: [10.65992/rdcf.v8n15.2026.850](https://doi.org/10.65992/rdcf.v8n15.2026.850).
+
+O artigo examina como fica a tributação da locação não residencial de imóveis por CBS e
+IBS a partir de janeiro de 2027. Compara o regime específico previsto a partir do
+art. 251 da Lei Complementar 214/2025, cujas alíquotas são reduzidas em setenta por
+cento e chegam a 7,95%, com a opção do art. 487 da mesma lei, que autoriza a locadora a
+seguir pagando os novos tributos no percentual de 3,65% hoje devido de PIS e Cofins,
+até o fim do prazo contratual, desde que o contrato seja de prazo determinado, tenha
+sido firmado até 16 de janeiro de 2025 e esteja registrado em cartório ou em registro de
+títulos e documentos até 31 de dezembro de 2025, ou disponibilizado à Receita Federal e
+ao Comitê Gestor na forma de regulamento que ainda não havia sido publicado quando o
+texto foi escrito. Sobre uma locadora tributada pelo lucro presumido e três locatárias,
+uma no lucro real, uma no lucro presumido e uma contribuinte final, os autores simulam
+receita, despesa e lançamentos contábeis, e medem o resultado de cada parte ao longo da
+transição.
+
+Guardo o texto pela simulação numérica passo a passo. A primeira tabela confronta, de
+2027 a 2035, o percentual do regime específico com os 3,65% do art. 487, e mostra que o
+regime específico só se torna mais oneroso em 2030, quando alcança 3,75%, ao passo que
+as duas seguintes tomam apenas o regime específico e acompanham, ano a ano, a
+neutralidade do resultado da locadora e o efeito em cada locatária. Interessa-me a
+primeira pergunta do roteiro de decisão dos autores, saber se o locatário é contribuinte
+regular ou final dos novos tributos, porque o sinal do resultado se inverte conforme
+essa qualificação. Na simulação, a opção do art. 487 só compensaria na locação à
+contribuinte final, e ainda assim porque a perda apurada em 2033 se repetiria em 2034 e
+2035, consumindo o ganho acumulado nos primeiros anos da transição.
+
+::: {.nota-metodo}
+Nota escrita a partir da leitura integral do trabalho, com assistência de modelo de
+linguagem na redação e revisão do autor.
+:::

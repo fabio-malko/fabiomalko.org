@@ -1,0 +1,44 @@
+---
+title: "Jarussi (2026): o split payment reconfigura a extinção da obrigação tributária sem tocar sua constituição"
+description: "Ensaio que circunscreve o split payment do IBS e da CBS à fase de recolhimento e extinção, preserva a constituição do crédito no lançamento por homologação e propõe um estatuto mínimo de garantias em cinco eixos."
+categories: [Direito Tributário, Regulação]
+---
+
+JARUSSI, Rodrigo Passos. O recolhimento automatizado por split payment: a reconfiguração
+da extinção da obrigação tributária e a nova dinâmica arrecadatória.
+**Revista Jurídica do Nordeste Mineiro**, v. 7, n. 8, p. 1-42, ago. 2026.
+DOI: [10.66104/9jebfc42](https://doi.org/10.66104/9jebfc42).
+
+O ensaio examina o split payment instituído pela Lei Complementar 214/2025, com as
+alterações da Lei Complementar 227/2026, e regulamentado, quanto à CBS, pelo Decreto
+12.955/2026. Delimita o campo de atuação do instituto à fase de recolhimento e extinção
+do débito, sem interferência na constituição do crédito, que permanece atrelada à
+apuração e à declaração do sujeito passivo, de modo que o núcleo do lançamento por
+homologação do art. 150 do Código Tributário Nacional subsiste íntegro e a verificação
+posterior da administração se desloca do ato material de pagar para a exatidão dos dados
+que alimentaram a parametrização algorítmica do sistema. A partir do construtivismo
+lógico-semântico, o autor sustenta que a automação suprime a flexibilidade temporal que
+a apuração periódica conferia à gestão do fluxo de caixa empresarial, com efeitos
+heterogêneos conforme porte e setor, e ressalva que a crítica não postula direito do
+contribuinte sobre o valor do tributo devido. Recorre à experiência italiana da
+scissione dei pagamenti e ao mecanismo polonês de pagamento fracionado como fontes
+subsidiárias, e conclui propondo um estatuto mínimo de garantias em cinco eixos:
+transparência radical e auditabilidade, contestação eletrônica simplificada,
+ressarcimento justo e célere, tratamento diferenciado com mitigação de impacto no caixa,
+e governança algorítmica com responsabilização por falhas.
+
+Guardo o texto pela distinção entre constituição e extinção da obrigação tributária, que
+me serve de contraponto à leitura penal do mesmo mecanismo que já registrei em outra
+nota deste sítio. O ensaio não trata da matéria penal: a varredura integral do artigo não
+encontra referência à Lei 8.137/1990, a crime, a sanção penal ou a tipificação, e as
+penalidades de que cuida são expressamente administrativas, dirigidas aos prestadores de
+serviços de pagamento. Faço por minha conta a ponte com o debate penal, apoiado na
+separação que o autor constrói entre o lançamento por homologação, que subsiste íntegro,
+e o recolhimento automatizado, que se antecipa na liquidação financeira, separação que me
+parece o pressuposto dogmático de qualquer discussão sobre o núcleo típico da apropriação
+de tributo declarado e não recolhido.
+
+::: {.nota-metodo}
+Nota escrita a partir da leitura integral do trabalho, com assistência de modelo de
+linguagem na redação e revisão do autor.
+:::

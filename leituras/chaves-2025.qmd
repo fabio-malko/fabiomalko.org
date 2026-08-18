@@ -1,0 +1,45 @@
+---
+title: "Chaves (2025): o IBS troca o crédito físico pelo financeiro pleno, e condiciona o crédito à extinção do débito anterior"
+description: "Contrasta o crédito físico do ICMS com o crédito financeiro pleno do IBS, e mostra que o art. 47 da LC 214/2025 condiciona o crédito à extinção do débito anterior enquanto o art. 48 dispensa essa condição até que o split payment esteja implementado."
+categories: [Direito Tributário]
+---
+
+CHAVES, Leonardo Cocchieri Leite. A não cumulatividade do IBS na Reforma Tributária do
+consumo (EC 132/2024 [sic] e LC 214/2025): regime de crédito financeiro e novos
+sistemas de pagamento (split payment e recolhimento pelo adquirente).
+**Revista da Procuradoria Geral do Estado de São Paulo**, São Paulo, n. 102, p. 212-234,
+jul./dez. 2025.
+DOI: [10.22491/0102-8065.2025.v102.1688](https://doi.org/10.22491/0102-8065.2025.v102.1688).
+
+O artigo contrasta o regime de crédito do ICMS, com os limites e as condicionantes da
+Lei Complementar 87/1996 e o critério físico consagrado pela jurisprudência do Supremo
+Tribunal Federal, com o crédito financeiro pleno que a Emenda Constitucional 132/2023
+conferiu ao Imposto sobre Bens e Serviços, excetuadas apenas as aquisições de uso ou
+consumo pessoal especificadas em lei complementar e as demais hipóteses previstas na
+Constituição. Registra que a Primeira Seção do Superior Tribunal de Justiça, no
+EAREsp 1.775.781/SP, julgado em outubro de 2023, passou a admitir crédito de produtos
+intermediários essenciais à atividade-fim ainda que não incorporados fisicamente ao
+produto, e expõe a resistência da Fazenda paulista a essa tese, antes de situar a
+disciplina da não cumulatividade do IBS nos arts. 47 a 56 da Lei Complementar 214/2025,
+detendo-se no art. 47, que condiciona o crédito à extinção do débito anterior, e no
+art. 48, que dispensa essa condição enquanto não implementados o split payment ou o
+recolhimento pelo adquirente. Descreve, por fim, os dois mecanismos de quitação
+instantânea: a liquidação financeira da operação, com procedimento padrão e
+procedimento simplificado por percentual preestabelecido, e o recolhimento pelo
+adquirente, subsidiário, cujo parágrafo que atribuiria responsabilidade solidária ao
+adquirente foi vetado.
+
+Guardo o texto pela articulação entre esses dois dispositivos, que é o ponto de maior
+consequência prática na transição: o art. 47 põe o crédito do adquirente na dependência
+da extinção do débito de terceiro, e o art. 48 afasta a dependência justamente
+enquanto os novos mecanismos de pagamento não estiverem operando. O autor associa o
+arranjo ao enfrentamento de dois gargalos do ICMS, a inadimplência contumaz no último
+elo da cadeia e as fraudes com créditos fabricados a partir de operações inexistentes,
+e recolhe a objeção de que não é adequado onerar o direito ao crédito por inadimplência
+alheia. Anoto, como questão minha e não do autor, a hipótese de que a automação do
+recolhimento altere a estrutura da fiscalização e da autuação.
+
+::: {.nota-metodo}
+Nota escrita a partir da leitura integral do trabalho, com assistência de modelo de
+linguagem na redação e revisão do autor.
+:::
