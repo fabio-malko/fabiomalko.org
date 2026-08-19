@@ -1,0 +1,21 @@
+---
+title: "Ngo (2026): vencer a recuperação de precedentes do COLIEE ainda dá F1 de 0,42"
+description: "A equipe NOWJ ficou em primeiro lugar em duas das cinco tarefas do COLIEE 2026, mas o sistema que decide bem sobre o Código Civil japonês erra a indicação dos artigos que sustentam a decisão, e a configuração validada em dados históricos desabou no teste cego."
+categories: [IA e Direito, Método de pesquisa]
+---
+
+NGO, Thuong-Hieu; NGUYEN, Hoang-Trung; NGUYEN, Huu-Dong; LE, Xuan-Bach; NGUYEN,
+Le-Dung; TRAN, Quang-Thanh; NGUYEN, Ha-Thanh; VUONG, Thi-Hai-Yen. NOWJ@COLIEE
+2026: adaptive pipelines for legal retrieval and reasoning. **arXiv**, 2026.
+Depósito arXiv:2607.16603 [cs.CL], versão 1, de 18 jul. 2026. Trabalho
+apresentado no COLIEE 2026. DOI:
+[10.48550/arXiv.2607.16603](https://doi.org/10.48550/arXiv.2607.16603).
+
+A equipe NOWJ, da Universidade Nacional do Vietnã, relata os sistemas que submeteu às cinco tarefas do COLIEE 2026 e o desempenho oficial de cada um. Na Tarefa 1, recuperação de precedentes num acervo da Corte Federal do Canadá, o arranjo de quatro estágios, que encadeia filtragem temporal dos candidatos, recuperação densa com dois modelos de embedding, reordenação e corte adaptativo por consulta, ficou em primeiro lugar com F1 de 0,4220, precisão de 0,4235 e revocação de 0,4206 (p. 4, Tabela 2). Vencer, ali, significa acertar pouco mais de dois em cada cinco precedentes efetivamente citados. Parte do teto vem do estágio anterior: mesmo abrindo a lista para duzentos candidatos, a revocação para de subir em 0,8274 com o Octen-Embedding-8B e em 0,8463 com o E5-Mistral-7B-Instruct (p. 4, Tabela 1), de modo que uma fatia dos precedentes corretos sequer chega à reordenação. Na Tarefa 3, sobre artigos do Código Civil japonês, o contraste é mais agudo. A acurácia da resposta binária alcançou 0,9512, com 78 acertos e revocação de 1,0000, enquanto o F2 da seleção dos artigos de apoio ficou em 0,2224, contra 0,7796 do sistema da JNLP (p. 6, Tabela 4). Os próprios autores atribuem a diferença à falta de uma etapa dedicada de filtragem: o modelo decide bem e entrega, junto, artigos de contexto que não sustentam juridicamente a conclusão.
+
+O que me interessa é menos o pódio e mais o que ele deixa de fora. Trabalho com contencioso tributário e penal econômico, onde localizar o precedente é a primeira metade do problema; a segunda é dizer por qual dispositivo ele se aplica, e é justamente nessa metade que o sistema falha, com revocação plena e F2 de 0,2224. Assistente que acerta o desfecho e erra a norma de apoio não serve para peça, porque o que se protocola é a norma, não o palpite. Há ainda o episódio da Tarefa 4. A configuração de roteamento por dificuldade vencia com folga nos conjuntos históricos de 2018, 2019 e 2020 (p. 8, Tabela 6), e caiu para 0,8049 no teste cego de 2026, abaixo da linha de base de poucos exemplos, que fez 0,8780 (p. 7, Tabela 5). Validação retrospectiva não garantiu comportamento estável quando o dado mudou — que é exatamente a pergunta da minha tese, medida campo a campo e em português. A competição afere acerto contra gabarito numa rodada; não afere se o mesmo sistema, reexecutado, devolve a mesma resposta, nem se a decomposição do resultado por campo se sustenta. Some-se o corpus: direito canadense e japonês, línguas e estruturas normativas distantes do acórdão brasileiro, sem garantia de que os ganhos de reordenação sobrevivam à travessia.
+
+::: {.nota-metodo}
+Nota escrita a partir da leitura integral do trabalho, com assistência de modelo de
+linguagem na redação e revisão do autor.
+:::

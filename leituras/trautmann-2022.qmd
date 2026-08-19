@@ -1,0 +1,41 @@
+---
+title: "Trautmann e outros (2022): o mesmo comando, quatro idiomas"
+description: "Prever o desfecho de julgados europeus e suíços por comando direto, sem treinamento adicional, e o que acontece com o desempenho quando o comando é traduzido do inglês para o alemão, o francês e o italiano."
+categories: [IA e Direito, Método de pesquisa]
+---
+
+TRAUTMANN, Dietrich; PETROVA, Alina; SCHILDER, Frank. Legal prompt engineering
+for multilingual legal judgement prediction. **arXiv**, 5 dez. 2022. Preprint,
+arXiv:2212.02199 [cs.CL].
+DOI: [10.48550/arXiv.2212.02199](https://doi.org/10.48550/arXiv.2212.02199).
+
+Três pesquisadores dos laboratórios da Thomson Reuters testaram se um modelo de
+linguagem de propósito geral, sem qualquer treinamento adicional, prevê o
+desfecho de um julgado a partir do relatório dos fatos. O comando foi montado à
+mão, em cinco tentativas sucessivas, até chegar ao formato
+documento–pergunta–opções–resposta descrito na página 3. O corpus é duplo:
+casos da Corte Europeia de Direitos Humanos, em inglês, e do Tribunal Federal
+suíço, em alemão, francês e italiano. No conjunto de teste da Corte Europeia,
+o GPT-J-6B chegou a
+macro-F1 de 0,528, contra 0,459 da linha de base de classe majoritária e 0,820
+do modelo supervisionado com ajuste fino (Tabela 1, p. 3). Nos casos suíços, o
+mGPTxl ficou em 0,493 no alemão, 0,502 no francês e 0,484 no italiano, ante
+0,685, 0,702 e 0,598 dos supervisionados correspondentes (Tabela 2, p. 4).
+Inverter a posição das opções A e B praticamente não moveu o resultado — 0,526
+no teste, contra 0,528 do arranjo original (p. 4).
+
+O que me interessa é o comportamento por idioma. A margem do modelo sobre a
+classe majoritária existe nas quatro línguas, mas é estreita e desigual: 3,7
+pontos de macro-F1 no italiano, 4,7 no alemão, 5,5 no francês (Tabela 2, p. 4).
+O mesmo desenho, traduzido, não carrega consigo o desempenho que tinha na língua de
+origem, e é precisamente essa a pergunta que enfrento na tese, ao medir campo a campo, e em português, a
+estabilidade da anotação de decisões judiciais feita por modelo de linguagem:
+método aferido em inglês não se presume válido no nosso idioma, e essa lacuna
+precisa ser medida, não suposta. Num acórdão de contencioso tributário ou numa
+denúncia por crime econômico, o custo de tomar por transferível o que ainda não
+foi testado recai sobre quem assina a peça.
+
+::: {.nota-metodo}
+Nota escrita a partir da leitura integral do trabalho, com assistência de modelo de
+linguagem na redação e revisão do autor.
+:::

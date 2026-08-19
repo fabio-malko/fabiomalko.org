@@ -1,0 +1,38 @@
+---
+title: "Törnberg (2024): padrões para anotação de texto com modelos de linguagem"
+description: "Nove exigências para que a anotação feita por modelo de linguagem sobreviva a uma revisão séria, e por que o piso de vinte a trinta casos por categoria incomoda quem pretende anotar acórdãos."
+categories: [IA e Direito, Método de pesquisa, Replicabilidade]
+---
+
+TÖRNBERG, Petter. **Best Practices for Text Annotation with Large Language Models**.
+Ithaca: arXiv, 2024.
+Preprint, arXiv:2402.05129v1 [cs.CL].
+DOI: [10.48550/arXiv.2402.05129](https://doi.org/10.48550/arXiv.2402.05129).
+
+Preprint normativo, não experimento. Törnberg reúne nove exigências para que a anotação
+de texto por modelo de linguagem deixe de ser o que ele chama de faroeste acadêmico:
+modelo escolhido com justificativa explícita, codificação iterativa ao lado de codificadores
+humanos, codebook que descreva prompt e parâmetros, validação, engenharia de prompt,
+parâmetros declarados, exame das implicações éticas e legais, teste de estocasticidade e
+atenção à hipótese de os próprios dados já estarem no treinamento. O piso da validação é
+de vinte a trinta casos rotulados à mão por categoria, e ela só conta se vier depois de
+congelado o prompt (p. 9). Acurácia isolada é recusada: se uma categoria concentra 90% da
+base, atribuir tudo a ela produz 90% de acerto (p. 9). Quanto aos parâmetros, temperatura 0
+e Top-P entre 0,2 e 0,4, sempre declarados, ainda que sejam os padrões (p. 13).
+
+O que me interessa é o encaixe com o que estou medindo na tese. A análise de estabilidade
+que ele propõe — paráfrases do mesmo prompt rodadas sobre um subconjunto e comparadas por
+alfa de Krippendorff (p. 15) — é o teste ausente em quase toda pesquisa brasileira que
+classifica decisão judicial por modelo de linguagem, e é ele que separa achado replicável
+de coincidência de sessão. Transposto a acórdãos do CARF, o piso de vinte a trinta casos
+por categoria fica exigente justamente onde as teses que importam são raras: multa
+qualificada, dissimulação, dolo. Em prova penal econômica a régua sobe de novo, porque erro
+de classificação ali compromete a própria prova. Some-se a advertência de que modelos
+anglocêntricos rendem menos fora do inglês (p. 4), que pesa sobre o português jurídico, e a
+proibição de enviar dado sigiloso a interface de terceiro (p. 14), que na advocacia tem
+estatuto de dever profissional, e não de mera recomendação de método.
+
+::: {.nota-metodo}
+Nota escrita a partir da leitura integral do trabalho, com assistência de modelo de
+linguagem na redação e revisão do autor.
+:::

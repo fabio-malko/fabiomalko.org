@@ -1,0 +1,60 @@
+---
+title: "Lin e Zhang (2025): a estabilidade da anotação por modelo desaba quando a tarefa deixa de ser binária"
+description: "Repetida vinte e cinco vezes a mesma consulta, com o mesmo prompt e os mesmos parâmetros, a concordância entre execuções cai de 0,934 num campo binário para 0,518 num campo multiclasse. O artigo desloca a discussão da acurácia para a reprodutibilidade e propõe um fluxo de trabalho para quem use modelo de linguagem como codificador."
+categories: [IA e Direito, Método de pesquisa, Replicabilidade]
+---
+
+LIN, Hao; ZHANG, Yongjun. Navigating the risks of using large language models for
+text annotation in social science research. Social Science Computer Review, v. 44,
+n. 3, p. 403-427, 2026, publicado on-line em 8 ago. 2025.
+DOI: [10.1177/08944393251366243](https://doi.org/10.1177/08944393251366243).
+Consultei o preprint depositado como arXiv:2503.22040v2 [cs.CL].
+
+Os autores submetem o GPT-4-turbo e dois modelos Llama 3 à codificação de notícias do
+New York Times já anotadas por codificadores humanos no projeto Dynamics of Collective
+Action, e escalonam o exercício em três graus de dificuldade: uma variável binária, a
+menção a presença policial; uma multiclasse, o porte do protesto em seis faixas; e uma
+multirrótulo, o repertório de ação. A acurácia do GPT-4-turbo cai de 0,84 na tarefa
+binária para 0,50 na multiclasse e 0,55 na multirrótulo, e o F1 acompanha a queda
+(Tabela 1, p. 12 do preprint). Mais grave que a acurácia é a instabilidade. Repetida
+vinte e cinco vezes a mesma consulta, com prompt e parâmetros idênticos, sobre duzentos
+artigos, a correlação intraclasse entre execuções fica em 0,934, com intervalo de
+confiança de 95% entre 0,921 e 0,946, para presença policial, e em 0,518, entre 0,463 e
+0,577, para porte do protesto (p. 13). O mesmo modelo, o mesmo prompt e a mesma amostra
+produzem confiabilidade excelente num campo e apenas moderada no campo vizinho. Os
+modelos abertos ficam atrás: o Llama-3.3-70B chega a 0,77 na tarefa binária e a 0,44 na
+multiclasse (Tabela 2, p. 23). A conferência humana do raciocínio em cem artigos mostrou
+o GPT-4 correto nos cem casos de presença policial e falho no porte, enquanto o Llama 3.3
+errou nas duas tarefas, com propensão a inferir do conhecimento pré-treinado aquilo que a
+notícia não afirma (p. 15 a 18). Daí o fluxo de trabalho proposto: conjunto de
+desenvolvimento e conjunto de avaliação separados, de cem a duzentos casos cada, ambos
+rotulados por humanos, seleção do prompt no primeiro e métricas relatadas no segundo, com
+decomposição das tarefas complexas em séries de decisões binárias.
+
+O que me interessa é a mudança de eixo: à pergunta sobre o acerto do modelo soma-se a
+pergunta sobre a repetição desse acerto do mesmo modo em execuções sucessivas. Esse é
+o terreno da minha tese, que
+mede a estabilidade da anotação de decisões judiciais campo a campo e em português. O
+resultado de Lin e Zhang justifica a decisão metodológica de não relatar uma métrica única
+para o conjunto do trabalho. Se a concordância entre execuções varia de excelente a
+moderada conforme o campo dentro do mesmo desenho, uma acurácia média oculta exatamente a
+informação de que o pesquisador precisa, e um campo instável contamina toda inferência que
+dele dependa. Transposto para o contencioso tributário, campos de leitura direta — houve
+recurso de ofício, houve voto de qualidade, aplicou-se multa qualificada — comportam-se de
+maneira diferente de campos que exigem juízo interpretativo, como o fundamento
+predominante do voto vencedor ou a natureza do vício apontado. A tendência do Llama 3.3 de
+completar o texto com o que supõe verdadeiro é o risco mais óbvio quando o corpus é
+jurisprudencial: o modelo preenche a lacuna com aquilo que acredita que um tribunal
+decidiria, e a alucinação assume a forma de doutrina plausível. Retenho ainda três
+exigências operacionais que o artigo impõe a qualquer desenho empírico assistido: registrar
+versão exata do modelo, parâmetros e prompt, porque a deriva de modelo e a retirada de
+versões antigas do ar inviabilizam a replicação; desligar personalização e memória em
+modelos proprietários, que introduzem variação não documentada; e preferir modelo aberto
+executado em ambiente próprio quando o corpus tiver dado sensível, o que no meu caso é
+regra, e não exceção, dado o sigilo fiscal e o segredo de justiça que recaem sobre boa
+parte do material.
+
+::: {.nota-metodo}
+Nota escrita a partir da leitura integral do trabalho, com assistência de modelo de
+linguagem na redação e revisão do autor.
+:::

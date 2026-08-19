@@ -1,0 +1,60 @@
+---
+title: "Schepers e outros (2025): metade do custo, mas a extração de citações não se repete"
+description: "GPT-4o e quatro estudantes de direito anotaram os mesmos 104 documentos do Comitê DESC da ONU. Empate nos campos simples, vantagem humana na extração de citações e custo total pela metade do lado automatizado."
+categories: [IA e Direito, Método de pesquisa, Replicabilidade]
+---
+
+SCHEPERS, Iris; BRUIJN, Michelle; WIELING, Martijn; VOLS, Michel. The price of
+automated case law annotation: comparing the cost and performance of GPT-4o and
+student annotators. **Artificial Intelligence and Law**, p. 1-33, 2025. Publicação
+eletrônica antecipada em 5 dez. 2025.
+DOI: [10.1007/s10506-025-09495-1](https://doi.org/10.1007/s10506-025-09495-1).
+
+Quatro pesquisadores da Universidade de Groningen puseram o GPT-4o e quatro
+estudantes de direito para anotar os mesmos 104 documentos do Comitê de Direitos
+Econômicos, Sociais e Culturais da ONU e mediram, lado a lado, desempenho e preço.
+Nas características básicas — identificador do documento, autor da comunicação,
+tipo de documento, Estado parte, decisão do Comitê, tema habitacional e presença de
+crianças — as duas vias empatam, com todas as acurácias acima de 0,95 e o modelo
+superando os estudantes por 0,01 justamente na variável mais interpretativa, a das
+crianças envolvidas (Tabela 2, p. 11). A diferença aparece na extração de citações.
+Os anotadores humanos alcançam precisão 0,97, revocação 0,98 e F1 0,97; o GPT-4o
+fica em 0,94, 0,89 e 0,92 (Tabela 3, p. 13). Nas decisões de mérito, que são os
+documentos mais longos e mais densos em referências, a revocação do modelo desaba
+para 0,59, contra 0,90 dos estudantes (Tabela 4, p. 13). O preço inverte o quadro:
+a anotação humana consumiu 69 horas e €3.800, somados treinamento, supervisão,
+anotação e limpeza dos dados (Tabela 7, p. 15), enquanto a via automatizada custou
+€1.895,08 (Tabela 8, p. 15), dos quais cerca de €5 correspondem ao processamento
+propriamente dito, feito em menos de uma hora (p. 18), e €1.600 às dezesseis horas
+de um especialista redigindo prompts (p. 16). O achado mais incômodo vem depois:
+prompts idênticos, aplicados com minutos de intervalo, devolveram
+extrações de citações diferentes, comportamento que os autores observaram repetidas
+vezes e que não se manifestou nas características básicas (p. 18).
+
+O que me interessa é a variação da instabilidade conforme o campo, que é exatamente
+o que pretendo medir. Os autores relatam oscilação entre execuções na extração de
+citações e ausência de oscilação nas variáveis de formato fixo (p. 18), o que confirma
+a premissa do meu desenho: a estabilidade varia conforme o campo anotado e precisa ser
+reportada campo a campo. Tomo de lá três decisões concretas. A primeira
+é derivar o padrão-ouro do consenso de dois especialistas que reexaminam o texto-fonte
+junto com a saída dos estudantes, em vez de tomar a anotação dos assistentes como tal
+(p. 10); num corpus de acórdãos do CARF ou de decisões em crime tributário, onde a
+qualificação de uma conduta admite leitura divergente, essa camada de adjudicação é o
+que separa erro de anotação de dissenso jurídico legítimo. A segunda é medir o custo
+real dos dois lados, para além do preço da API: o gasto humano concentrou-se em
+dezesseis horas de limpeza de dados mal formatados, e o gasto automatizado, em
+dezesseis horas de engenharia de prompt (Tabelas 7 e 8, p. 15) — a economia vem do
+formato estruturado da saída, não da inteligência do modelo. A terceira é calibrar
+expectativa por tipo de documento: a revocação de 0,59 nas decisões de mérito e o
+episódio de um único relatório que recebeu mais de setecentas referências incorretas
+(p. 17) dizem que peças longas e densas em citação são precisamente aquelas em que a
+extração automatizada falha, e é esse o perfil do acórdão tributário brasileiro. Fica
+também o dado de que a dupla anotação humana elevou os arquivos perfeitos de 73% para
+74% (p. 12), com o segundo anotador por vezes introduzindo erro novo em vez de corrigir
+o do primeiro: redundância humana não é, por si, garantia de confiabilidade, o que
+reforça reportar concordância e revisão como métricas separadas.
+
+::: {.nota-metodo}
+Nota escrita a partir da leitura integral do trabalho, com assistência de modelo de
+linguagem na redação e revisão do autor.
+:::

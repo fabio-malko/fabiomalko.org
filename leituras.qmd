@@ -4,6 +4,21 @@ subtitle: "Notas curtas sobre trabalhos de outros autores"
 listing:
   id: fichas
   contents:
+    - leituras/choi-2024.qmd
+    - leituras/cui-alexander-2026.qmd
+    - leituras/tornberg-2024.qmd
+    - leituras/schepers-2025.qmd
+    - leituras/watson-2026.qmd
+    - leituras/lin-zhang-2025.qmd
+    - leituras/trautmann-2022.qmd
+    - leituras/maia-bezerra-2023.qmd
+    - leituras/molka-jimenez-2025.qmd
+    - leituras/lorusso-2026.qmd
+    - leituras/thaldar-2025.qmd
+    - leituras/shi-2025.qmd
+    - leituras/leng-2025.qmd
+    - leituras/ngo-2026.qmd
+    - leituras/edelman-skolnick-2025.qmd
     - leituras/jarussi-2026.qmd
     - leituras/chaves-2025.qmd
     - leituras/lima-pegas-2026.qmd

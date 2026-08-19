@@ -1,0 +1,21 @@
+---
+title: "Watson e outros (2026): quando o modelo acerta porque a sentença já contou o final"
+description: "Em reclamações do tribunal trabalhista britânico, 4% dos atributos, todos expressões retrospectivas do próprio julgado, bastam para prever o desfecho, e o sinal que sobrevive à remoção desses atalhos é bem menor do que o desempenho agregado sugeria."
+categories: [IA e Direito, Método de pesquisa]
+---
+
+WATSON, Joe; FARIA, Joana Ribeiro de; TOMALIN, Marcus; MAGNUSSON, Måns;
+XIE, Huiyuan; YEUNG, Hao Tian; CARTER, Christine; RUTHERFORD, Jonathan;
+STEFFEK, Felix. **Shortcut learning in legal judgment prediction: empirical
+evidence from the UK Employment Tribunal**. [S. l.]: arXiv, 2026. Preprint,
+versão 2, de 10 jul. 2026. arXiv:2607.04261 [cs.AI].
+DOI: [10.48550/arXiv.2607.04261](https://doi.org/10.48550/arXiv.2607.04261).
+
+Nove pesquisadores de Cambridge, Uppsala e Tsinghua tomaram 33.158 pedidos individuais extraídos de 13.253 decisões do Employment Tribunal do Reino Unido e treinaram classificadores para prever, pedido a pedido, se o reclamante ganha, perde ou obtém desfecho apenas processual (Tabela 1, p. 6). O resultado agregado parecia sólido: Macro-F1 de até 0,623 nos modelos supervisionados, contra 0,47 e 0,54 do modelo de linguagem em zero e few-shot, e cerca de 0,51 no parâmetro humano formado por dois especialistas que receberam exatamente os mesmos insumos (p. 9). O diagnóstico veio depois. Auditados os 5.000 trigramas do vocabulário, 200 deles, ou 4% do espaço de atributos, foram classificados como vazamento de desfecho, expressões como "claimant failed to" que só existem porque a decisão já havia sido tomada (p. 8). Um modelo treinado exclusivamente nesses 200 trigramas alcançou Macro-F1 de 56,07, próximo do modelo de texto integral e acima da referência humana (p. 13). Os autores não concluem pelo abandono da agenda: retreinado do zero com os atalhos mascarados, o modelo caiu de 62,27 para 61,62 (p. 14), o que indica sinal remanescente sob o artefato.
+
+O que me interessa é o efeito disso sobre a anotação automática, que é o objeto da tese que conduzo. Se o texto que serve de insumo já carrega a marca do desfecho, o desempenho do modelo mede a redação do julgador, e não a leitura do caso. A diferença entre acertar e acertar pela razão certa passa a ser questão de validade do instrumento, antes de ser questão filosófica. Em contencioso tributário e em direito penal econômico o problema tende a se agravar: acórdão do CARF e sentença criminal são escritos para justificar o que já foi decidido, com vocabulário retrospectivo provavelmente mais padronizado que o do tribunal trabalhista britânico. Guardo ainda a nota metodológica incômoda: o próprio vazamento foi identificado por modelo de linguagem, e a validação humana cega chegou a 73% de concordância binária entre dois juristas, com 67% e 53% de acordo entre o modelo e cada revisor (p. 8). O instrumento que audita o atalho é, ele mesmo, instável, e essa instabilidade é exatamente o que procuro medir campo a campo, em português.
+
+::: {.nota-metodo}
+Nota escrita a partir da leitura integral do trabalho, com assistência de modelo de
+linguagem na redação e revisão do autor.
+:::

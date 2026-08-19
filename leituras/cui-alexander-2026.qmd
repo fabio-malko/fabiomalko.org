@@ -1,0 +1,56 @@
+---
+title: "Cui e Alexander (2026): o mesmo comando, rodado dez vezes, produz análises diferentes"
+description: "Quatrocentas e oitenta execuções da mesma tarefa de análise de dados por seis modelos: as estimativas divergem em sinal e magnitude, e a divergência sobrevive à temperatura zero."
+categories: [IA e Direito, Método de pesquisa, Replicabilidade]
+---
+
+CUI, Jiaxin; ALEXANDER, Rohan. **Same prompt, different outcomes: evaluating the
+reproducibility of data analysis by LLMs**. Ithaca: arXiv, 2026.
+Preprint, arXiv:2602.14349v1 [stat.AP].
+DOI: [10.48550/arXiv.2602.14349](https://doi.org/10.48550/arXiv.2602.14349).
+
+Cui e Alexander submetem uma tarefa realista de análise de dados a seis modelos de três
+fornecedores, em quatro temperaturas e duas estratégias de comando, com dez execuções
+independentes por configuração: 480 tentativas ao todo (p. 4 e p. 12). A tarefa tem cinco
+etapas — consolidar doze arquivos anuais de nomeações públicas de New Brunswick, identificar
+reconduções, agregar por órgão e ano, estimar uma regressão por MQO e gerar o gráfico —,
+descrita em linguagem natural, como um gerente instruiria um analista júnior. Cada execução
+é avaliada por completude, concordância com a análise humana, validade e consistência interna
+(pp. 4-5). O código gerado quase sempre roda e é estruturalmente válido, mas os coeficientes
+não convergem: os coeficientes angulares variam em sinal e em magnitude e, embora a maioria
+das estatísticas t sustente a mesma conclusão de ausência de significância, algumas
+configurações de comando único chegam a valores que autorizariam conclusão oposta (p. 10). A
+instabilidade não desaparece com temperatura zero (p. 7). Aparece também onde eu não
+esperava: o comando encadeado em cinco etapas completa menos que o comando único, porque
+erro em uma etapa impede as seguintes, e o Gemini Flash 3 completa 100% no modo único contra
+0% no encadeado, falhando sempre na etapa 2 por tratamento de caminho de arquivo (p. 5). A
+origem da divergência está na preparação dos dados: ordenação, critério de desempate e
+tratamento de ausentes ficam subespecificados no comando e determinam qual amostra chega à
+regressão (p. 10).
+
+O que me interessa é o modo como este trabalho desloca o problema que Barrie, Palaiologou e
+Törnberg (2026) formularam e cuja nota já está aqui. Lá a estabilidade é medida no rótulo: o
+mesmo comando roda trinta vezes, cada execução vale por um anotador e o alfa de Krippendorff
+diz quanto elas concordam entre si. Aqui a variação nasce antes do rótulo, nas decisões de
+preparo que o comando não especifica, e só depois se manifesta no resultado. O acréscimo
+está na forma da divergência. Ela não é ruído em torno de um centro: as estimativas se
+agrupam em conjuntos distintos, o que sugere que os modelos escolhem caminhos analíticos
+determinados e permanecem neles (p. 10). Um escore de estabilidade alto pode, portanto,
+descrever apenas coerência dentro de um caminho, sem dizer nada sobre a existência de outro
+caminho, igualmente estável, que responderia o contrário à mesma pergunta. Há ainda uma
+correção de rota. A leitura de Barrie e outros permite supor que temperatura zero seja o
+piso da variação; Cui e Alexander mostram que não é (p. 7), e não se contentam em medir:
+prescrevem execuções múltiplas e independentes como padrão e modelos de ao menos dois
+fornecedores (p. 10). Para a tese isso significa que medir estabilidade campo a campo no
+acórdão do CARF é insuficiente se eu não medir também o que vem antes — quais decisões
+entram na base, como resolvo duplicidade e recursos repetidos do mesmo contribuinte, o que
+faço com campo em branco. É ali que a resposta se decide. Registro a distância: eles avaliam
+geração de código sobre dado administrativo tabular, não anotação de texto judicial, e
+reconhecem tarefa única sobre conjunto único de dados (p. 11). O mecanismo, contudo, é o
+mesmo que temo em prova de dolo e em qualificação de multa: escolha subespecificada que
+ninguém reporta e que se propaga até a conclusão.
+
+::: {.nota-metodo}
+Nota escrita a partir da leitura integral do trabalho, com assistência de modelo de
+linguagem na redação e revisão do autor.
+:::

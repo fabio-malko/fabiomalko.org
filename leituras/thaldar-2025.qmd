@@ -1,0 +1,47 @@
+---
+title: "Thaldar (2025): dos cinco modelos testados, só um trouxe a lei escrita sem ser provocado"
+description: "Cinco modelos generativos julgados em três hipóteses de direito privado sul-africano, segundo sete critérios. O ranking importa menos do que o desenho da avaliação: uma execução por modelo, sem repetição e sem escala de nota."
+categories: [IA e Direito, Método de pesquisa]
+---
+
+THALDAR, Donrich. Can AI think like a lawyer? Evaluating generative AI in South African law.
+**Potchefstroom Electronic Law Journal**, Potchefstroom, v. 28, p. 1-32, 2025.
+DOI: [10.17159/1727-3781/2025/v28i0a21584](https://doi.org/10.17159/1727-3781/2025/v28i0a21584).
+
+Thaldar submeteu cinco modelos generativos — ChatGPT 4o, Claude 3.7 Sonnet, DeepSeek R1,
+Gemini 2.0 Flash e Grok 3 Beta — a três hipóteses de direito privado sul-africano, construídas
+sobre a *actio de pauperie*, a *negotiorum gestio* e a *actio legis Aquiliae*, e julgou cada
+resposta por sete critérios: identificação da causa de pedir, exatidão dos requisitos legais,
+aplicação aos fatos, citação de julgados, pertinência dos julgados, exame de defesas e clareza
+da conclusão (p. 5-6). As quinze interações ocorreram todas em 1º de março de 2025, com sessão
+nova a cada cenário, resposta limitada a trezentas palavras e ordem expressa de citar
+jurisprudência (p. 5). O resultado é desigual. No primeiro cenário, os cinco modelos acertaram
+a causa de pedir; no segundo, apenas o Claude identificou a *negotiorum gestio*, enquanto
+Gemini e Grok migraram para enriquecimento sem causa e contrato implícito (p. 9 e p. 23). No
+terceiro, só o Claude chegou à lei escrita aplicável, o National Veld and Forest Fire Act 101
+de 1998, e à presunção de negligência que dela decorre; os demais permaneceram no *common law*,
+embora nada no comando vedasse consultar legislação (p. 22 e p. 28). Na citação de julgados, o
+Claude referiu de três a quatro casos reais por cenário, sem fabricar nenhum; o ChatGPT alucinou
+precedentes em dois dos três cenários; o Gemini citou de um a dois casos, quase sempre com
+referência incompleta (p. 24-25).
+
+O que me interessa é menos o ranking e mais o que o desenho deixa de fora. Thaldar avaliou uma
+única execução por modelo e por cenário, sem repetição, e o julgamento das sete rubricas é
+narrativo: não há escala, não há nota, não há segundo avaliador nem medida de concordância. A
+conclusão de que um modelo é o mais forte repousa, portanto, sobre quinze respostas lidas uma
+só vez por um só leitor. Esse é justamente o vão que minha tese procura fechar ao medir, campo
+a campo, a estabilidade da anotação de decisões judiciais sob repetição. A grade de sete
+critérios, ainda assim, me serve: separar identificação da causa de pedir, exatidão dos
+requisitos e subsunção aos fatos é a decomposição de que preciso para saber onde a anotação
+falha, em vez de registrar um acerto agregado. Já a transponibilidade ao Brasil é parcial, e
+convém dizê-lo. O ordenamento sul-africano é misto, de base romano-holandesa e forte peso
+jurisprudencial. O achado de que os modelos só alcançam a lei escrita quando provocados tende
+a pesar mais entre nós, onde o ponto de partida é quase sempre o texto legal, tanto no
+contencioso tributário quanto no Direito Penal Econômico. Se o modelo não busca o dispositivo
+por conta própria, a anotação de acórdãos brasileiros terá de tratá-lo como campo obrigatório
+do protocolo, e não como algo que se espere emergir da leitura.
+
+::: {.nota-metodo}
+Nota escrita a partir da leitura integral do trabalho, com assistência de modelo de
+linguagem na redação e revisão do autor.
+:::

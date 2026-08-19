@@ -1,0 +1,50 @@
+---
+title: "Choi (2024): anotação de acórdãos por modelo de linguagem"
+description: "O GPT-4 iguala o codificador humano numa classificação de cânone interpretativo, desde que a entrada seja curta — e o que esse desenho de validação deixa de medir."
+categories: [IA e Direito, Método de pesquisa, Replicabilidade]
+---
+
+CHOI, Jonathan H. How to use large language models for empirical legal research.
+**Journal of Institutional and Theoretical Economics**, Tübingen, v. 180, n. 2,
+p. 214-233, 2024.
+DOI: [10.1628/jite-2024-0006](https://doi.org/10.1628/jite-2024-0006).
+
+Choi retoma a base de Mendelson (2018) sobre cânones de construção em acórdãos da
+Suprema Corte norte-americana e pergunta se um modelo de linguagem faz o que
+fizeram, à mão, os assistentes de pesquisa que anotaram aquele material. A tarefa
+é única e binária: dizer se a opinião aplica a regra contra o supérfluo. Sobre
+amostra de 200 casos, aproximadamente equilibrada entre positivos e negativos, o
+GPT-4 sem artifício algum de prompt e com entradas curtas de 500 tokens alcança
+F1 de 0,89, contra 0,88 do codificador humano e 0,63 do melhor classificador de
+geração anterior, floresta aleatória com vetorização TF-IDF (p. 225). Dois
+achados contrariam a expectativa corrente. O desempenho desaba quando a entrada
+se alonga: no limite de 7.450 tokens, o mesmo GPT-4 cai para F1 de 0,39, com
+precisão de 1,00 e recall de 0,25 (p. 225). E nem a cadeia de raciocínio nem os
+exemplos prévios melhoram a classificação; na maioria das combinações, pioram-na
+(p. 228). Daí a recomendação de fragmentar documentos longos em vez de confiar em
+janelas amplas de contexto, e a advertência de que os falsos positivos do modelo,
+mais frequentes que os do humano, enviesam de modo sistemático qualquer
+estimativa de frequência derivada da anotação automática (p. 231).
+
+O que me interessa é o desenho de validação, mais do que o número. Tomo de Choi
+três coisas: a separação entre a amostra pequena em que se calibra o prompt e a
+amostra separada em que se mede o desempenho (p. 230), a temperatura fixada em
+zero (p. 217) e a exigência de corrigir o desequilíbrio entre falso positivo e
+falso negativo antes de extrair qualquer inferência substantiva do rótulo
+automático (p. 231). Divirjo em três, e é onde a tese avança. Choi mede acerto
+contra padrão-ouro humano — que ele mesmo teve de revisar caso a caso, porque
+Mendelson usara um único assistente por acórdão e não havia concordância entre
+codificadores a calcular (p. 224) —, ao passo que meço estabilidade, isto é, se o
+modelo concorda consigo mesmo entre execuções sucessivas. Choi encerra essa
+questão ao fixar a temperatura e tratar a reprodutibilidade como resolvida. Ele mede um rótulo; meço campo a campo, porque
+anotar decisão de contencioso tributário ou de Direito Penal Econômico exige
+extrair tributo, período, tese, resultado e fundamento, cada um com perfil de
+erro próprio. E ele mede em inglês, sobre opinions da Suprema Corte; meço em
+português, sobre acórdãos brasileiros, sem garantia de transferência — limitação
+que o próprio autor antecipa ao registrar que a avaliação de desempenho desses
+modelos é fortemente dependente do domínio (p. 229).
+
+::: {.nota-metodo}
+Nota escrita a partir da leitura integral do trabalho, com assistência de modelo de
+linguagem na redação e revisão do autor.
+:::

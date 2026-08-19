@@ -1,0 +1,52 @@
+---
+title: "Leng et al. (2025): predição conjunta de acusação e artigo de lei"
+description: "Uma rede de atenção cruzada prevê ao mesmo tempo a acusação e o dispositivo aplicável em 86.154 casos ambientais chineses, e a distância entre as duas tarefas é o que interessa a quem trabalha com tipos penais de perímetro estreito."
+categories: [IA e Direito, Método de pesquisa, Direito Penal, Replicabilidade]
+---
+
+LENG, Sihan; KANG, Xiaojun; LIANG, Qingzhong; LI, Xinchuan; FAN, Yuanyuan.
+Accusations and law articles prediction in the field of environmental protection.
+**Applied Sciences**, Basileia, v. 15, n. 1, art. 280, 2025. Licença CC BY 4.0.
+DOI: [10.3390/app15010280](https://doi.org/10.3390/app15010280).
+
+Cinco pesquisadores da China University of Geosciences propõem uma rede neural,
+a EKICAN, que prevê ao mesmo tempo a acusação e o artigo de lei aplicável em casos
+ambientais chineses. À descrição fática e ao voto do tribunal somam um terceiro
+insumo, que chamam de conhecimento externo — definição legal do tipo, elementos
+subjetivo e objetivo e dispositivos aplicáveis —, e combinam os três por atenção
+cruzada, de modo que cada segmento seja lido à luz dos outros dois. O corpus foi
+raspado da rede pública de documentos judiciais da China: 86.154 casos, 23
+acusações e 157 dispositivos, dos quais 67.600 processos criminais contra apenas
+597 cíveis e 726 administrativos (p. 9-10). O desequilíbrio foi corrigido por
+geração sintética, com 2.000 casos cíveis e 2.000 administrativos fabricados por
+modelo de linguagem ajustado ao domínio ambiental — cerca de três quartos do
+material não criminal de treino, portanto, é texto gerado, não decisão real
+(Tabela 1, p. 10). Contra dez arquiteturas concorrentes, a EKICAN chega a
+Macro-F1 de 91,9% na acusação e de 74,3% no artigo de lei; na acurácia da
+predição do artigo, porém, fica atrás da NeurJudge, 72,1% contra 73,2%
+(Tabela 4, p. 13).
+
+O que me interessa é a arquitetura de predição conjunta e o abismo que ela revela
+entre as duas tarefas. Quase dezoito pontos de Macro-F1 separam identificar a
+acusação de fixar o dispositivo, ainda que ambas partam das mesmas representações
+e do mesmo texto. É a confirmação, em outro idioma e outro ramo, do que venho
+medindo campo a campo: rotular o tipo é tarefa bem mais estável do que rotular a
+norma incidente, e tratar as duas como um único campo de anotação mascara erro.
+A transposição me parece direta para tipos de perímetro definido, como os da
+Lei 8.137/1990, em que a fronteira entre os incisos do art. 1º, e entre estes e
+o art. 2º, se joga em nuances de conduta e resultado que os autores chamam, para
+o furto e o corte ilegal de árvores, de diferença sutil nos elementos objetivos
+(p. 2-3). O ganho atribuído ao conhecimento externo — a definição do tipo como
+insumo, e não só o relato dos fatos — é hipótese testável em português com o
+mesmo desenho. Dois limites impedem que eu tome os números como referência
+comparativa. Os dados não são públicos, por restrição de privacidade declarada
+pelos próprios autores (p. 16), o que veda replicação. E o texto oscila entre
+dois nomes para o mesmo conjunto, JELJD e LEPJPDS (p. 4 e p. 6), além de
+descrever no corpo como F1 de acusação o valor 90,1%, que na tabela é a coluna
+de acurácia (p. 13) — descuidos de anotação num trabalho que se propõe a medir
+anotação.
+
+::: {.nota-metodo}
+Nota escrita a partir da leitura integral do trabalho, com assistência de modelo de
+linguagem na redação e revisão do autor.
+:::

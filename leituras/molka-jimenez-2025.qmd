@@ -1,0 +1,57 @@
+---
+title: "Mółka e Jiménez (2025): o algoritmo que bloqueia a conta bancária do contribuinte polonês é secreto"
+description: "Comparação entre o instrumental de inteligência artificial da administração tributária da Polônia e da Espanha. A diferença decisiva está na moldura jurídica que cada país construiu, ou deixou de construir, em torno da tecnologia."
+categories: [IA e Direito, Direito Tributário]
+---
+
+MÓŁKA, Michał; JIMÉNEZ, Aleksandra. The use of artificial intelligence tools by tax
+administration on the example of Poland and Spain. **Teka Komisji Prawniczej PAN Oddział
+w Lublinie**, Lublin, v. 18, n. 1, p. 255-265, 2025.
+DOI: [10.32084/tkp.9152](https://doi.org/10.32084/tkp.9152).
+
+Os autores percorrem, por método dogmático-jurídico, as ferramentas de inteligência
+artificial em uso pelas administrações tributárias polonesa e espanhola, para responder se
+essas soluções cabem nos limites da lei. Na Polônia o eixo é o STIR, sistema de comunicação
+da câmara de compensação: o Chefe da Administração Tributária Nacional pode determinar o
+bloqueio da conta de entidade qualificada por até 72 horas com base no indicador de risco
+que o sistema produz (art. 119zv, § 1º, da Ordenação Tributária), prazo prorrogável por até
+três meses quando o crédito supere o equivalente a 10.000 euros (art. 119zw, § 1º) — p.
+257-258. O sistema trabalha em três níveis: avaliação de risco por exame diário do fluxo de
+caixa, análise da rede de conexões entre contribuintes e disparo das chamadas mensagens
+comportamentais. O algoritmo que faz a seleção é secreto, e o resultado dessa seleção
+fundamenta o bloqueio (p. 258). Do lado espanhol o catálogo é bem mais largo — ZÚJAR,
+PROMETEO, TESEO, GENIO e, sobretudo, HERMES, que compara o comportamento declarado com o
+que a base de dados da administração indica e monta perfis de risco para escolher quem será
+fiscalizado (p. 260-261). A diferença que o artigo destaca não é de tecnologia. A Espanha
+publicou estratégia de IA em maio de 2024 e plano estratégico 2024-2027 em que se afirma que
+nenhuma atuação administrativa automatizada se baseará exclusivamente no resultado do
+sistema, com intervenção humana sempre garantida para supervisionar, aprovar ou rejeitar (p.
+259-260); a Polônia não tem documento equivalente. E há uma ressalva que os autores fazem
+questão de registrar: o considerando 59 do Regulamento (UE) 2024/1689 afasta da
+classificação de alto risco os sistemas de IA destinados a procedimentos administrativos de
+autoridades tributárias e aduaneiras (p. 263), retirando salvaguardas exatamente onde elas
+seriam úteis.
+
+O que me interessa é que o problema descrito chega quase sem tradução ao contencioso
+administrativo brasileiro. Malha fiscal, cruzamento de obrigações acessórias e seleção de
+contribuintes para fiscalização já operam com a lógica do HERMES: confrontar o declarado com
+o que a base de dados sugere e disparar o procedimento quando a divergência passa de certo
+ponto. Selecionar por máquina não é, em si, o ponto crítico. O ponto crítico é o contribuinte
+não conseguir saber por que foi selecionado, e é aí que o lançamento automatizado esbarra no
+devido processo. Quando o auto de infração nasce de escore que ninguém exibe, a impugnação
+perde objeto e a motivação do ato administrativo se reduz a fórmula, embora o art. 50, § 1º,
+da Lei 9.784/1999 exija motivação explícita, clara e congruente — não se examina a
+congruência de critério que não se conhece. O art. 20 da Lei 13.709/2018 assegura ao titular
+a revisão de decisões tomadas unicamente com base em tratamento automatizado, mas o
+dispositivo pressupõe que se saiba que houve tratamento automatizado, o que raramente consta
+do termo de verificação fiscal. A proposta dos autores, de reserva legal garantindo que a
+decisão final em matéria tributária seja sempre humana, me parece transponível. No CARF, na
+CSRF e nos tribunais administrativos estaduais a discussão prática não será proibir a IA;
+será distinguir o auto de infração com fundamento verificável daquele que apenas veste de
+fundamentação um indício algorítmico. O considerando 59 mostra que nem a regulação europeia
+resolveu isso.
+
+::: {.nota-metodo}
+Nota escrita a partir da leitura integral do trabalho, com assistência de modelo de
+linguagem na redação e revisão do autor.
+:::

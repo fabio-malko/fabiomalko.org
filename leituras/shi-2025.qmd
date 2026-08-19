@@ -1,0 +1,44 @@
+---
+title: "Shi (2025): verificar cada passo do raciocínio eleva a concordância com o tribunal de 72,37 para 80,27"
+description: "Um verificador de processo audita passo a passo o raciocínio do modelo e corrige o passo defeituoso antes da conclusão. A nota examina o que esse desenho entrega a quem mede a estabilidade da anotação automatizada de decisões e o que ele apenas desloca."
+categories: [IA e Direito, Método de pesquisa]
+---
+
+SHI, Weijie; ZHU, Han; JI, Jiaming; LI, Mengze; ZHANG, Jipeng; ZHANG, Ruiyuan; ZHU, Jia;
+XU, Jiajie; HAN, Sirui; GUO, Yike. LegalReasoner: step-wised verification-correction for
+legal judgment reasoning. **Proceedings of the 63rd Annual Meeting of the Association for
+Computational Linguistics (Volume 1: Long Papers)**, Viena, p. 7297-7313, 2025.
+DOI: [10.18653/v1/2025.acl-long.361](https://doi.org/10.18653/v1/2025.acl-long.361).
+
+O trabalho ataca a previsão de julgamento em três tempos. Primeiro identifica os pontos
+controvertidos e decompõe o caso; depois raciocina passo a passo; por fim submete cada passo
+a um verificador treinado, que o avalia sob três ângulos — correção, progressividade e
+potencial. Detectado o defeito, estratégias de atribuição e resolução desenhadas por juristas
+reescrevem aquele passo específico, com rastreio de fatos, recuperação de dispositivo legal ou
+recálculo de valores conforme o tipo de erro. Para treinar o sistema os autores montaram o
+LegalHK, filtrado de 185.495 para 58.130 decisões de tribunais de Hong Kong entre 1900 e 2023,
+cobrindo dez tipos de caso e 827 dispositivos legais (p. 7301). O ganho central está na
+Tabela 1: a acurácia no nível do caso sobe de 72,37 para 80,27 sobre o LLAMA-3.1-70B já
+ajustado, e de 68,21 para 76,95 no conjunto criminal chinês CMDL (p. 7302). A ablação isola o
+mérito do verificador — retirado o mecanismo de verificação e correção, a acurácia recua 5,78
+pontos no LegalHK e 5,95 no CMDL (p. 7303).
+
+O que me interessa é o deslocamento do objeto avaliado. Minha tese mede a estabilidade da
+anotação de decisões campo a campo, em português, e o campo isolado tem um limite conhecido:
+ele registra o resultado, não o percurso. Um modelo pode marcar corretamente o campo
+«provimento parcial» percorrendo um caminho que nenhum julgador assinaria. Auditar cada passo,
+como aqui se propõe, é justamente o que separa a decisão fundamentada da decisão que acerta por
+acaso — e a distinção não é acadêmica no contencioso tributário, onde a controvérsia costuma
+residir na qualificação do fato antes de residir no dispositivo, nem no Direito Penal
+Econômico, em que a cadeia entre conduta, elemento subjetivo e resultado é toda ela contestável
+passo a passo. O desenho tem um custo que os próprios dados revelam. O verificador é outro
+modelo ajustado sobre rótulos de processo, e as métricas de elemento (E-Cov e E-Pre) são
+apuradas pelo GPT-4, com conferência humana apenas por amostra (p. 7301). A pergunta sobre
+quem verifica o verificador permanece aberta, e é a mesma que a minha tese enfrenta ao medir
+concordância entre execuções. Fica de pé, ainda assim, a lição de método: o passo intermediário
+é anotável, e o que é anotável é mensurável.
+
+::: {.nota-metodo}
+Nota escrita a partir da leitura integral do trabalho, com assistência de modelo de
+linguagem na redação e revisão do autor.
+:::

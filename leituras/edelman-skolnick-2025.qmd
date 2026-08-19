@@ -1,0 +1,52 @@
+---
+title: "Edelman e Skolnick (2025): recuperar a fonte antes de citá-la zera a citação inventada"
+description: "Utilitário aberto e auto-hospedável que verifica afirmações científicas em lote conferindo cada referência antes de redigir o relatório: 211 citações confirmadas e nenhuma falsa, contra nenhuma citação íntegra do GPT-4o isolado."
+categories: [IA e Direito, Método de pesquisa]
+---
+
+EDELMAN, Brice; SKOLNICK, Jeffrey. Valsci: an open-source, self-hostable
+literature review utility for automated large-batch scientific claim verification
+using large language models. **BMC Bioinformatics**, Londres, v. 26, n. 1,
+art. 140, 2025.
+DOI: [10.1186/s12859-025-06159-4](https://doi.org/10.1186/s12859-025-06159-4).
+
+Os autores descrevem o Valsci, utilitário de código aberto e auto-hospedável que
+verifica afirmações científicas em lote acoplando geração aumentada por
+recuperação sobre a base do Semantic Scholar a um escore bibliométrico e a uma
+cadeia de raciocínio conduzida por prompt estruturado. O teste de citação é o mais
+direto de ler. Numa amostra de dez afirmações que renderam 211 citações, todas as
+obras invocadas pelo Valsci foram confirmadas como existentes, enquanto o GPT-4o
+isolado, em trinta citações, não produziu uma única referência sem erro relevante:
+três foram classificadas como alucinações parciais e vinte e sete como fabricações
+completas (p. 8). Sobre cerca de quinhentas afirmações rotuladas do conjunto
+SciFact, o sistema com GPT-4o alcançou F1 de 0,761 contra 0,706 do modelo sozinho,
+com taxa de incerteza de 0,267 contra 0,360 (p. 10). A cadência medida foi de 144
+afirmações por hora, algo como trinta e seis vezes o ritmo de um pesquisador de
+graduação fazendo o mesmo trabalho à mão (p. 8-9). O preço aparece nas limitações:
+a cópia local da base do Semantic Scholar ocupa quase dois terabytes e precisa ser
+atualizada periodicamente (p. 12).
+
+O que me interessa é a arquitetura de verificação, e não o objeto verificado. A
+alucinação de referência, que aqui produz um relatório mal fundamentado, na
+advocacia é falta gravíssima: citar julgado inexistente perante juízo ou
+autoridade fiscal induz a decisão a erro e expõe o cliente. O desenho do Valsci
+separa duas operações que os modelos de uso geral confundem, a geração do texto e
+a existência da fonte, e trata a segunda como etapa própria e anterior — a
+citação só entra no relatório porque foi antes recuperada de uma base e teve
+trecho literal carregado no contexto, não porque o modelo a produziu. Interessa-me
+igualmente a auto-hospedagem. Os autores registram que o sistema comporta modelos
+abertos executados localmente, como LLaMA, Deepseek-R1 e Mistral, em ambientes de
+pesquisa voltados à privacidade (p. 7), e quem lida com material sob sigilo
+profissional não pode remeter esse material a serviço de terceiro, de modo que
+rodar o circuito inteiro em infraestrutura própria é o que torna a ferramenta
+cogitável dentro de um escritório. É leitura transposta de outro domínio, e as
+diferenças pesam. Não há equivalente do Semantic Scholar para a jurisprudência
+brasileira, o escore bibliométrico não se converte em hierarquia de precedente, e
+a tarefa aqui medida, dizer se uma afirmação é verdadeira ou falsa, é mais simples
+do que anotar campo a campo uma decisão judicial. O que aproveito é o princípio de
+separar verificação de geração, não o instrumento.
+
+::: {.nota-metodo}
+Nota escrita a partir da leitura integral do trabalho, com assistência de modelo de
+linguagem na redação e revisão do autor.
+:::
