@@ -1,7 +1,7 @@
 ---
 title: "Extração automatizada e tratamento semântico de decisões judiciais com inteligência artificial"
 subtitle: "Um método replicável aplicado a pesquisa de precedentes tributários do STJ"
-description: "Dissertação de mestrado profissional defendida no IDP em 27 de julho de 2026. Desenvolve e aplica método replicável de coleta, extração e classificação semântica sobre 62.383 decisões do STJ em ICMS, ISS, ITBI e ITCMD, com validação adjudicada por amostragem e medição de concordância campo a campo."
+description: "Dissertação de mestrado profissional defendida no IDP em 27 de julho de 2026 e depositada no repositório institucional. Desenvolve e aplica método replicável de coleta, extração e classificação semântica sobre 62.383 decisões do STJ em ICMS, ISS, ITBI e ITCMD, com validação adjudicada por amostragem e medição de concordância campo a campo."
 date: 2026-07-27
 author: "Fábio André Malko"
 categories: [Direito Tributário, Método de pesquisa, IA e Direito, Replicabilidade]
@@ -11,16 +11,44 @@ categories: [Direito Tributário, Método de pesquisa, IA e Direito, Replicabili
 
 MALKO, Fábio André. **Extração automatizada e tratamento semântico de decisões judiciais
 com inteligência artificial**: um método replicável aplicado a pesquisa de precedentes
-tributários do STJ. 2026. Dissertação (Mestrado Profissional em Direito) — Instituto
-Brasileiro de Ensino, Desenvolvimento e Pesquisa, Brasília, 2026. Orientador:
+tributários do STJ. 2026. 198 f. Dissertação (Mestrado Profissional em Direito) —
+Instituto Brasileiro de Ensino, Desenvolvimento e Pesquisa, Brasília, 2026. Orientador:
 Prof. Dr. Luís Felipe Perdigão de Castro. Defesa em 27 de julho de 2026.
 
 ## Onde encontrar o texto integral
 
-O trabalho está depositado no [repositório institucional do
-IDP](https://repositorio.idp.edu.br), e o endereço permanente do registro será indicado
-nesta página. O texto integral também pode ser solicitado por mensagem para
-[malko@malko.adv.br](mailto:malko@malko.adv.br).
+O trabalho está depositado em acesso aberto no repositório institucional do IDP, sob o
+endereço permanente <https://repositorio.idp.edu.br/handle/123456789/5980>, de onde se
+obtém o texto integral em
+[arquivo PDF](https://repositorio.idp.edu.br/bitstreams/e90b5c6c-1309-4a39-a7a7-ea59313ce6ad/download).
+
+## Resumo depositado
+
+O texto abaixo é o resumo tal como consta do registro no repositório institucional do IDP.
+
+> Esta dissertação propõe, descreve e testa um método empírico-computacional replicável
+> para a extração, a estruturação e a análise semântica de decisões judiciais com apoio
+> de inteligência artificial, tomando como campo de prova o contencioso tributário
+> estadual e municipal no Superior Tribunal de Justiça. O problema desdobra-se em dois
+> planos: no plano substantivo, indaga-se se os tribunais de origem aplicam de modo
+> uniforme os precedentes do Superior Tribunal de Justiça em matéria de ICMS, ISS, ITBI e
+> ITCMD; no plano metodológico, que é o central, pergunta-se como tratar grandes volumes
+> de decisões de forma reconstruível e acessível ao jurista, sem programação prévia e sem
+> leitura automatizada ingênua. O corpus foi constituído a partir dos dados abertos de
+> inteiros teores do próprio Superior Tribunal de Justiça, coletados por raspagem em
+> Python e delimitados pelos códigos de assunto da Tabela Processual Unificada do
+> Conselho Nacional de Justiça, no recorte de maio de 2022 a dezembro de 2025. O
+> tratamento organizou-se em três camadas: extração determinística, análise semântica
+> (classificação por modelo de linguagem segundo dicionário de categorias fechado) e
+> consolidação por processo. Adotaram-se salvaguardas contra alucinação e instabilidade,
+> além de validação humana por amostragem. Reuniram-se mais de cinquenta e oito mil
+> decisões com inteiro teor, distribuídas em dezenas de milhares de processos únicos. Os
+> achados indicam o predomínio dos óbices de admissibilidade no acesso ao mérito e uma
+> variação relevante das taxas de reforma entre os tribunais de origem, compatível com a
+> hipótese de focos desiguais de divergência, aqui designados ilhas de resistência. O
+> produto do trabalho, próprio do mestrado profissional, é um roteiro replicável de
+> análise de decisões em escala, transferível a outros tributos, cortes e ramos do
+> Direito.
 
 ## Síntese
 
@@ -56,9 +84,13 @@ condições adversas.
 Precedentes judiciais; Superior Tribunal de Justiça; tributos estaduais e municipais;
 pesquisa empírica em Direito; inteligência artificial; jurimetria.
 
+No registro do repositório, os assuntos atribuídos são «Precedente judicial - Superior
+Tribunal de Justiça», «Decisão judicial - análise semântica» e «Direito tributário».
+
 ## Como citar
 
 > MALKO, Fábio André. *Extração automatizada e tratamento semântico de decisões
 > judiciais com inteligência artificial*: um método replicável aplicado a pesquisa de
-> precedentes tributários do STJ. 2026. Dissertação (Mestrado Profissional em Direito) —
-> Instituto Brasileiro de Ensino, Desenvolvimento e Pesquisa, Brasília, 2026.
+> precedentes tributários do STJ. 2026. 198 f. Dissertação (Mestrado Profissional em
+> Direito) — Instituto Brasileiro de Ensino, Desenvolvimento e Pesquisa, Brasília, 2026.
+> Disponível em: https://repositorio.idp.edu.br/handle/123456789/5980. Acesso em: [data].

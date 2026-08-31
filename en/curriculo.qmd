@@ -40,11 +40,38 @@ Supervisor: Prof. Dr. Luís Felipe Perdigão de Castro.
 
 MALKO, Fábio André. *Extração automatizada e tratamento semântico de decisões
 judiciais com inteligência artificial: um método replicável aplicado a pesquisa de
-precedentes tributários do STJ*. 2026. Master's dissertation (Law) — Instituto
-Brasileiro de Ensino, Desenvolvimento e Pesquisa, Brasília, 2026.
+precedentes tributários do STJ*. 2026. 198 p. Master's dissertation (Law) — Instituto
+Brasileiro de Ensino, Desenvolvimento e Pesquisa, Brasília, 2026. Available at:
+<https://repositorio.idp.edu.br/handle/123456789/5980>.
 
-The full text is deposited in IDP's institutional repository, and this site holds the
-bibliographic record with a pointer to the official source.
+The full text is deposited in open access in IDP's institutional repository, at the
+permanent address above, and is available as a
+[PDF file](https://repositorio.idp.edu.br/bitstreams/e90b5c6c-1309-4a39-a7a7-ea59313ce6ad/download).
+
+The abstract below is the one recorded in the institutional repository.
+
+> This dissertation proposes, describes and tests a replicable empirical-computational
+> method for the extraction, structuring and semantic analysis of judicial decisions with
+> the support of artificial intelligence, using state and municipal tax litigation before
+> the Brazilian Superior Court of Justice (STJ) as a testing field. The research question
+> unfolds on two levels: substantively, it asks whether lower courts uniformly apply the
+> precedents of the Superior Court of Justice regarding ICMS, ISS, ITBI and ITCMD;
+> methodologically, which is the core concern, it asks how to process large volumes of
+> decisions in a reconstructible way that is accessible to legal scholars, without prior
+> programming skills and without naive automated reading. The corpus was built from the
+> Court's own open full-text data, collected through Python web scraping and delimited by
+> the subject codes of the National Council of Justice's Unified Procedural Table,
+> covering the period from May 2022 to December 2025. The processing was organized into
+> three layers: deterministic extraction, semantic analysis (classification by a language
+> model under a closed category dictionary) and process-level consolidation. Safeguards
+> against hallucination and instability were adopted, along with human validation by
+> sampling. More than fifty-eight thousand full-text decisions were gathered, spread over
+> tens of thousands of unique cases. The findings point to the predominance of
+> admissibility barriers in access to the merits and to a relevant variation in reversal
+> rates among lower courts, consistent with the hypothesis of unevenly distributed
+> divergence, here called islands of resistance. The outcome, proper to a professional
+> master's degree, is a replicable roadmap for analysing decisions at scale, transferable
+> to other taxes, courts and fields of law.
 
 ### In preparation
 

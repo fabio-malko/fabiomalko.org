@@ -120,14 +120,15 @@ empresarial no Jusbrasil, reunidos em
 
 MALKO, Fábio André. **Extração automatizada e tratamento semântico de decisões judiciais
 com inteligência artificial**: um método replicável aplicado a pesquisa de precedentes
-tributários do STJ. 2026. Dissertação (Mestrado Profissional em Direito) — Instituto
-Brasileiro de Ensino, Desenvolvimento e Pesquisa, Brasília, 2026. Orientador:
-Prof. Dr. Luís Felipe Perdigão de Castro. Defesa em 27 de julho de 2026.
+tributários do STJ. 2026. 198 f. Dissertação (Mestrado Profissional em Direito) —
+Instituto Brasileiro de Ensino, Desenvolvimento e Pesquisa, Brasília, 2026. Orientador:
+Prof. Dr. Luís Felipe Perdigão de Castro. Defesa em 27 de julho de 2026. Disponível em:
+<https://repositorio.idp.edu.br/handle/123456789/5980>.
 [Página no sítio](artigos/dissertacao-precedentes-tributarios-stj.qmd).
 
-O trabalho está depositado no [repositório institucional do
-IDP](https://repositorio.idp.edu.br), e o endereço permanente do registro será indicado
-aqui. O texto integral também pode ser solicitado pelo endereço de contato.
+O trabalho está depositado em acesso aberto no repositório institucional do IDP, sob o
+endereço permanente acima, com o texto integral em
+[arquivo PDF](https://repositorio.idp.edu.br/bitstreams/e90b5c6c-1309-4a39-a7a7-ea59313ce6ad/download).
 
 ## Áreas de atuação acadêmica
 
