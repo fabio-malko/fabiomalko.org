@@ -33,6 +33,8 @@ website:
         text: Artigos e notas
       - href: leituras.qmd
         text: Leituras
+      - href: observatorio.qmd
+        text: Observatório
       - href: pesquisa.qmd
         text: Linha de pesquisa
       - href: curriculo.qmd
