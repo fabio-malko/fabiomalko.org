@@ -204,6 +204,10 @@ main#quarto-document-content { max-width: 46rem; }
 .referencia strong { color: var(--tinta); }
 .nota-metodo { margin-top: 2.5rem; padding-top: .9rem; border-top: 1px solid var(--linha); font-size: .85rem; color: var(--tinta-3); }
 
+// Prosa ao fim de página larga (ex.: «Sobre este painel» do Observatório).
+.prosa { max-width: 46rem; margin-top: 2.5rem; }
+.prosa h2 { font-size: 1.6rem; }
+
 // Rodapé em três colunas.
 footer.footer { border-top: 1px solid var(--linha); font-size: .85rem; color: var(--tinta-3); padding: 2rem 0 2.5rem; }
 footer.footer a { color: var(--tinta-2); }

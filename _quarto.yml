@@ -38,7 +38,7 @@ website:
       - href: observatorio.qmd
         text: Observatório
       - href: sobre.qmd
-        text: Sobre
+        text: Currículo
     right:
       - href: en/index.qmd
         text: "EN"

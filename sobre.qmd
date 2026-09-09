@@ -1,5 +1,5 @@
 ---
-title: "Sobre"
+title: "Currículo"
 subtitle: "Currículo de pesquisa, forma de citar, uso de inteligência artificial e contato"
 aliases:
   - curriculo.html
