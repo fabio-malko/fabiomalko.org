@@ -6,6 +6,33 @@ subtitle: "Inteligência artificial e pesquisa empírica em Direito: aplicaçõe
 Esta é a linha registrada no Currículo Lattes e conduzida no doutorado em curso no IDP.
 Ela parte de um resultado já defendido e avança para a pergunta que ele deixou em aberto.
 
+::: {.etapas}
+::: {.etapa}
+[01]{.n}
+
+### Onde a pesquisa está {.unnumbered .unlisted}
+Método replicável de extração e tratamento semântico sobre 62.383 decisões do STJ; validação adjudicada em 401 decisões; quatro dos dez campos passaram no critério.
+:::
+::: {.etapa}
+[02]{.n}
+
+### O achado {.unnumbered .unlisted}
+Dispersão entre campos: 0,97 na multa, 0,17 no precedente determinante. Daí a replicabilidade funcional por campo.
+:::
+::: {.etapa}
+[03]{.n}
+
+### A lacuna {.unnumbered .unlisted}
+Nenhum trabalho examinado submete o mesmo protocolo jurídico, em português, a um painel de modelos abertos e proprietários com medição formal de estabilidade.
+:::
+::: {.etapa}
+[04]{.n}
+
+### O desenho em curso {.unnumbered .unlisted}
+Painel de quatro braços — referência proprietária, aberto auto-hospedado, aberto de segundo provedor e linha de base sem generativo — com um quinto opcional.
+:::
+:::
+
 ## Onde a pesquisa está
 
 A dissertação de mestrado desenvolveu e aplicou um método replicável de extração

@@ -11,7 +11,7 @@ project:
   resources:
     - CNAME
 
-# Congela os resultados de computação: o Python roda na máquina do titular e nunca na
+# Congela os resultados de computação: o Python roda na máquina do pesquisador e nunca na
 # publicação. Versionar o diretório _freeze junto com o repositório.
 execute:
   freeze: auto
@@ -24,49 +24,70 @@ website:
   open-graph: true
   twitter-card: false
 
+  # Cinco entradas. «Sobre» reúne currículo, forma de citar, declaração de uso de IA e
+  # contato; o endereço antigo curriculo.html redireciona para ela (alias em sobre.qmd).
   navbar:
     title: "Fábio André Malko"
     left:
-      - href: index.qmd
-        text: Início
+      - href: pesquisa.qmd
+        text: Pesquisa
       - href: artigos.qmd
-        text: Artigos e notas
+        text: Publicações
       - href: leituras.qmd
         text: Leituras
       - href: observatorio.qmd
         text: Observatório
-      - href: pesquisa.qmd
-        text: Linha de pesquisa
-      - href: curriculo.qmd
-        text: Currículo
+      - href: sobre.qmd
+        text: Sobre
     right:
       - href: en/index.qmd
         text: "EN"
+    tools: []
 
   page-footer:
     left: |
       **Fábio André Malko**<br>
-      Doutorando em Direito, IDP, desde 2026
+      Doutorando em Direito, IDP, desde 2026.<br>
+      Sítio pessoal de pesquisa; não constitui canal de consulta jurídica.
     center: |
       Conteúdo sob [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/deed.pt-br),
-      salvo indicação em contrário
+      salvo indicação em contrário.<br>
+      [Declaração de uso de IA](/transparencia.qmd)
     right: |
       [ORCID](https://orcid.org/0009-0006-5975-9603) ·
       [Lattes](https://lattes.cnpq.br/6791025189749226) ·
-      [Declaração de uso de IA](/transparencia.qmd)
+      [malko@malko.adv.br](mailto:malko@malko.adv.br)<br>
+      Nenhuma fonte, script ou rastreador de terceiro é carregado.
 
 format:
   html:
+    # O claro é o padrão; o escuro só entra pelo interruptor do cabeçalho.
     theme:
-      - cosmo
-      - estilo.scss
+      light: [cosmo, estilo.scss]
+      dark: [cosmo, estilo.scss, escuro.scss]
+    grid:
+      body-width: 860px
+      sidebar-width: 240px
+      margin-width: 260px
     toc: true
     toc-title: "Nesta página"
-    css: estilo.css
     link-external-newwindow: true
     link-external-icon: false
     citations-hover: true
     lang: pt-BR
+    # Nas notas de leitura, o primeiro parágrafo é a referência bibliográfica: ganha a
+    # caixa destacada. Sem dependência externa.
+    include-after-body:
+      text: |
+        <script>
+        (function(){
+          if (!/\/leituras\/[^/]+\.html$/.test(location.pathname)) return;
+          var main = document.querySelector('main#quarto-document-content') || document.querySelector('main');
+          if (!main) return;
+          var p = main.querySelector(':scope > p');
+          if (p) p.classList.add('referencia');
+        })();
+        </script>
 
 bibliography: referencias.bib
 # csl: definir arquivo CSL da ABNT antes de usar citações

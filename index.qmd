@@ -1,73 +1,141 @@
 ---
 pagetitle: "Fábio André Malko"
+page-layout: full
 toc: false
 listing:
   - id: recentes
+    # Ordem manual: as três notas mais recentes, na mesma ordem do topo de leituras.qmd.
+    # Ao publicar nota nova, atualizar aqui também.
     contents:
-      - artigos
-      - leituras
-    type: default
-    sort: "date desc"
-    max-items: 6
-    fields: [date, title, description, categories]
-    date-format: "MMM YYYY"
+      - leituras/choi-2024.qmd
+      - leituras/cui-alexander-2026.qmd
+      - leituras/tornberg-2024.qmd
+    type: grid
+    grid-columns: 3
+    sort: false
+    fields: [categories, title, description]
+    image-height: 0px
+    max-description-length: 400
     filter-ui: false
     sort-ui: false
 ---
 
-::: {.perfil}
-![](recursos/retrato.jpg){alt="Fábio André Malko"}
+::: {.capa}
+::: {}
+[Doutorando em Direito · IDP · Quatro Barras/PR]{.olho}
 
-::: {.perfil-texto}
-## Fábio André Malko {#perfil}
+## Medir, campo a campo, o que a *inteligência artificial* lê numa decisão judicial. {.unnumbered .unlisted}
 
-::: {.perfil-papel}
-Advogado, contabilista e professor. Mestre e Doutorando em Direito pelo IDP.
+::: {.chamada}
+Pesquisa empírica em Direito aplicada ao contencioso tributário e ao Direito Penal
+Econômico. Advogado e contabilista; o que escrevo nasce de problemas reais e volta a eles.
 :::
 
-::: {.perfil-links}
+::: {.botoes}
+[Conhecer a linha de pesquisa](pesquisa.qmd){.botao .principal}
+[Abrir o Observatório da Reforma](observatorio.qmd){.botao}
+:::
+:::
+
+::: {.retrato}
+![](recursos/retrato.jpg){alt="Fábio André Malko" width="240"}
+
+::: {.identificadores}
 [ORCID 0009-0006-5975-9603](https://orcid.org/0009-0006-5975-9603)
-[Currículo Lattes](https://lattes.cnpq.br/6791025189749226)
+[Lattes 6791025189749226](https://lattes.cnpq.br/6791025189749226)
 [malko@malko.adv.br](mailto:malko@malko.adv.br)
 :::
 :::
 :::
 
-Este endereço reúne o que escrevo e o que leio em direito tributário, penal econômico,
-empresarial e no uso de IA para pesquisa jurídica.
+::: {.indicadores}
+::: {.indicador}
+[62.383]{.numero}
+[decisões do STJ no corpus da dissertação (ICMS, ISS, ITBI e ITCMD)]{.legenda}
+:::
+::: {.indicador}
+[31]{.numero}
+[notas de leitura sobre trabalhos de outros autores]{.legenda}
+:::
+::: {.indicador}
+[4]{.numero}
+[publicações próprias com referência, veículo e DOI]{.legenda}
+:::
+::: {.indicador}
+[5 + 26]{.numero}
+[ações no STF e processos no DataJud acompanhados pelo Observatório]{.legenda}
+:::
+:::
 
-A pergunta que orienta a minha pesquisa nasceu da dupla formação em Direito e em
-Contabilidade. Quem trabalha com matéria tributária pelos dois lados convive diariamente
-com a distância entre o que uma decisão judicial afirma e o que dela se consegue extrair
-de forma sistemática. Foi essa distância que me levou à pesquisa empírica assistida por
-computador, e dela ao problema que hoje ocupa a minha [linha de
-pesquisa](pesquisa.qmd), que é medir campo a campo, em português, a estabilidade da
-anotação de decisões judiciais feita por modelos de linguagem.
+::: {.duas-colunas}
+::: {}
+[A pergunta]{.olho}
 
-Defendi a dissertação de mestrado no IDP em julho de 2026 e sigo no doutorado na mesma
-instituição. A atuação profissional em contencioso tributário e em direito penal
-econômico, exercida em todos os estados da federação, é o terreno em que essas perguntas
-nascem e o que mantém a pesquisa presa a problemas reais. O [currículo](curriculo.qmd)
-reúne a formação, a produção e o histórico profissional.
+::: {.citacao}
+Um modelo de linguagem anota a mesma decisão da mesma forma duas vezes? E em português,
+sobre acórdãos brasileiros, campo a campo?
+:::
+:::
 
-## O que há aqui
+::: {}
+A dissertação de mestrado mediu concordância de 0,97 no campo da multa e de 0,17 no do
+precedente determinante, no mesmo corpus, com o mesmo modelo, no mesmo dia. Uma variação
+dessa ordem torna insuficiente qualquer afirmação global sobre reprodutibilidade e impõe
+que a medida seja feita e declarada campo a campo.
 
-Em [artigos e notas](artigos.qmd) fica a produção própria, do artigo submetido a
-periódico à nota curta escrita para o sítio, sempre com indicação do veículo em que
-o texto saiu, quando for o caso.
+O doutorado submete o mesmo protocolo a um painel de modelos abertos e proprietários, com
+medição formal de estabilidade — a interseção que nenhum dos trabalhos levantados até aqui
+ocupa.
 
-Em [leituras](leituras.qmd) ficam notas curtas sobre trabalhos de outros autores que li
-e achei relevantes, com o registro do que me interessou em cada um e remissão ao texto
-integral.
+[Ler o desenho da pesquisa →](pesquisa.qmd)
+:::
+:::
 
-A [linha de pesquisa](pesquisa.qmd) apresenta o programa em curso, registrado como
-«Inteligência artificial e pesquisa empírica em Direito: aplicações ao contencioso
-tributário e ao Direito Penal Econômico».
+::: {.secao}
+::: {.secao-cabeca}
+::: {}
+[Recentes]{.olho}
 
-## Publicado recentemente
+## Últimas leituras {.unnumbered .unlisted}
+:::
+[Todas as leituras →](leituras.qmd)
+:::
 
 ::: {#recentes}
 :::
+:::
 
-Sobre o método de trabalho, inclusive quanto ao uso de inteligência artificial na
-produção deste sítio, há [declaração própria](transparencia.qmd).
+::: {.secao}
+::: {.faixa}
+::: {}
+[Painel público · dados abertos]{.olho}
+
+## Observatório da Reforma {.unnumbered .unlisted}
+
+As ações judiciais sobre a reforma tributária do consumo — EC 132/2023, LC 214/2025 e
+LC 227/2026 — conferidas na fonte: controle concentrado no STF e processos com assunto
+de IBS e CBS no DataJud, cada um com ficha, cronologia e link para a íntegra.
+
+[Abrir o painel](observatorio.qmd){.botao}
+:::
+
+::: {.placar}
+::: {}
+[5]{.numero}
+[ações de controle concentrado no STF]{.legenda}
+:::
+::: {}
+[3]{.numero}
+[já julgadas no mérito]{.legenda}
+:::
+::: {}
+[26]{.numero}
+[processos localizados no DataJud]{.legenda}
+:::
+::: {}
+[25]{.numero}
+[ajuizados em 2026]{.legenda}
+:::
+:::
+:::
+:::

@@ -1,6 +1,7 @@
 ---
-title: "Artigos e notas"
-subtitle: "Produção própria em direito tributário, penal econômico, societário e método de pesquisa"
+title: "Publicações"
+subtitle: "Artigos em periódico, dissertação e notas escritas para este sítio"
+toc: false
 listing:
   id: producao
   contents: artigos
@@ -10,8 +11,8 @@ listing:
   categories: true
   feed: true
   filter-ui: true
-  sort-ui: [date, title]
-  date-format: "D [de] MMMM [de] YYYY"
+  sort-ui: false
+  date-format: "MMMM [de] YYYY"
 ---
 
 Reúno aqui o que escrevo, do artigo submetido a periódico à nota curta redigida para

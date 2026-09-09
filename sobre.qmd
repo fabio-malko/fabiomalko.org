@@ -1,7 +1,10 @@
 ---
-title: "Currículo de pesquisa"
-subtitle: "Atualizado a partir do Currículo Lattes de 31 de julho de 2026"
+title: "Sobre"
+subtitle: "Currículo de pesquisa, forma de citar, uso de inteligência artificial e contato"
+aliases:
+  - curriculo.html
 ---
+
 
 ## Identificação
 
@@ -147,8 +150,22 @@ Inglês e espanhol, com leitura e compreensão em nível razoável.
 Cada artigo, nota e ficha de leitura traz autoria nominal e forma própria de citação na
 respectiva página.
 
+## Uso de inteligência artificial
+
+A estrutura, a redação e a revisão do conteúdo deste sítio contam com assistência de modelo
+de linguagem, sob revisão integral do pesquisador responsável. Nenhuma referência,
+citação, julgado, dispositivo legal ou dado numérico é produzido por geração automática
+sem conferência contra a fonte primária. A [declaração completa](transparencia.qmd) diz
+como os modelos são empregados na produção do sítio e na pesquisa.
+
 ## Contato
 
 [malko@malko.adv.br](mailto:malko@malko.adv.br)
 
 WhatsApp: [(41) 9 8850-7680](https://wa.me/5541988507680)
+
+::: {.aviso}
+Este endereço reúne pesquisa e produção acadêmica e não constitui canal de consulta
+jurídica. A leitura de qualquer texto aqui publicado não substitui exame de situação
+determinada.
+:::

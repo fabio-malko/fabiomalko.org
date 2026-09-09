@@ -1,0 +1,32 @@
+/*-- scss:defaults --*/
+
+// Tema escuro, ativado apenas pelo interruptor do cabeçalho. O padrão do sítio é o claro.
+$body-bg: #111519 !default;
+$body-color: #e8e4dc !default;
+$link-color: #8fb4d6 !default;
+$link-hover-color: #b7d0e6 !default;
+$navbar-bg: #111519 !default;
+$navbar-fg: #e8e4dc !default;
+$navbar-hl: #e8e4dc !default;
+$footer-bg: #111519 !default;
+$footer-fg: #847e74 !default;
+$toc-color: #b4aea3 !default;
+$code-bg: #181e25 !default;
+
+/*-- scss:rules --*/
+
+:root {
+  --papel: #111519;
+  --papel-2: #181e25;
+  --tinta: #e8e4dc;
+  --tinta-2: #b4aea3;
+  --tinta-3: #847e74;
+  --linha: #2a323c;
+  --marinho: #8fb4d6;
+  --marinho-2: #b7d0e6;
+  --bronze: #c9a26a;
+  --bronze-suave: #2a241a;
+  --faixa-bg: #0c2338;
+}
+.botao.principal { color: #0c2338 !important; }
+.quarto-listing-category .category.active { color: #0c2338; }

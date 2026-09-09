@@ -1,6 +1,7 @@
 ---
 title: "Leituras"
 subtitle: "Notas curtas sobre trabalhos de outros autores"
+toc: false
 listing:
   id: fichas
   contents:
@@ -37,11 +38,10 @@ listing:
     - leituras/barrie-2026.qmd
   type: default
   sort: false
-  fields: [title, description, categories]
   categories: true
-  feed: false
   filter-ui: true
   sort-ui: false
+  fields: [title, description, categories]
 ---
 
 Registro aqui o que ando lendo e o que me chamou atenção em cada trabalho. Cada nota traz
