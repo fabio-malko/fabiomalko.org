@@ -5,6 +5,21 @@ toc: false
 listing:
   id: fichas
   contents:
+    - leituras/hu-2026.qmd
+    - leituras/zahraei-2026.qmd
+    - leituras/xie-2026.qmd
+    - leituras/zeloni-2026.qmd
+    - leituras/zhao-2026.qmd
+    - leituras/finley-2026.qmd
+    - leituras/arawjo-2026.qmd
+    - leituras/won-2026.qmd
+    - leituras/rehman-2026.qmd
+    - leituras/hong-2026.qmd
+    - leituras/lyu-2026.qmd
+    - leituras/marwah-2026.qmd
+    - leituras/ye-2026.qmd
+    - leituras/lewis-lim-2026.qmd
+    - leituras/cong-2026.qmd
     - leituras/choi-2024.qmd
     - leituras/cui-alexander-2026.qmd
     - leituras/tornberg-2024.qmd

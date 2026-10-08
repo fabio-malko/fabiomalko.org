@@ -1,0 +1,21 @@
+---
+title: "Rehman (2026): o filtro conformal leva a factualidade a cerca de 96%, mas retém só 4% a 31% das afirmações"
+description: "Em RAG de múltiplos saltos, metas conformais mais severas elevam a fração de respostas inteiramente apoiadas, ao preço de reter poucas afirmações e de devolver muitas respostas vazias, que satisfazem o critério de modo vacuoso."
+categories: [Estado da arte em IA, Método de pesquisa]
+---
+
+REHMAN, Muhammad Aimal; YEH, Chi-Kuang. Conformal factuality control for multi-hop
+retrieval-augmented generation. **arXiv**, 2026. Depósito arXiv:2609.38222 [cs.CL],
+versão 1, de 27 set. 2026. DOI:
+[10.48550/arXiv.2609.38222](https://doi.org/10.48550/arXiv.2609.38222).
+
+Os autores perguntam se o controle conformal de factualidade no nível da afirmação, desenvolvido para a geração aumentada por recuperação (*retrieval-augmented generation*, RAG) de etapa única, continua eficaz quando a evidência é recuperada em até três saltos dependentes (p. 5). Aplicam filtragem *split-conformal* às afirmações atômicas das respostas, com Llama 3.1 8B e GPT-4o-mini sobre HotpotQA, Natural Questions e TriviaQA (p. 7, Tabela 1), em subconjuntos de 60 perguntas por base (p. 7), divididos em 30 exemplos de calibração e 30 de teste, em 100 partições (p. 6). Na meta de 95%, a fração de respostas inteiramente apoiadas vai de 95,80% a 97,20%, contra 55,60% a 76,03% sem filtragem; em contrapartida, apenas 4,41% a 31,09% das afirmações são retidas e só 9,70% a 51,40% das respostas permanecem não vazias (p. 8, Tabela 2). Como a resposta vazia satisfaz o evento de modo vacuoso, o GPT-4o-mini em HotpotQA e em NQ alcança 97,20% e 96,43% com 10,80% e 9,70% de respostas não vazias, e o suporte integral entre as não vazias cai a 78,48% e 71,72% (p. 9).
+
+O que me interessa é a tríade de medidas, porque ela impede a leitura ingênua do resultado. Em verificação de citações jurídicas por modelo de linguagem, a taxa de respostas inteiramente apoiadas pode ser apresentada como virtude da ferramenta. O trabalho mostra que, num filtro calibrado, essa taxa pode decorrer sobretudo de abstenção, avalia em conjunto o suporte, a retenção de afirmações e a cobertura de respostas não vazias (p. 7) e, na linha de Chen et al. (2026), reforça a necessidade de reportá-los juntos (p. 10). Os autores lembram ainda que a meta 1−α é a probabilidade-alvo para a resposta filtrada, e não a fração de afirmações corretas em cada resposta (p. 4). Os limites são por eles declarados: subconjuntos de 60 perguntas, 100 execuções que repartem respostas fixas e não gerações independentes, anotação de suporte por modelo verificador, decomposição automática das afirmações e garantia dependente de permutabilidade entre calibração e teste (p. 10). As bases são de perguntas gerais ligadas à Wikipédia (p. 2), e o trabalho não toca o direito. A transposição é hipótese minha: aplicado a perguntas sobre a jurisprudência do STJ, com anotação humana de suporte, o filtro talvez eleve a factualidade nominal à meta enquanto o suporte entre as respostas não vazias permanece abaixo dela, como ocorreu aqui com o GPT-4o-mini, hipótese que só experimento próprio, com juristas anotando, poderia testar.
+
+**Texto integral:** [arXiv:2609.38222, na fonte](https://arxiv.org/abs/2609.38222)
+
+::: {.nota-metodo}
+Nota escrita a partir da leitura integral do trabalho, com assistência de modelo de
+linguagem na redação e revisão do autor.
+:::

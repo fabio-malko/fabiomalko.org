@@ -1,0 +1,23 @@
+---
+title: "Zhao (2026): citações fundamentadas na fonte convivem com F1 de 0,65 e alucinação de 0,48 quando a evidência falta"
+description: "Os autores propõem medir a fundamentação de respostas com citação pelo casamento exato de números, sem anotação de especialista, e mostram que o modelo cita bem, acerta menos o que se perguntou e, em quase metade dos casos, produz número ou citação quando o trecho necessário é retirado do contexto."
+categories: [Estado da arte em IA, Método de pesquisa]
+---
+
+ZHAO, Yingzhu; PANDELEA, Vlad; YUAN, Han; HU, Bo; LUO, Wuqiong; ZHANG, Li; MA,
+Zheng. A citation-grounded benchmark for trustworthy earnings call transcript
+analysis with large language models. **arXiv**, 2026. Depósito arXiv:2610.00969
+[cs.CL], versão 1, de 1 out. 2026. Trabalho identificado na primeira página como
+destinado ao Third NeurIPS Workshop on Attributing Model Behavior at Scale: Data
+Attribution and Provenance (NeurIPS 2026). DOI: [10.48550/arXiv.2610.00969](https://doi.org/10.48550/arXiv.2610.00969).
+
+Os autores, da área de ciência de decisão da American Express, propõem avaliar respostas de modelos de linguagem formadas por pares afirmação-citação, sobre transcrições de teleconferências de resultados, sem anotação de especialista. A *numeric evidence evaluation* extrai os números relevantes da afirmação, da citação e do contexto, normaliza-os em tipo, valor e unidade e conta como acerto o casamento exato (p. 3). Aplicada a seis configurações com GPT-4.1, sobre as transcrições do quarto trimestre de 2024 das cem maiores empresas do S&P 500 (p. 4-5), a métrica indica fundamentação alta: entre 0,970 e 0,982 na relação afirmação-contexto, entre 0,989 e 0,995 na citação-contexto e entre 0,907 e 0,959 na afirmação-citação (p. 3, Tabela 1). A correção, medida no ECTs-100, conjunto construído automaticamente com perguntas cuja resposta é um número extraído do texto, é menor: a precisão das citações chega a 0,9721, a revocação fica em 0,7139 e o F1 normalizado das afirmações é de 0,6468 (p. 6). Quando a frase que contém o número é retirada do contexto, a taxa média de alucinação é de 0,4834, ou seja, o modelo produz número ou citação em vez de declarar que não pode responder (p. 6). Os próprios autores ressalvam que a métrica não foi validada contra julgamento humano, que conta como coincidentes números iguais referidos a entidades ou períodos distintos, que só um modelo foi usado e que os gabaritos são gerados automaticamente (p. 10).
+
+Interessa-me a separação em três relações: afirmação-citação, afirmação-fonte e citação-fonte. Por interpretação minha, e não dos autores, ela se transpõe à verificação de citação jurisprudencial por modelo: a ementa transcrita existe no acórdão, a tese afirmada consta dele e o trecho invocado a sustenta. O resultado também ilustra um ponto da minha tese, o de que um índice agregado alto não diz se a resposta é idônea, pois fundamentação acima de 0,9 convive com correção moderada e com alucinação em quase metade dos casos sem evidência. O protocolo de *conscious incompetence*, que retira do contexto o trecho necessário e mede se o modelo se abstém, pode ser reaproveitado para testar se um sistema jurídico fabrica citação em vez de declarar insuficiência, questão que toca o dever de fundamentação. Os limites pesam na transposição. A métrica só casa números exatos e, tal como desenhada, exclui datas, períodos e identificadores (p. 3); no direito, ela alcançaria valores e quantidades, e conferir número de processo, data ou dispositivo exigiria adaptá-la, sem que nenhuma das duas versões chegue ao conteúdo jurídico da tese. Falta, ainda, a medida de concordância entre a métrica automática e anotadores humanos, que a pesquisa teria de fazer. O domínio é financeiro e o modelo avaliado é um só.
+
+**Texto integral:** [arXiv:2610.00969, na fonte](https://arxiv.org/abs/2610.00969)
+
+::: {.nota-metodo}
+Nota escrita a partir da leitura integral do trabalho, com assistência de modelo de
+linguagem na redação e revisão do autor.
+:::

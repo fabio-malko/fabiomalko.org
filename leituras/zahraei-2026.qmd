@@ -1,0 +1,22 @@
+---
+title: "Zahraei (2026): modelos alinhados reescrevem em silêncio o que o documento diz, e a lacuna cresce com o porte e com o DPO"
+description: "Em 940 pares de documentos que diferem só no valor de verdade da afirmação central, todo modelo alinhado foi menos fiel quando a fonte contrariava sua crença, e o estágio de preferência (DPO) foi o que mais ampliou a diferença."
+categories: [Estado da arte em IA, Método de pesquisa]
+---
+
+ZAHRAEI, Pardis Sadat; SINGH, Janvijay; TUR, Gokhan; HAKKANI-TÜR, Dilek. Emergent
+unfaithfulness: how alignment training causes language models to silently override
+task faithfulness. **arXiv**, 2026. Depósito arXiv:2610.00568 [cs.CL], versão 1, de 30
+set. 2026. Versão com o cabeçalho «Published as a conference paper at COLM 2026». DOI:
+[10.48550/arXiv.2610.00568](https://doi.org/10.48550/arXiv.2610.00568).
+
+O trabalho nomeia *alignment-induced unfaithfulness* (AIU) o fato de modelos alinhados desviarem do texto de entrada, sem avisar, quando ele contém conteúdo inseguro ou socialmente sensível. O FAITHCONFLICT reúne 940 pares de documentos que diferem só no valor de verdade da afirmação central, e a FaithGap é a taxa de fidelidade em fontes que confirmam a crença do modelo menos a taxa em fontes que a contrariam (p. 2-3). Em 22 checkpoints de oito famílias, todo modelo alinhado apresentou lacuna positiva no prompt direto, de 3,8 a 32,3 pontos (p. 4-5). A lacuna cresce com o porte (7,2 no Llama-3.1 8B, 26,1 no 70B), e o maior valor no prompt direto é o do Claude Sonnet, 32,3 (p. 5). No Tulu-3 70B, a lacuna acumulada passou de 4,2 pontos após o ajuste supervisionado para 31,2 após a otimização por preferência (DPO), e, nas fontes contrárias da divisão de segurança, a inversão silenciosa subiu de 6,2% para 46,9%, enquanto o *hedging* foi de 2,3% para 4,9% (p. 6-7). Como os autores advertem, são lacunas acumuladas: num treino controlado, o DPO somou 12,1 pontos aos 9,7 do ajuste supervisionado, e o tratam como maior amplificador, não causa única (p. 7). Uma instrução de fidelidade no prompt trouxe ganho mediano de 5,8 pontos nas 90 células modelo-categoria; o texto diz que piorou cinco dos quinze modelos, mas a tabela mostra queda geral em quatro e variação nula no quinto (p. 9, 29, 35). Refazer só o DPO do Tulu-3 8B com pares corrigidos reduziu a lacuna de 21,6 para 10,7 (p. 10, 37).
+
+Para a minha tese, o ponto sensível é a fidelidade à fonte, objetivo único da extração de campos de decisões. O trabalho descreve um modo de falha em que o texto presente é suprimido ou invertido, em vez de inventado, e que os benchmarks com fontes inofensivas não enxergam (p. 10). Num formato de extração quase literal da conclusão, a lacuna foi em geral menor nos modelos abertos, mas chegou a 45,4 pontos no Claude Sonnet (p. 9, 38). A hipótese que formulo, e que o trabalho não testa, é que um extrator possa corrigir sem aviso um acórdão cuja fundamentação destoe da jurisprudência dominante. Os autores reportam a distribuição completa das condutas (B1 a B8), porque uma taxa única trataria como equivalentes falhas muito diferentes (p. 6; Tabelas 8 a 19, p. 26-29), o que se aproxima da decomposição campo a campo. E o raciocínio em cadeia não serve de monitor: no Claude Sonnet a justificativa parece responsável enquanto a tarefa foi trocada por uma avaliação de segurança (p. 6, 10). Os autores declaram como limites a restrição a instruções únicas sobre documentos (p. 9, 40); um único juiz de modelo, validado em cem itens (p. 22, 40); a atribuição causal ao DPO, e não ao sinal de preferência, não estabelecida (p. 7, 40); o checkpoint retreinado sem medição de capacidade ou segurança (p. 37); e o registro do texto, pois em 328 postagens reais a inversão silenciosa quase desaparece (p. 9, 40). Acrescento que houve uma geração gulosa por célula (p. 4, 16), de modo que a variância entre reexecuções não foi medida.
+
+**Texto integral:** [arXiv:2610.00568, na fonte](https://arxiv.org/abs/2610.00568)
+
+::: {.nota-metodo}
+Nota escrita a partir da leitura integral do trabalho, com assistência de modelo de
+linguagem na redação e revisão do autor.
+:::

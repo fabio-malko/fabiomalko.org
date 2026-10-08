@@ -1,0 +1,22 @@
+---
+title: "Zeloni (2026): um juiz de modelo barato entrega saída impecável e mal distingue resposta fiel de infiel"
+description: "O AGO AI Quality Gate trata dado ausente e erro do juiz como resultados explícitos da decisão de liberar uma versão de RAG; no RAGBench, o juiz barato teve AUROC de 0,603 sem emitir um único erro de protocolo."
+categories: [Estado da arte em IA, Método de pesquisa]
+---
+
+ZELONI, Giulio; LO CONTE, Enrico; RIONERO, Salvatore; SANTORO, Giuseppe; RASTELLI,
+Alessandro; SORRENTINO, Fabio. AGO AI Quality Gate: evidence-first release decisions
+for retrieval-augmented generation. **arXiv**, 2026. Depósito arXiv:2610.01218 [cs.CL],
+versão 1, de 1 out. 2026. DOI:
+[10.48550/arXiv.2610.01218](https://doi.org/10.48550/arXiv.2610.01218).
+
+Os autores, da Protom Group, descrevem o AGO AI Quality Gate, plataforma usada em consultorias de avaliação de sistemas de geração aumentada por recuperação (*retrieval-augmented generation*, RAG) para decidir se uma versão deve ser promovida, revisada ou bloqueada. O arranjo combina um modelo de decisão com quatro estados, no qual dado ausente e erro do juiz de linguagem aparecem como resultados explícitos (p. 5), um portão estatístico beta-binomial estratificado, que estima a probabilidade de regressão entre versões, e um protocolo obrigatório de meta-avaliação do juiz antes que ele influencie qualquer decisão (p. 6-7). Como os dados dos clientes são proprietários, a camada do juiz foi testada no RAGBench, com 1.200 instâncias por juiz. O modelo barato, gpt-4.1-nano, obteve AUROC de 0,603 [0,570; 0,634] na detecção de respostas não aderentes ao contexto, embora tenha emitido zero erros de protocolo e explicações bem formadas; o gpt-4o chegou a 0,783 [0,756; 0,807] (p. 9, Tabela 2). Mesmo o juiz forte oscila entre AUROC de 0,620 (cuad, contratos) e 0,883 (expertqa), e entre MCC de 0,040 e 0,618 no limiar adotado (p. 9 e 11, Tabela 3). Um piloto com 300 instâncias dera 0,563 [0,495; 0,631], intervalo que inclui o acaso (p. 9). Em simulação sintética com 1.000 réplicas por cenário e tamanho de amostra, o perfil *decision_grade* promoveu de 22,2% a 35,1% das versões regredidas, contra 29,3% a 41,8% de um critério ingênuo, ao custo de enviar de 23,8% a 48,6% das versões inalteradas a revisão ou bloqueio (p. 11-12, Tabela 4).
+
+A relevância para a minha pesquisa está no instrumento de medida. Quando um modelo julga ou valida a saída de outro, como ocorreria na verificação de campos extraídos de acórdãos, a validade do juiz precisa ser demonstrada em cada domínio, e o trabalho oferece números que sustentam isso: o juiz barato não emitiu sinal algum da falha (p. 9), e o forte variou de MCC 0,040 a 0,618 conforme o conjunto de dados (p. 9, 11). O conjunto de contratos, cuad, é justamente o de menor AUROC do juiz forte (p. 9, 11). Relaciono a isso o problema da citação inventada, que também chega em forma impecável. A regra de que ausência de evidência produz *não avaliável* ou revisão manual, nunca aprovação (p. 5), parece-me uma boa tradução operacional do dever de fundamentação diante de decisão assistida, interpretação que é minha e não dos autores. Os limites merecem registro. Os rótulos do RAGBench vêm de anotadores de modelo calibrados com humanos, e não de verdade de terreno (p. 3); cada conjunto teve 100 instâncias, sem pretensão de estimar desempenho populacional (p. 8); o juiz rodou a temperatura zero numa única chamada, e a análise de variância por caso em amostragem repetida fica como trabalho futuro (p. 4, 13), de modo que a reprodutibilidade que me interessa não foi medida; a simulação do portão usa dados sintéticos e execuções independentes (p. 11), e os autores afirmam que os resultados não validam o portão completo (p. 10).
+
+**Texto integral:** [arXiv:2610.01218, na fonte](https://arxiv.org/abs/2610.01218)
+
+::: {.nota-metodo}
+Nota escrita a partir da leitura integral do trabalho, com assistência de modelo de
+linguagem na redação e revisão do autor.
+:::

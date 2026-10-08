@@ -1,0 +1,18 @@
+---
+title: "Arawjo (2026): rodar testes sobre notas brutas de juiz de linguagem infla falsos positivos e, em dados numéricos, o risco é maior onde a concordância parece excelente"
+description: "O autor simula intervalos e testes para avaliações com menos de 100 itens, mostra que a concordância alta entre juiz e humanos não autoriza testes sobre as notas do juiz e propõe testes corrigidos por inferência apoiada em predição, reunidos no pacote evalstats."
+categories: [Estado da arte em IA, Método de pesquisa]
+---
+
+ARAWJO, Ian. How to run statistics over LLM judges and trust the results: calibrated inference for small-sample AI evaluation with evalstats. **arXiv**, 2026. Depósito arXiv:2609.35815 [cs.CL], versão 1, de 20 set. 2026. DOI: [10.48550/arXiv.2609.35815](https://doi.org/10.48550/arXiv.2609.35815).
+
+O trabalho trata de dois problemas de quem avalia sistemas de IA com amostras pequenas e juízes de linguagem (*LLM judges*): que intervalos de confiança, testes e correções de erro por família usar com menos de 100 itens, e como fazer estatística sobre notas atribuídas por modelo. Por simulações de Monte Carlo, o autor recomenda o intervalo de Bonett-Price para dados binários pareados e a correção de Romano-Wolf a partir de 30 itens, e desaconselha intervalos por *bootstrap*, que ficaram sobreconfiantes quase em toda parte (p. 6-7, Figuras 2 e 3). O achado central é que testes sobre as notas brutas do juiz inflam os falsos positivos. Na maioria das métricas em dados Likert, o risco atinge o máximo na faixa de concordância 0,80 a 0,90, a de acordo "quase perfeito". Em dados binários, kappa mais alto reduz o risco sem eliminá-lo, e com 0,81 o falso positivo ainda ficou em cerca de 37% (p. 8-10, Figura 6 e nota 7). Como alternativa, implementa nove testes corrigidos por inferência apoiada em predição (*prediction-powered inference*, PPI), entre eles, segundo ele, as primeiras correções para quatro testes baseados em postos (p. 8). A regra prática é buscar ρ² de pelo menos 0,4 entre juiz e humanos, o que rende cerca de 1,5 vez a amostra humana efetiva; abaixo de 0,2, o juiz não justifica o uso (p. 9-10). Numa demonstração com 860 respostas reais, o teste de Kruskal-Wallis sobre as notas brutas rejeitou a hipótese nula (p = 1,9 × 10^-4); o corrigido não rejeitou (p = 0,31) (p. 14-15).
+
+O que me interessa é a advertência metodológica, que alcança qualquer pesquisa que use modelo para avaliar a saída de outro modelo. Na minha tese, validar a extração de campos de decisões tributárias contra um gabarito humano é a regra, e o trabalho mostra que um índice de concordância sozinho, por mais alto que seja, não certifica o avaliador; isso reforça a distinção entre acurácia agregada e idoneidade decisória. Os limites estão no próprio texto: a correção exige amostra rotulada por humanos escolhida ao acaso, e a confiança no resultado depende da qualidade desses rótulos (p. 10, 14 e 16); no pacote, a correção por PPI pede ao menos 50 itens e um único fator e não se combina com dados de múltiplas execuções (p. 5); e os intervalos de comparação entre pares em delineamentos entre sujeitos ainda não foram validados (p. 5 e 16). O pacote aceita dados de múltiplas execuções e informa a variância por item, mas adia a validação dos intervalos para esse caso (p. 5), o que toca a minha preocupação com a variância entre reexecuções do mesmo comando. A ponte para o contencioso e para a prova pericial por modelo é interpretação nossa; o trabalho não trata de direito.
+
+**Texto integral:** [arXiv:2609.35815, na fonte](https://arxiv.org/abs/2609.35815)
+
+::: {.nota-metodo}
+Nota escrita a partir da leitura integral do trabalho, com assistência de modelo de
+linguagem na redação e revisão do autor.
+:::

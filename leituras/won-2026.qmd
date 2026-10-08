@@ -1,0 +1,21 @@
+---
+title: "Won (2026): um classificador leve antes do LLM melhora a abstenção diante de ruído de recuperação simulado, mas não em todas as bases"
+description: "O arranjo em dois estágios, com uma peneira que detecta evidência conflitante antes do gerador, eleva a acurácia de sistema em relação ao modelo sem ajuste e, em sete de oito bases, ao DTA-chatQA, mas perde para o gerador ajustado isolado em parte das bases gerais, em testes cujo ruído é predominantemente simulado."
+categories: [Estado da arte em IA, Método de pesquisa]
+---
+
+WON, Jongbin; AN, Sung Geun; LEE, Jay-Yoon. Sieve and Sage: efficient distraction
+filtering for reliable RALM abstention. **arXiv**, 2026. Depósito arXiv:2609.35794
+[cs.CL], versão 1, de 17 set. 2026. DOI:
+[10.48550/arXiv.2609.35794](https://doi.org/10.48550/arXiv.2609.35794).
+
+Os autores separam duas falhas de recuperação em modelos de linguagem aumentados por recuperação (RALM): o estado irrespondível, em que falta a evidência necessária, e o estado distraído, em que a evidência pertinente convive com documento conflitante, negado ou adversarial (p. 4). A peneira (*Sieve*) é um Longformer-base-4096 de 149 milhões de parâmetros que barra o conjunto distraído antes de o gerador (*Sage*) responder ou abster-se; o gerador é um Llama-3-8B-Instruct ajustado, substituído pelo Med42-8B nas bases médicas e pelo AstroSage-8B na astronômica (p. 6-7; p. 15, Tabela 8). A peneira é treinada só com documentos conflitantes como exemplos positivos e testada também contra os negados e os adversariais (p. 4), em cinco bases gerais e três especializadas (p. 6, Tabela 1). Em NQ-google, a acurácia de sistema é de 0,796, contra 0,102 do modelo sem ajuste e 0,230 do DTA-chatQA, com latência de 379,6 ms contra 756,3 ms deste último, o que dá a aceleração de 1,99 vez (p. 8; p. 19, Tabela 15). Em MedQA, frente ao DTA-chatQA, as respostas incorretas caem de 319 para 140 e as abstenções corretas sobem de 108 para 289, ao custo de cobertura de 0,914 para 0,862 e de acurácia seletiva de 0,509 para 0,460 (p. 8).
+
+Interessa-me a taxonomia dos estados de recuperação. Na verificação de citações jurídicas por modelo de linguagem, objeto da minha tese, o acórdão que não existe corresponde ao estado irrespondível, e o precedente superado ou de sentido invertido, ao estado distraído. Essa ponte é interpretação minha, porque o trabalho não trata de direito e nenhuma das oito bases de teste é jurídica. Os limites incluem o que os autores declaram, a saber, ruído predominantemente simulado e um ponto ótimo entre abster-se e responder que depende do custo relativo de cada erro (p. 9-10), e o que a Tabela 15 revela (p. 19): o gerador ajustado isolado (*Sage-only*) supera o arranjo completo em acurácia de sistema em NQ-wiki (0,792 contra 0,638), em WebQ (0,746 contra 0,578) e em RAG-Bench (0,397 contra 0,368), e em BioASQ o DTA-chatQA fica à frente (0,456 contra 0,428). A aceleração de até 1,99 vez é medida contra o DTA-chatQA. A acurácia de sistema soma acerto e abstenção correta (p. 7), de modo que, sozinha, não informa se a resposta emitida sustentaria uma peça. Por isso eu leria o ganho como demonstração de um desenho, e não como estimativa de desempenho em jurisprudência brasileira.
+
+**Texto integral:** [arXiv:2609.35794, na fonte](https://arxiv.org/abs/2609.35794)
+
+::: {.nota-metodo}
+Nota escrita a partir da leitura integral do trabalho, com assistência de modelo de
+linguagem na redação e revisão do autor.
+:::

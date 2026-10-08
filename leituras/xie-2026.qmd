@@ -1,0 +1,21 @@
+---
+title: "Xie (2026): a auditoria do próprio texto da OpenAI Model Spec achou cinco inconsistências validadas"
+description: "O VeriSpec extrai regras da especificação, agrupa as que podem colidir e exige de um modelo verificador uma situação concreta antes de aceitar a inconsistência; de 13 candidatos, cinco foram validados por dois revisores."
+categories: [Estado da arte em IA, Método de pesquisa]
+---
+
+XIE, Zichen; PAWAGI, Mrigank; SHAO, Lize; HU, Yang; WANG, Wenxi. Detecting
+inconsistencies in model specifications with LLM-as-verifier reasoning. **arXiv**,
+2026. Depósito arXiv:2610.01847 [cs.SE], versão 1, de 1 out. 2026. DOI:
+[10.48550/arXiv.2610.01847](https://doi.org/10.48550/arXiv.2610.01847).
+
+Os autores propõem o VeriSpec, método para detectar inconsistências no próprio texto de uma especificação de modelo, isto é, nos princípios que dizem como um modelo de linguagem deve se comportar, sem testar o comportamento de modelo algum. O método mantém a especificação em linguagem natural e usa um modelo como verificador (*LLM-as-verifier*) em três estágios: extração de regras com precondição, pós-condição, nível de autoridade e contexto; agrupamento das regras por tópico em um grafo, formando unidades de análise do mesmo nível de autoridade; e verificação de cada unidade, em que só se aceita o achado acompanhado de uma situação concreta, de um argumento de que as duas pós-condições não se satisfazem em conjunto e de evidência de que o contexto não resolve o conflito (p. 2, 4-7). Aplicado à OpenAI Model Spec, na versão de 18 de agosto de 2026, o método extraiu 405 regras e formou 32 unidades (p. 2, 6-7). Depois de cinco passadas por unidade, restaram 13 candidatos, dos quais dois revisores validaram cinco, com precisão de 38,5% e custo de US$ 11,12 por inconsistência validada (p. 7, Tabela 1; p. 8). As bases de comparação, sem a etapa de verificação ou sem o grafo, validaram de zero a três; a variante que usa as mesmas unidades mas pede a detecção direta reportou 221 candidatos e validou três, com 1,4% de precisão (p. 7, 9). Os autores relatam ter comunicado os cinco casos aos responsáveis pela especificação, que reagiram de modo positivo (p. 1-2).
+
+Interessa-me por dois motivos que tocam a tese. O primeiro é que o trabalho recusa tratar a especificação como gabarito: os autores sustentam que garantir que os modelos sigam sua especificação é só parte do problema, porque a própria especificação precisa ser consistente (p. 10). A observação vale para qualquer avaliação que meça acerto contra um padrão de referência, como a minha, em que o gabarito das decisões do STJ e do CARF é construído por pessoas e pode conter defeitos que a acurácia agregada não revela. O segundo é de método. Os autores repetem a verificação cinco vezes por unidade para reduzir achados perdidos, e o total acumulado de candidatos distintos só chega aos 13 na quinta tentativa, a última realizada (p. 7-8, Figura 4). Leio nisso, por conta própria, um indício de que uma execução isolada subestima o que o modelo produz e de que, no meu protocolo de replicabilidade, a variância entre reexecuções deve ser reportada. A exigência de testemunho concreto lembra a verificação de citação que procuro aplicar a precedentes. Também como leitura própria, vejo na busca de antinomias entre princípios um paralelo com a análise de normas de compliance e de cláusulas contratuais, hipótese que dependeria de teste. Os limites são nítidos: uma só especificação, cinco achados validados por dois revisores sobre 13 candidatos e nenhuma estimativa de revocação, que o trabalho não apresenta; além disso, 126 das 405 anotações foram acrescentadas por modelo, com revisão dos autores, e os campos das regras foram extraídos por modelo (p. 5, 7, 12).
+
+**Texto integral:** [arXiv:2610.01847, na fonte](https://arxiv.org/abs/2610.01847)
+
+::: {.nota-metodo}
+Nota escrita a partir da leitura integral do trabalho, com assistência de modelo de
+linguagem na redação e revisão do autor.
+:::

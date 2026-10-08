@@ -1,0 +1,21 @@
+---
+title: "Finley (2026): a melhor de 30 configurações de agente cumpre toda a rubrica em cerca de um quarto das tentativas de trabalho profissional"
+description: "O DAYJOB reúne 130 tarefas de saúde e finanças com pedidos curtos e espaços de trabalho extensos, e mostra que agentes aceitam premissas que o registro contradiz e constroem análises coerentes sobre dados errados."
+categories: [Estado da arte em IA, Método de pesquisa]
+---
+
+FINLEY, Stephanie; PANAVAS, Liudas; MIKKELSON, Thomas; HINTON, Cam; GANSS, Stacey;
+MONTON, Bradley; et al. DAYJOB: a benchmark for long-horizon professional work.
+**arXiv**, 2026. Depósito arXiv:2610.01306 [cs.AI], versão 1, de 1 out. 2026. DOI:
+[10.48550/arXiv.2610.01306](https://doi.org/10.48550/arXiv.2610.01306).
+
+O DAYJOB é um conjunto de 130 tarefas elaboradas por profissionais, 50 de saúde e 80 de finanças, estimadas em 13,6 e 16,6 horas de trabalho humano em média (p. 1). Cada tarefa é um ambiente conteinerizado, com pedido curto (média de 48,9 e 80,7 palavras, contra 337,2 do subconjunto de referência do GDPval), espaço de trabalho de 19,8 e 25,7 arquivos em média, parte deles irrelevante por desenho, e rubrica de critérios binários, com medianas de 47,5 e 57,5; em finanças, essas contagens descrevem as 50 tarefas públicas (p. 4, Tabela 2). A tentativa só passa se cumprir todos os critérios, aferidos por um juiz agêntico que abre os arquivos, recalcula valores e cita a evidência de cada veredito, o OpenCode com Claude Opus 4.8 (p. 5). Entre 30 configurações de 13 desenvolvedoras, a melhor, Claude Opus 5.5 (adaptive/max), passa 24,7% das tentativas em saúde e 23,9% em finanças. A configuração mediana fica em 0,6% e 2,5%, respectivamente, e 19 delas não chegam a 5% em nenhum dos dois domínios (p. 1; p. 6, Tabela 3). Com limiar de 90% dos critérios, o líder chega a 62,4% e 58,3% (p. 6). Num caso, o preço de uma ação cotado em centavos sul-africanos foi lançado como rand, e uma posição de cerca de US$ 260 mil aparece como US$ 26 milhões; um dos agentes achou duas outras exceções, mas não questionou esse preço (p. 1; p. 8).
+
+O trabalho não trata de direito, e o que dele aproveito para a minha pesquisa é o método. A rubrica de critérios binários, as proibições de erros plausíveis e o juiz que recalcula em vez de confiar na mensagem final (p. 3, 5) são desenho transponível à avaliação de assistentes jurídicos. O contraste entre 24,7% no critério estrito e 62,4% a 90% de critérios, em saúde, ilustra a tese de que um resultado agregado não implica idoneidade decisória, pois os critérios não têm peso por importância e o limiar mais baixo admite tentativa que erra um ponto decisivo (p. 5). O texto não tem seção de limitações; os limites que aponto são leitura minha: não há medida própria de concordância entre o juiz e avaliadores humanos, e as 30 tarefas financeiras restantes só estão disponíveis sob pedido (p. 4-5). Observação também minha, não dos autores: o juiz é modelo da família Claude, e a configuração líder também, o que o texto não discute. Transpor ao direito brasileiro exigiria rubrica própria, por exemplo com citação de precedente inexistente embutida no pedido.
+
+**Texto integral:** [arXiv:2610.01306, na fonte](https://arxiv.org/abs/2610.01306)
+
+::: {.nota-metodo}
+Nota escrita a partir da leitura integral do trabalho, com assistência de modelo de
+linguagem na redação e revisão do autor.
+:::

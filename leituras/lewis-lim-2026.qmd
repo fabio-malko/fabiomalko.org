@@ -1,0 +1,22 @@
+---
+title: "Lewis-Lim (2026): encurtar a cadeia de raciocínio reduz a fidelidade em 11 de 15 configurações, mas preserva em boa parte a monitorabilidade"
+description: "Três métodos de treino para raciocinar com menos tokens, aplicados a três modelos, mostram que a perda de fidelidade da cadeia de raciocínio vem sobretudo de respostas menos consistentes, e que a capacidade de detectar influência indevida só cai sob compressão muito forte."
+categories: [Estado da arte em IA, Método de pesquisa]
+---
+
+LEWIS-LIM, Samuel; TAN, Xingwei; SANGER, Mario; ZHAO, Zhixue; ALETRAS,
+Nikolaos. Efficient reasoning training does not always harm CoT faithfulness and
+monitorability. **arXiv**, 2026. Depósito arXiv:2610.03509 [cs.AI], versão 1, de
+2 out. 2026. DOI:
+[10.48550/arXiv.2610.03509](https://doi.org/10.48550/arXiv.2610.03509).
+
+Os autores, da Universidade de Sheffield e da AstraZeneca, treinam três modelos de raciocínio (Qwen3-4B-Thinking, Qwen3-8B e Olmo3-7B-Think) por aprendizado por reforço com recompensa verificável e adaptadores LoRA, sob três formas de pressão sobre o comprimento da cadeia de raciocínio (*chain of thought*, CoT): um orçamento fixo (ThinkPrune), um alvo por exemplo indicado no *prompt* (L1) e uma recompensa relativa ao grupo de respostas (GLP), em 15 configurações (p. 2-5). A fidelidade, medida pelo ganho normalizado de simulabilidade (NSG) em sete tarefas de previsão e decisão, seis sobre a descrição de uma pessoa e uma sobre a escolha de um veículo autônomo, cai de modo significativo em 11 das 15; no Olmo3-7B com L1, a cadeia encurta cerca de 70% e o NSG passa de 38,4% para cerca de 21% (p. 5). A variação do NSG acompanha a da consistência das respostas (ρ = 0,87) mais do que a do comprimento (ρ = 0,46) (p. 6, Figura 4), mas nem toda configuração perde: o ThinkPrune encurta a cadeia em 42% no Qwen3-8B e em 29% no Olmo3-7B sem reduzir o NSG, e o GLP a encurta em 65% no Qwen3-8B e eleva o NSG de 29,8% para 33,1% (p. 5). A monitorabilidade resiste melhor: na bajulação, nenhum modelo treinado cai mais de 0,08 abaixo do modelo-base; nos vieses cognitivos em questões médicas, só o menor orçamento do L1 perde mais de 0,2, como no Qwen3-4B, de 0,87 para 0,62 (p. 7). A queda acompanha a compressão relativa ao modelo-base (ρ = 0,68) e não o comprimento absoluto (p. 8).
+
+Interessa-me a conclusão de que a fidelidade se perde sobretudo porque o modelo passa a responder de forma menos consistente, mais do que porque a cadeia deixe de conter a informação (p. 6), embora os autores registrem também uma perda própria da cadeia, de 3 a 8 pontos em 10 das 15 configurações, nos casos em que a resposta muda (p. 7). Isso se aproxima da pergunta da minha tese sobre a variância entre execuções do mesmo comando, aqui medida por dez reamostragens por pergunta. Por interpretação minha, e não dos autores, o achado alerta para o uso, no direito, da fundamentação gerada pelo modelo como prova do caminho que levou à conclusão: a cadeia pode nomear um fundamento que o modelo já não segue de modo estável, tema que toca o dever de fundamentação diante de decisão automatizada. O exemplo da Figura 7 (p. 8) mostra ainda a cadeia curta que omite o indício que influenciou a resposta. Os limites são os do desenho: o treino usou problemas de matemática; as tarefas de fidelidade não são jurídicas; o monitor é um único modelo; e os autores declaram que os resultados não cobrem cenários agênticos complexos (p. 9 e 15, Apêndice A). Trata-se de *preprint*, ainda sem publicação em periódico ou anais.
+
+**Texto integral:** [arXiv:2610.03509, na fonte](https://arxiv.org/abs/2610.03509)
+
+::: {.nota-metodo}
+Nota escrita a partir da leitura integral do trabalho, com assistência de modelo de
+linguagem na redação e revisão do autor.
+:::

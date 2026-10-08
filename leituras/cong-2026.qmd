@@ -1,0 +1,22 @@
+---
+title: "Cong (2026): juízes LLM concordam moderadamente com humanos na qualidade, mas mal concordam sobre quais casos são difíceis"
+description: "Um modelo de Rasch de múltiplas facetas, ajustado separadamente a avaliadores humanos e a 17 modelos de pesos abertos, mostra que a concordância em qualidade latente (ρ de 0,371) não se repete na dificuldade residual de julgar cada caso (ρ de 0,089)."
+categories: [Estado da arte em IA, Método de pesquisa]
+---
+
+CONG, Longwei; HAHN, Sonja; GOMBERT, Sebastian; CAMUS, Leon; ZEHNER, Fabian;
+DRACHSLER, Hendrik; KROEHNE, Ulf. Evaluating LLM-as-a-judge beyond score
+alignment: a psychometric analysis of residual judging difficulty. **arXiv**,
+2026. Depósito arXiv:2610.02877 [cs.CL], versão 1, de 2 out. 2026. DOI:
+[10.48550/arXiv.2610.02877](https://doi.org/10.48550/arXiv.2610.02877).
+
+Os autores, ligados ao DIPF, instituto Leibniz de pesquisa e informação em educação, ao Centro de Avaliação Internacional de Estudantes (ZIB), à Universidade Goethe de Frankfurt e à Universidade Técnica de Chemnitz, ajustam modelos de Rasch de múltiplas facetas (*Many-Facet Rasch Models*), em separado, às notas de oito avaliadores humanos, três especialistas e cinco de *crowdsourcing*, e de 17 modelos de linguagem de pesos abertos, de 0,8B a 14B parâmetros, sobre 1.600 resumos do SummEval, em quatro dimensões e escala de 1 a 5 (p. 3). Definem a dificuldade residual como a média do resíduo absoluto entre a nota observada e a esperada pelo modelo (p. 4). A concordância em qualidade latente é moderada, com Pearson de 0,372 e Spearman de 0,371 sobre os 1.600 resumos, mas a de dificuldade residual cai para r = 0,145 e ρ = 0,089 sobre 6.400 unidades resumo-dimensão (p. 5). O contraste persiste quando se usam apenas os sete juízes de 7B ou mais (ρ de 0,408 contra 0,039) e quando se comparam só os três especialistas humanos com esse mesmo painel de 7B ou mais (0,688 contra 0,092) (p. 5). A dificuldade se distribui de modo diverso conforme a dimensão avaliada: na consistência, os modelos acham difíceis 74,7% das unidades, contra 50,8% dos humanos, ao passo que na coerência a proporção se inverte, com 57,3% para os humanos e 34,8% para os modelos (p. 5-6, Tabela 2). Os casos fáceis para humanos e difíceis para o modelo são só parcialmente previsíveis por traços do texto, com AUROC de 0,631 e AUPRC de 0,341 diante de taxa positiva de 23,3% (p. 6, Tabela 4).
+
+Interessa-me porque separa a concordância agregada da concordância sobre onde está o erro, distinção próxima da minha tese, na qual acurácia agregada não implica idoneidade decisória. A dimensão em que o juiz automático mais sofre é a consistência, que exige conferir se as afirmações do resumo têm suporte na fonte (p. 7), tarefa vizinha da verificação de citação. Os próprios autores propõem encaminhar à revisão humana os casos previstos como fáceis para humanos e difíceis para o modelo (p. 2 e 8). A transposição ao direito é interpretação minha e não dos autores: na anotação de campos de acórdãos do STJ e do CARF, um modelo pode concordar com advogados no agregado e divergir justamente nos casos que humanos julgam fáceis. O modelo de medida, as análises de sensibilidade e a previsão por traços observáveis são reaproveitáveis. Os limites são declarados (p. 9): um único conjunto de dados, de resumos de notícias; um painel fixo de modelos abertos sob um só *prompt*; dificuldade residual tratada como diagnóstico pós-ajuste, sem significado necessariamente idêntico entre painéis; e correlatos preditivos, não causas. Observo ainda que a decodificação foi determinística, de modo que o trabalho não mede variância entre execuções (p. 3), ponto que a minha pesquisa precisa medir.
+
+**Texto integral:** [arXiv:2610.02877, na fonte](https://arxiv.org/abs/2610.02877)
+
+::: {.nota-metodo}
+Nota escrita a partir da leitura integral do trabalho, com assistência de modelo de
+linguagem na redação e revisão do autor.
+:::
