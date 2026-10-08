@@ -1,0 +1,20 @@
+---
+title: "Farri e Gomes (2025): a Itália automatiza a liquidação e a análise de risco, mas mantém a decisão humana como princípio da cobrança"
+description: "Inventário descritivo dos usos de inteligência artificial pela administração tributária italiana, da liquidação automatizada de declarações ao concordato preventivo bienal, com os limites de transparência algorítmica e de proteção de dados que a jurisprudência e o Garante da Privacidade impuseram."
+categories: [IA e Direito, Direito Tributário]
+---
+
+FARRI, Francesco; GOMES, Marcus Lívio. O uso da inteligência artificial no direito tributário
+italiano. **Revista de Finanças Públicas, Tributação e Desenvolvimento**, v. 13, n. 21,
+p. 1-29, jul./dez. 2025. Disponível em: <https://www.e-publicacoes.uerj.br/rfptd/article/view/94753>.
+
+Os autores, professores de direito financeiro e tributário em Gênova e na UERJ, fazem um inventário descritivo dos usos de inteligência artificial pela administração tributária italiana, sem dados empíricos próprios, em dez seções. Começam pela liquidação automatizada das declarações, prevista no art. 36 bis do Decreto da Presidência da República n. 600/1973 e estendida ao IVA em 1999 (p. 2-3). Seguem pela análise de risco de sonegação, que evoluiu dos coeficientes presuntivos aos estudos de setor e, depois, aos indicadores sintéticos de confiabilidade (ISA) do art. 9 bis do Decreto-Lei n. 50/2017 (p. 4-6), e pela base de dados alimentada pela fatura eletrônica generalizada desde 2019 (p. 7-8). Afirmam como princípio geral que a cobrança de tributo não pago depende de decisão humana e que o contraditório efetivo deveria sempre preceder a notificação, com exceções para notificações de natureza objetiva, listadas em decreto ministerial de 24 de abril de 2024 (p. 8-9). Descrevem a consulta jurídica simplificada automatizada do art. 10 novies do Estatuto dos Direitos do Contribuinte, ainda não ativada, cuja resposta, se aceita, afasta multas (p. 11-12), a declaração pré-preenchida e o *concordato preventivo biennale* (p. 12-14), e registram que a parte do projeto Prodigit destinada a gerar minutas de sentença não foi levada a cabo (p. 14-15). Os riscos tratados são a transparência dos algoritmos, com as sentenças do Conselho de Estado n. 2270/2019 e n. 8537/2024 (p. 16-17), e a proteção de dados, com pareceres do Garante da Privacidade sobre a fatura eletrônica e sobre a possível insuficiência da pseudonimização (p. 19).
+
+O que retenho é a combinação de dois pontos. O primeiro é o art. 10 novies, que, segundo os autores, constituiria provavelmente o primeiro caso em que o ordenamento associa efeitos jurídicos vinculantes a conteúdo produzido exclusivamente por inteligência artificial generativa (p. 11-12); é exatamente o tipo de arranjo em que dever de fundamentação e devido processo deixam de ser tema teórico. O segundo é a exigência do Conselho de Estado de que o algoritmo seja «cognoscível» e sujeito à plena sindicância do juiz (p. 16-17), que dialoga com a minha preocupação com decisão automatizada. O texto também lembra que a qualidade dos dados de entrada determina a dos dados de saída (p. 19). Os limites são claros: o trabalho descreve normas, projetos e pareceres e não mede desempenho nem confiabilidade de sistema algum; as três decisões do Conselho de Estado sobre transparência algorítmica vêm de áreas do direito público distintas do tributário, como os próprios autores ressalvam (p. 16), e só a sentença de 2024 trata da matéria tributária (p. 17). A aproximação com a Receita Federal e com a notificação de lançamento fica por conta das notas dos autores (p. 5 e p. 8); que o raciocínio sirva ao CARF e ao contencioso brasileiro é transposição minha, não do artigo.
+
+**Texto integral:** [O uso da inteligência artificial no direito tributário italiano, na fonte](https://www.e-publicacoes.uerj.br/rfptd/article/view/94753)
+
+::: {.nota-metodo}
+Nota escrita a partir da leitura integral do trabalho, com assistência de modelo de
+linguagem na redação e revisão do autor.
+:::

@@ -5,6 +5,8 @@ toc: false
 listing:
   id: fichas
   contents:
+    - leituras/farri-2025.qmd
+    - leituras/domingos-junior-2025.qmd
     - leituras/oliveira-2025.qmd
     - leituras/cunha-2024.qmd
     - leituras/farley-2024.qmd

@@ -1,0 +1,22 @@
+---
+title: "Domingos Júnior et al. (2025): um RAG próprio supera ChatGPT e Perplexity em relevância, mas perde em correção factual no IRPF"
+description: "Os autores montam um conjunto de 715 perguntas sobre o imposto de renda da pessoa física, com normas e acórdãos do CARF como referência, e mostram que o sistema próprio responde de forma mais relevante, enquanto as ferramentas comerciais obtêm correção factual mais alta."
+categories: [IA e Direito, Direito Tributário, Método de pesquisa]
+---
+
+DOMINGOS JÚNIOR, Juvenal; FARIA, Augusto; OLIVEIRA, E. Seiti de; BRITO, Erick de;
+TEOTONIO, Matheus; ASSUMPÇÃO, Andre; et al. BR-TaxQA-R: a dataset for question answering
+with references for Brazilian personal income tax law, including case law. **arXiv**, 2025.
+Depósito arXiv:2505.15916 [cs.CL], versão 1, de 21 maio 2025. DOI:
+[10.48550/arXiv.2505.15916](https://doi.org/10.48550/arXiv.2505.15916).
+
+Os autores, sobretudo da Unicamp e da Universidade Federal do Cariri, constroem o BR-TaxQA-R, um *dataset* de perguntas e respostas com referências sobre o imposto de renda da pessoa física. Partem das 715 perguntas do documento oficial «Perguntas e Respostas IRPF 2024», da Receita Federal, das quais 117, cerca de 16%, não citam nenhum documento externo (p. 5). Reúnem 478 documentos normativos citados nas respostas e 7.204 acórdãos do CARF, coletados apenas de 2023 (p. 4 e p. 7, Tabela 1). Sobre esse acervo montam um sistema de *Retrieval-Augmented Generation* com o modelo de *embeddings* text-embedding-3-small, índice FAISS e geração pelo gpt-4o-mini, e comparam duas formas de segmentar os textos: janela deslizante de 2.048 *tokens*, com passo de 1.024, e divisor recursivo de caracteres (p. 8-9). O confronto com ChatGPT com busca, Perplexity com *Deep Research* e Grok 3 com *DeepSearch* usa métricas da biblioteca RAGAS (p. 9-10). A melhor configuração própria, janela deslizante com jurisprudência, alcança *Response Relevancy* de 0,829 e *Factual Correctness* de 0,327. Entre as ferramentas comerciais, o Perplexity chega a 0,469 de correção factual, o Grok a 0,454 e o ChatGPT a 0,389, mas as três ficam abaixo na relevância da resposta, com 0,665, 0,509 e 0,738, respectivamente (p. 11, Tabela 4). Os autores leem o resultado como uma troca entre rastreabilidade jurídica e fluência e concluem que a avaliação por especialistas humanos segue indispensável, porque métricas como similaridade semântica e ROUGE não asseguram a validade jurídica da resposta (p. 13-14).
+
+Interessa-me o trabalho por duas razões e por um limite. A primeira é o uso de acórdãos do CARF como corpus, que toca diretamente o material de que trato na tese, somado ao fato de o sistema devolver, ao fim de cada resposta, uma lista estruturada das normas citadas (p. 9), o que abriria espaço para verificar a citação uma a uma; os autores, porém, não reportam métrica de acerto de citação na Tabela 4, de modo que essa verificação fica por fazer. A segunda é a advertência dos próprios autores de que pontuação alta não equivale a resposta juridicamente adequada, o que converge com a minha tese de que acurácia agregada não implica idoneidade decisória. O limite está na robustez. A Tabela 4 traz um único valor por configuração, sem dispersão nem reexecução, e parte das métricas da RAGAS é calculada com apoio de um modelo de linguagem, que o texto exemplifica com o gpt-4o-mini sem precisar qual avaliou cada métrica (p. 10), de modo que o próprio avaliador entra como fonte de variância não medida. Quanto à transposição, o recorte é o IRPF e apenas a jurisprudência de 2023; que o resultado alcance o contencioso de pessoa jurídica ou o penal econômico é hipótese minha, não afirmação do trabalho.
+
+**Texto integral:** [arXiv:2505.15916, na fonte](https://arxiv.org/abs/2505.15916)
+
+::: {.nota-metodo}
+Nota escrita a partir da leitura integral do trabalho, com assistência de modelo de
+linguagem na redação e revisão do autor.
+:::
