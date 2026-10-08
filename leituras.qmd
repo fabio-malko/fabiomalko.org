@@ -5,6 +5,13 @@ toc: false
 listing:
   id: fichas
   contents:
+    - leituras/oliveira-2025.qmd
+    - leituras/cunha-2024.qmd
+    - leituras/farley-2024.qmd
+    - leituras/valle-2025.qmd
+    - leituras/lee-2026.qmd
+    - leituras/comissao-europeia-2026.qmd
+    - leituras/alviano-2026.qmd
     - leituras/hu-2026.qmd
     - leituras/zahraei-2026.qmd
     - leituras/xie-2026.qmd

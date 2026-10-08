@@ -1,0 +1,22 @@
+---
+title: "Comissão Europeia (2026): diretrizes vivas para o uso responsável de IA generativa na pesquisa"
+description: "Terceira versão, de maio de 2026, das recomendações não vinculantes do ERA Forum a pesquisadores, organizações de pesquisa e agências de fomento, com a responsabilidade final mantida no pesquisador e a declaração do uso substancial."
+categories: [IA e Direito, Método de pesquisa]
+---
+
+COMISSÃO EUROPEIA. Direção-Geral de Investigação e Inovação. **Living guidelines on the
+responsible use of generative AI in research**: ERA Forum stakeholders' document.
+3. versão. Bruxelas: Comissão Europeia, maio 2026. Disponível em:
+[research-and-innovation.ec.europa.eu](https://research-and-innovation.ec.europa.eu/document/download/2b6cf7e5-36ac-41cb-aab5-0d32050143dc_en?filename=ec_rtd_ai-guidelines.pdf).
+Acesso em: 8 out. 2026.
+
+O documento não vincula, e diz isso de si mesmo, dirigindo-se a pesquisadores, a organizações de pesquisa e a agências de fomento. Ao pesquisador dirige seis recomendações, das quais quatro me importam: a responsabilidade final pelo produto científico continua humana, porque sistema de inteligência artificial não é autor nem coautor; o uso substancial se noticia na seção de método ou equivalente, conforme a norma do periódico ou da disciplina, e a referência à ferramenta pode incluir nome, versão e data, o que o texto sugere em nota e não impõe no corpo; obra inédita e dado sensível não se carregam em sistema externo sem garantia de que não serão reaproveitados no treinamento; e recomenda-se abstenção de uso substancial em atividades sensíveis que afetem outros pesquisadores, das quais a revisão por pares é exemplo. À organização recomenda adotar, sempre que possível e necessário, ferramenta sob governança própria; à agência de fomento, pedir do candidato a declaração de uso substancial e tratar como risco os comandos ocultos embutidos em documento recebido de terceiro.
+
+Isto me alcança em duas frentes. Na pesquisa, é o texto que sustenta a página de transparência deste sítio e a declaração que acompanha cada nota, e a indicação de nome, versão e data da ferramenta, ainda que apenas sugerida, converge com o protocolo de replicabilidade que desenvolvo. Na advocacia, a recomendação de governança própria sobre a ferramenta que trata dado protegido dá apoio institucional ao que o sigilo profissional já impunha por dever. Esta é a terceira versão, de maio de 2026, e o próprio documento se declara vivo e sujeito a atualização periódica, de maneira que a versão citada precisa ser conferida a cada uso.
+
+**Texto integral:** [Living guidelines, terceira versão, no sítio da Comissão Europeia](https://research-and-innovation.ec.europa.eu/document/download/2b6cf7e5-36ac-41cb-aab5-0d32050143dc_en?filename=ec_rtd_ai-guidelines.pdf)
+
+::: {.nota-metodo}
+Nota escrita a partir da leitura integral do trabalho, com assistência de modelo de
+linguagem na redação e revisão do autor.
+:::

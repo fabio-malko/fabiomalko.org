@@ -1,0 +1,21 @@
+---
+title: "Oliveira, Caliendo e Bulara (2025): no CARF, a maioria dos consultados espera eficiência da IA e quer revisão humana integral"
+description: "O artigo propõe uma curadoria algorítmica paritária para uma inteligência artificial de apoio ao julgamento no CARF e relata pesquisa com 25 conselheiros e ex-conselheiros, em que a expectativa de eficiência convive com o receio de viés e de perda de autonomia."
+categories: [IA e Direito, Direito Tributário]
+---
+
+OLIVEIRA, Ana Claudia Borges de; CALIENDO, Paulo; BULARA, Vanessa. As expectativas da
+inteligência artificial no contencioso tributário federal brasileiro. **Revista Direito
+Tributário Atual**, São Paulo, v. 61, ano 43, p. 265-280, 3º quadrimestre 2025.
+Disponível em: <https://revista.ibdt.org.br/index.php/RDTA/article/view/2949>.
+
+As autoras e o autor, duas conselheiras do CARF e um professor titular da PUCRS, examinam o uso de inteligência artificial em processos do Conselho Administrativo de Recursos Fiscais partindo da ausência de lei específica: o país aguarda o Projeto de Lei n. 2.338/2023, enquanto se apoia em normas infralegais, como a Resolução CNJ n. 615/2025, e na LGPD (p. 267-268 e p. 270). O Regulamento (UE) n. 2024/1689 é indicado como paradigma (p. 271 e p. 278). A contribuição propositiva é uma curadoria algorítmica, de composição paritária, para a «IARA» (Inteligência Artificial em Recursos Administrativos), em três camadas: dados, com rastreabilidade (*data lineage*) e uma «cadeia de custódia» do processo algorítmico; modelo, com análise de vieses e revisão humana obrigatória e documentada; e resultados, com indicadores, monitoramento de deriva (*drift*), auditorias e canal de contestação técnica (p. 274-275). Defendem a vedação de decisões exclusivamente automatizadas e advertem contra «súmulas algorítmicas» de fato (p. 275). O artigo relata ainda pesquisa da ACONCARF com o Instituto Tax Moot Brasil, cujo relatório, de 15 de maio de 2025, reúne 25 participantes: 52% acreditam que a ferramenta poderá reduzir o estoque de forma significativa; 20% discordam de que a qualidade da fundamentação será mantida ou aprimorada e 36% ficam neutros; o viés algorítmico é o risco mais temido, com quase 40% atribuindo a nota máxima; para 80%, o nível aceitável de supervisão é a revisão total das decisões; e elaboração do voto, decisão final e valoração da prova são apontadas como tarefas que não devem ser delegadas (p. 276-277).
+
+Para a pesquisa que desenvolvo, o texto vale como registro de como o próprio órgão julgador pensa a automação, e a proposta de curadoria toca pontos que também persigo: a cadeia de custódia dos dados, a revisão de modelos e de *prompts*, a medição de deriva e a exigência de justificativas auditáveis (p. 274-275). Os limites são nítidos. O artigo não testa sistema algum e não apresenta medida de desempenho; os percentuais vêm de questionário respondido por 25 pessoas, que captam percepção e não confiabilidade. Os indicadores sugeridos, como tempo, dispersão decisória e aderência a precedentes qualificados, aparecem sem indicação de como seriam medidos (p. 275), e nada se diz sobre reexecução do mesmo comando nem sobre variância entre execuções, que é onde entra a minha tese. A advocacia de contencioso, por sua vez, encontra no texto um argumento para exigir transparência e participação dos contribuintes na curadoria. Que a proposta seja operacionalizável com o rigor que defendo é avaliação minha, não dos autores.
+
+**Texto integral:** [As expectativas da inteligência artificial no contencioso tributário federal brasileiro, na fonte](https://revista.ibdt.org.br/index.php/RDTA/article/view/2949)
+
+::: {.nota-metodo}
+Nota escrita a partir da leitura integral do trabalho, com assistência de modelo de
+linguagem na redação e revisão do autor.
+:::

@@ -1,0 +1,18 @@
+---
+title: "Menezes (2024): o split payment amplo cobra do caixa das empresas o que promete ganhar em combate à fraude"
+description: "Sobre o PLP 68/2024, o artigo sustenta, com apoio em relatório elaborado para a Comissão Europeia, que o pagamento fracionado do IBS e da CBS só se justifica como medida específica e de alcance limitado, e aponta a falta de regras sobre decisões automatizadas."
+categories: [Direito Tributário]
+---
+
+MENEZES, Farley Soares. As inconveniências do split payment: a nova modalidade de recolhimento do IBS e da CBS. **Caderno Virtual**, IDP, v. 1, n. 59, 2024. Seção Artigos Acadêmicos, edição «Temas Atuais de Direito Tributário».
+
+O artigo examina o *split payment* como forma de recolhimento do IBS e da CBS e formula duas perguntas: qual o impacto do mecanismo para empresas e governo, e se ele é tecnicamente viável num país de dimensões continentais e de grandes disparidades regionais (p. 1 e 3). A pesquisa é bibliográfica e documental, com resultados qualitativos (p. 1). O autor descreve quatro formatos de pagamento fracionado (p. 7-8) e se apoia no relatório elaborado para a Comissão Europeia por um grupo de pesquisadores sobre o pagamento fracionado como método alternativo de cobrança do IVA, citado a partir de seu sumário executivo de 2017 (p. 13, nota 12). Segundo a descrição do autor, o relatório estima redução de 27% a 56% na fraude e na evasão, com destaque para a fraude carrossel, mas conclui que a aplicação ampla elevaria custos para empresas e fiscos e afetaria o capital de giro, de modo que o mecanismo serviria como medida específica e de alcance limitado (p. 13-14). Em seguida, o texto confronta o art. 27 e os arts. 50 e 51 do PLP 68/2024 com essas conclusões e vê neles vários modelos de *split payment* convivendo, com risco de maior complexidade (p. 14-17). Observa também que a operação do sistema exigirá decisões automatizadas e perfilamento de contribuintes, e que o PLP 108/2024 não traz regra sobre o tema (p. 18). Conclui que o mecanismo caberia melhor como regime especial (p. 18) e que a escolha do projeto não vem acompanhada de estudos macroeconômicos prévios (p. 19).
+
+Interessa-me o artigo por dois pontos. O primeiro é o argumento da liquidez: ao reter o tributo antes da compensação com créditos, o *split payment* desloca caixa para o Estado, e isso toca diretamente a rotina de quem defende contribuintes em contencioso tributário. O segundo é o apontamento sobre decisões automatizadas, que o autor liga à proteção de dados e ao devido processo tecnológico (p. 18) e que dialoga com o dever de fundamentação diante de decisão tomada por sistema, tema central da minha pesquisa. Os limites são visíveis. O texto analisa a redação dos projetos de lei complementar consultada em junho de 2024 (p. 20), e quem for usá-lo deve conferir cada artigo citado com o texto normativo em vigor. O relatório europeu chega ao leitor por meio do autor, e a comparação internacional se apoia sobretudo num estudo de 2017, que não trata do desenho brasileiro, além de menção breve às experiências da Itália, da Polônia, da Romênia e do Reino Unido (p. 12). A passagem sobre decisões automatizadas é um alerta breve, de dois parágrafos, sem desenvolvimento. A relação que traço entre essa passagem e a minha tese sobre confiabilidade da extração automatizada é interpretação minha, e não do autor.
+
+**Texto integral:** [As inconveniências do split payment, no portal de periódicos do IDP](https://www.portaldeperiodicos.idp.edu.br/cadernovirtual/article/view/7920)
+
+::: {.nota-metodo}
+Nota escrita a partir da leitura integral do trabalho, com assistência de modelo de
+linguagem na redação e revisão do autor.
+:::

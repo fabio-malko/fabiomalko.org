@@ -1,0 +1,20 @@
+---
+title: "Cunha, Stamile e Grupenmacher (2024): o sigilo dos critérios de seleção do Sisam seria compatível com uma transparência algorítmica apenas temperada"
+description: "Estudo de caso do sistema de aprendizado de máquina que a Receita Federal usa na seleção aduaneira; os autores defendem transparência temperada, sujeita a auditoria da ANPD, e registram que não há controle externo do sistema."
+categories: [IA e Direito, Direito Tributário]
+---
+
+CUNHA, Carlos Renato; STAMILE, Natalina; GRUPENMACHER, Betina Treiger. O uso da inteligência artificial na fiscalização tributária e a opacidade algorítmica: o caso do Sistema de Seleção Aduaneira por Aprendizado de Máquina – SISAM. **Pensar – Revista de Ciências Jurídicas**, Fortaleza, v. 29, n. 3, p. 1-15, jul./set. 2024.
+DOI: [10.5020/2317-2150.2024.13867](https://doi.org/10.5020/2317-2150.2024.13867).
+Há versão em inglês, traduzida por inteligência artificial e publicada no mesmo fascículo (p. 1-22): DOI: [10.5020/2317-2150.2024.16864](https://doi.org/10.5020/2317-2150.2024.16864).
+
+O artigo analisa a opacidade algorítmica na fiscalização tributária por meio do Sisam, sistema de aprendizado de máquina que a Receita Federal usa na seleção de declarações de importação desde 2014 (p. 1). Os autores partem da natureza de "direito de massa" do Direito Tributário (p. 4) e descrevem o sistema como alimentado pelo histórico das declarações, estimando a probabilidade de cerca de trinta tipos de erro em cada nova declaração e com capacidade de selecionar declarações para conferência sem intervenção humana (p. 5). Do devido processo legal, da motivação dos atos e do art. 20 da Lei 13.709/2018 extraem um dever de transparência algorítmica (p. 6-8), com duas exceções: uma expressa, o segredo comercial e industrial, com a alternativa de auditoria da ANPD (p. 8), e uma implícita, a dos critérios de seleção da fiscalização, cuja divulgação integral permitiria aos fiscalizados escapar deles (p. 9). Daí a tese da "transparência temperada" (p. 9), que associam à "transparência qualificada" de Pasquale (p. 11). Concluem que o Sisam não seria uma caixa-preta para a própria Receita, pois o sistema pode produzir registro completo do próprio raciocínio, segundo um de seus idealizadores (p. 10), e que as decisões automatizadas ocorrem em fases iniciais, validadas por auditores e sujeitas a defesa e recurso (p. 11). Registram, porém, que inexiste controle externo do Sisam, o que chamam de evidente déficit de transparência (p. 11).
+
+Interessa-me o artigo pelo ponto em que delimita o dever de transparência diante de decisão automatizada, que toca o dever de fundamentação e o devido processo da minha pesquisa. A exceção defendida vale para os critérios de seleção de quem será fiscalizado, e os autores dizem não advogar investigações secretas (p. 9). Em minha leitura, que é transposição minha, a exceção perde força quando a saída automatizada deixa de selecionar contribuintes e passa a sustentar a motivação de um ato, como ocorre na extração de campos de decisões do STJ e do CARF: aí o problema passa a ser a confiabilidade e a reprodutibilidade do resultado, que o artigo não trata. Os limites são claros. O estudo é qualitativo, baseado em pesquisa bibliográfica e documental (p. 1, 3), sem exame próprio do sistema e sem taxa de erro; a única referência de desempenho é uma "taxa de acerto significativa", sem número (p. 10). A própria fonte que os autores transcrevem informa que a seleção automática estava implementada, mas ainda não em produção (p. 10), e a validação por auditores é apenas afirmada (p. 11). A auditoria pela ANPD (p. 9, 11) apoia-se no § 2º do art. 20 da LGPD, e o texto não examina se a expressão "titular dos dados" alcança importadores pessoas jurídicas, pergunta que deixo em aberto. Para o contencioso tributário, o dado mais útil é a ausência de controle externo (p. 11).
+
+**Texto integral:** [DOI 10.5020/2317-2150.2024.13867, na fonte](https://doi.org/10.5020/2317-2150.2024.13867)
+
+::: {.nota-metodo}
+Nota escrita a partir da leitura integral do trabalho, com assistência de modelo de
+linguagem na redação e revisão do autor.
+:::

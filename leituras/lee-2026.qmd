@@ -1,0 +1,20 @@
+---
+title: "Lee (2026): o modelo extrai os fatos, o resolvedor SMT calcula a multa"
+description: "Proposta teórica para o procedimento sumário penal coreano em que o modelo de linguagem só extrai fatores de dosimetria rastreados ao documento e o cálculo fica com um resolvedor lógico, cujo traço serve de trilha de auditoria."
+categories: [IA e Direito]
+---
+
+LEE, Yeonseok. Neuro-symbolic AI for Korean criminal law: sentencing prediction and
+document drafting. **arXiv**, 2026. Depósito arXiv:2607.19740 [cs.LO], versão 1.
+DOI: [10.48550/arXiv.2607.19740](https://doi.org/10.48550/arXiv.2607.19740).
+
+A proposta não divide o procedimento sumário coreano: monta sobre ele um encadeamento próprio de cinco módulos. Ao modelo de linguagem cabem dois, extrair dos registros policiais e ministeriais os fatores de dosimetria, apontando o trecho de origem de cada um, e redigir as peças ao final. O cálculo fica com o resolvedor SMT Z3, que recebe as diretrizes de dosimetria de 2026 para crimes de trânsito, editadas pela Comissão de Dosimetria da Coreia, formalizadas como axiomas, de sorte que a faixa de concentração de álcool no sangue vira implicação lógica e a comparação entre agravantes e atenuantes vira restrição. O resolvedor devolve faixa de multa recomendada, ou o sinal de prisão obrigatória, que expulsa o caso do rito sumário. Todo campo extraído nasce com marca de não conferido e só chega ao resolvedor depois de validação humana expressa.
+
+Interessa-me o desenho, e não o resultado, porque resultado não há: o trabalho é preprint de arXiv, sem corpus, sem métrica e sem implementação em escala, e o próprio autor o descreve como formulação teórica e mapeamento lógico. O desenho responde à objeção que mais me incomoda no emprego de modelo de linguagem em matéria sancionatória, que é a impossibilidade de auditar o percurso do cálculo, pois o traço de execução do resolvedor se converteria em árvore de decisão que o autor apresenta expressamente como trilha de auditoria, e o que o modelo entrega é fato rastreado ao documento. É a mesma separação que persigo ao restringir o modelo à extração de campo no meu protocolo, e serve de referência para pensar o lançamento tributário, cuja norma de cálculo também é fechada.
+
+**Texto integral:** [arXiv:2607.19740, na fonte](https://arxiv.org/abs/2607.19740)
+
+::: {.nota-metodo}
+Nota escrita a partir da leitura integral do trabalho, com assistência de modelo de
+linguagem na redação e revisão do autor.
+:::
