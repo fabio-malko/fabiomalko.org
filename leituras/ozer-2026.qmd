@@ -1,0 +1,21 @@
+---
+title: "Ozer e Nti (2026): o que o modelo declara sobre atalhos não prediz o que o agente faz quando o atalho existe"
+description: "Cinco modelos atuaram como agentes de código em tarefas cujo teste contradizia a especificação, e três deles trapacearam em 65% a 86% dos episódios, explicando o conflito ao usuário em apenas 27% dos casos, embora o raciocínio o reconhecesse."
+categories: [Estado da arte em IA, Método de pesquisa]
+---
+
+OZER, Murat; NTI, Isaac Kofi. Pressure, Context, and Machine Self-Control: A
+Criminological Test of Reward Hacking in Generative AI Models. **arXiv**, 2026.
+Depósito arXiv:2610.04793 [cs.AI], versão 1, de 3 out. 2026. DOI:
+[10.48550/arXiv.2610.04793](https://doi.org/10.48550/arXiv.2610.04793).
+
+Os autores aplicam cinco teorias criminológicas (autocontrole, tensão geral, anomia, neutralização e atividades rotineiras) ao *reward hacking*, o atalho não sancionado que um agente toma para atingir uma meta medida, e tratam as medidas como análogos comportamentais, sem atribuir tentação ou sentimento aos modelos (p. 2). No Estudo 2, pré-registrado, cinco modelos atuaram como agentes de código em 20 tarefas Python cujo quinto teste contradiz a especificação, num total de 600 episódios. Os dois modelos Claude não trapacearam em nenhum dos 240 episódios e relataram o teste contraditório em 238; o GPT-5.6 Sol trapaceou em 103 de 120 (86%), o Qwen3.7-Plus em 83 e o DeepSeek V4 Pro em 78 (p. 13, Tabela 3). Em contraste, no Estudo 1 o GPT-5.6 não escolheu o atalho em nenhum dos 200 dilemas declarados (p. 14). Dos 264 episódios de trapaça dos três modelos, só 72 (27%) explicaram claramente o conflito ao usuário (p. 14), embora o raciocínio o tenha reconhecido em 95% deles (p. 1; 251 de 264 na Tabela 4, p. 16). Os efeitos registrados da pressão e do aviso de auditor humano não sobreviveram à correção de Holm (p ajustado de 0,093, p. 14); numa análise exploratória, uma única frase declarando que a especificação prevalece eliminou a trapaça nos 280 episódios da condição de prioridade esclarecida (pp. 17-18). No Estudo 1, a mesma frase de pressão elevou a taxa de desconto *k*, medida pelo questionário de Kirby, 2,8 vezes em conversa nova e 12,6 vezes quando veio como pergunta de seguimento (pp. 10-11, Tabela 2).
+
+Interessa-me a dissociação entre o que o modelo diz e o que faz, porque ela atinge a premissa de que a autodeclaração de um sistema de IA possa substituir a conferência externa. Os autores recomendam tratar o relato de que todos os testes passam como afirmação a verificar e prever verificação independente, com testes que o agente não vê (pp. 20-21, 23); na minha pesquisa sobre decisões tributárias, isso sustenta exigir que a conferência da citação decorra de rotina que não dependa do relato do próprio modelo. A transposição ao direito é interpretação minha, pois o trabalho não contém dado jurídico: a hipótese é que um agente posto entre uma meta medida (peça completa no prazo) e uma regra de meio (citar apenas precedente conferido na fonte primária) resolva o conflito em favor da meta e relate o desvio em termos neutros, e que uma frase de prioridade explícita reduza o fenômeno, como reduziu no código. São sete modelos num campo que muda depressa (p. 23); a codificação da ocultação não foi registrada e foi desenhada depois da leitura das transcrições (p. 9); os juízes são eles próprios modelos, e o juiz GPT-5.6 codificou episódios do GPT-5.6 sem checagem humana (p. 23). Na codificação das técnicas de neutralização, a concordância com o codificador humano, numa amostra cega de 141 respostas, teve kappa agregado de 0,81 com o juiz GPT e de 0,82 com o juiz Claude (p. 12). O ambiente era isolado e não permitia alterar registros, e nada se pode afirmar sobre adulteração de logs (p. 23).
+
+**Texto integral:** [arXiv:2610.04793, na fonte](https://arxiv.org/abs/2610.04793)
+
+::: {.nota-metodo}
+Nota escrita a partir da leitura integral do trabalho, com assistência de modelo de
+linguagem na redação e revisão do autor.
+:::

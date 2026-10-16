@@ -1,0 +1,21 @@
+---
+title: "Ravideshik e Kejriwal (2026): com o veredito do sistema à vista, o juiz de IA deixa de discriminar acertos de erros"
+description: "Em três bases de alinhamento de entidades, o juiz que vê o rótulo do sistema o ecoa, e a inversão do rótulo muda o escore em 53% a 99% dos pares, com maior sensibilidade nos modelos mais fortes."
+categories: [Estado da arte em IA, Método de pesquisa]
+---
+
+RAVIDESHIK, Vaibhava Lakshmi; KEJRIWAL, Mayank. Reliability of LLM Judges for
+Evaluating Entity Alignment. **arXiv**, 2026. Depósito arXiv:2610.09554 [cs.AI],
+versão 1, de 7 out. 2026. DOI:
+[10.48550/arXiv.2610.09554](https://doi.org/10.48550/arXiv.2610.09554).
+
+O trabalho pergunta se o escore de um modelo de linguagem que atua como juiz da decisão de um sistema de alinhamento de entidades entre grafos de conhecimento (MATCH ou NON-MATCH) mede a correção dessa decisão ou ecoa o rótulo que lhe é mostrado (pp. 1 e 3). Os autores chamam esse fenômeno de *anchor bias*. Usaram três bases, entre elas um novo conjunto biomédico MeSH-SNOMED CT de 15 mil pares, dois sistemas de alinhamento (EasyEA e NeuSymEA) com suas ablações, três juízes (GPT-4o-mini, GPT-4o e Claude Opus 4.7, temperatura 0) e três prompts, o último sem exibir o rótulo (pp. 4-6). Com o rótulo visível, a discriminação do juiz, medida pela área sob a curva ROC (J-ROC-AUC), cai ou se inverte, com valores de 0,12 a 0,87 no conjunto e de 0,12 a 0,53 nas bases de nomes distintivos (conclusão, p. 9); a exceção é o EasyEA na base DBpedia-YAGO, com 0,57 a 0,87 (Tabela 5, p. 19). A cadeia de raciocínio de oito passos não corrige o viés (pp. 7-9). No teste contrafactual, que inverte apenas o rótulo, o escore muda mais de dois pontos em 53% a 99% dos pares, e o juiz mais forte é o mais sensível: o Claude Opus 4.7 chega a 99% na base DBpedia-Wikidata com o EasyEA (p. 9, Tabela 2). Sem o rótulo, o NeuSymEA alcança J-ROC-AUC de 0,981 a 1,000 em ambas as bases gerais (p. 8). Dois anotadores humanos, que são os próprios autores, concordaram entre si com kappa de Cohen de 0,902 em 102 pares (p. 7).
+
+A estrutura interessa à minha tese porque é a de um verificador automático de citações: quando um modelo confere se a citação jurisprudencial produzida por outro procede, mostrar-lhe o veredito prévio («citação confere») pode induzi-lo a ratificar em vez de conferir. Essa ponte é interpretação minha. O trabalho oferece o desenho que posso replicar com acórdãos reais, o de inverter só o veredito e medir a sensibilidade do escore, além da validação humana cega com kappa. A hipótese que extraio é que o verificador sem acesso ao veredito acerte com mais frequência, com vantagem maior em precedentes célebres do que em acórdãos pouco citados do CARF ou de tribunais estaduais, por analogia com o contraste que os autores traçam entre bases de nomes conhecidos e o conjunto biomédico (pp. 8-9). Os limites declarados são relevantes: amostras balanceadas em 50/50, sem a proporção real de classes; só três modelos fechados, um único provedor de API e só inglês; o terceiro prompt muda ao mesmo tempo a exposição do rótulo e o enquadramento da tarefa, sem controle pareado; e os anotadores são os próprios autores (p. 10). A recuperação sem o rótulo também falha quando os nomes são quase idênticos e o sistema, na qualificação dos autores, é fraco (J-ROC-AUC de 0,468 a 0,527 com o EasyEA na base DBpedia-YAGO, sem significância, p. 26). A generalização a outras tarefas é apresentada como predição testável e não como achado estabelecido (p. 26).
+
+**Texto integral:** [arXiv:2610.09554, na fonte](https://arxiv.org/abs/2610.09554)
+
+::: {.nota-metodo}
+Nota escrita a partir da leitura integral do trabalho, com assistência de modelo de
+linguagem na redação e revisão do autor.
+:::

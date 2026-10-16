@@ -5,6 +5,17 @@ toc: false
 listing:
   id: fichas
   contents:
+    - leituras/ravideshik-2026.qmd
+    - leituras/meng-2026.qmd
+    - leituras/baek-2026.qmd
+    - leituras/ozer-2026.qmd
+    - leituras/zhang-2026.qmd
+    - leituras/valjakka-2026.qmd
+    - leituras/xu-2026.qmd
+    - leituras/sousa-2026.qmd
+    - leituras/andrew-2026.qmd
+    - leituras/vaugrante-2026.qmd
+    - leituras/zhang-li-2026.qmd
     - leituras/farri-2025.qmd
     - leituras/domingos-junior-2025.qmd
     - leituras/oliveira-2025.qmd

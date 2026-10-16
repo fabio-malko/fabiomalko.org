@@ -1,0 +1,21 @@
+---
+title: "Meng et al. (2026): a premissa alucinada derruba mais a acurácia dos modelos mais fortes, e a recuperação bem-sucedida é rara"
+description: "Em 4.820 instâncias e 18 modelos, a premissa alucinada reduz a acurácia em 7,7 pontos percentuais em média, e na maioria dos modelos menos de 10% das respostas corrigem a premissa e ainda acertam a resposta."
+categories: [Estado da arte em IA, Método de pesquisa]
+---
+
+MENG, Linghao; HE, Feng; YANG, Xuan; MAO, Junyuan; REN, Pinze; MU, Deqing; et al.
+PHRBench: A Behavioral Evaluation of Post-Hallucination Reasoning in LLMs.
+**arXiv**, 2026. Depósito arXiv:2610.10455 [cs.CL], versão 1, de 7 out. 2026.
+DOI: [10.48550/arXiv.2610.10455](https://doi.org/10.48550/arXiv.2610.10455).
+
+O *PHRBench* estuda o que um modelo faz quando uma premissa alucinada já está no contexto, como quando a saída de uma etapa do sistema alimenta a seguinte (p. 1). São 460 questões-base de oito bancos, em química, biomedicina, física e geração de código, cada uma com uma versão de contexto verdadeira e várias alucinadas (3.900), num total de 4.820 instâncias, avaliadas em 18 modelos, com dez amostras por instância (pp. 4-5). O trabalho classifica cada resposta, independentemente do acerto final, como submissão à premissa, evasão ou correção heurística, e chama de trajetória perspicaz a correção que também chega à resposta certa (p. 7). A premissa alucinada reduz a acurácia em 7,7 pontos percentuais em média, e a perda é maior nos modelos mais fortes: o GPT-5.2 vai de 61,6% a 44,7% (p. 6, Tabela 1). Entre os tipos de corrupção, a distorção de estado é a que mais degrada, enquanto a teoria pseudocientífica preserva cerca de 98% da acurácia de base (pp. 6-7). A correção heurística cresce com a escala e vai de 1,98% a 39,08% das respostas, conforme o modelo (p. 7, Tabela 2), mas a trajetória perspicaz fica abaixo de 10% das respostas em 11 dos 18 modelos, com máximo de 24,91% no Qwen3-235B-A22B (p. 7). Em quatro modelos representativos, a atualização de crença tem frequência média de 0,63 nas trajetórias perspicazes e de 0,18 nas demais (p. 8), medida a partir da divergência entre distribuições de próximo token, e um preditor treinado em 24 atributos do prompt alcança AUROC de 0,847 (p. 9).
+
+O cenário é o da alucinação jurisprudencial em cascata, que leio por analogia: um julgado inexistente ou distorcido, produzido numa etapa de pesquisa, entra como premissa na etapa de redação ou de revisão. A distinção entre submissão, evasão e correção importa à minha tese porque a evasão contorna a premissa falsa sem denunciá-la, e uma métrica de acerto final não a enxerga. A transposição que proponho é interpretação minha e não do trabalho: tomar os três tipos de corrupção e testá-los em modelo revisor, com contradição de regra (súmula com enunciado adulterado), distorção de estado (julgado real com relator, data ou resultado trocados) e entendimento superado apresentado como vigente, medindo a taxa de correção explícita por tipo. Os limites são vários, e o trabalho não traz seção de limitações. Não há dado jurídico. O GPT-4o gerou as premissas (p. 15) e figura também entre os modelos avaliados (p. 6, Tabela 1). Os rótulos de comportamento vêm de procedimento humano-LLM, e os autores informam apenas que 95% dos rótulos foram julgados corretos numa amostra auditada, sem indicar o tamanho dela nem medida de concordância (p. 29). A atualização de crença é calculada por um modelo de referência fixo, o Qwen2.5-7B-Instruct, e valor alto não prova revisão de crença nem melhor raciocínio (pp. 21-22). O preditor tem AUROC de 0,847, mas AUPRC de 0,502 e revocação de 0,524, e os valores SHAP não são efeitos causais (p. 36).
+
+**Texto integral:** [arXiv:2610.10455, na fonte](https://arxiv.org/abs/2610.10455v1)
+
+::: {.nota-metodo}
+Nota escrita a partir da leitura integral do trabalho, com assistência de modelo de
+linguagem na redação e revisão do autor.
+:::

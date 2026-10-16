@@ -1,0 +1,21 @@
+---
+title: "Baek et al. (2026): manter o registro da tarefa fora do modelo melhora o que o agente entrega a partir de muitos arquivos"
+description: "Uma «aba» mantida pelo ambiente, com requisitos, leituras e arquivos não abertos, supera a linha de base em três benchmarks e três modelos, e boa parte do ganho vem do que o ambiente captura por conta própria."
+categories: [Estado da arte em IA, Método de pesquisa]
+---
+
+BAEK, Jinheon; JEONG, Soyeong; CHOI, Yumin; HAN, Dongsu; HWANG, Sung Ju.
+RunningTab: Direct Workspace Interaction with Environment-Side Tabs. **arXiv**,
+2026. Depósito arXiv:2610.10444 [cs.AI], versão 1, de 7 out. 2026. DOI:
+[10.48550/arXiv.2610.10444](https://doi.org/10.48550/arXiv.2610.10444).
+
+O trabalho parte de um diagnóstico: quando um agente de linguagem monta um documento a partir de muitos arquivos, o que ele leu passa pela janela de contexto e se perde. Com o GPT-5.4 nano no Workspace-Bench, 51,1% dos pontos perdidos vêm da extração (arquivos abertos cujo conteúdo falta ou vem distorcido no entregável) e 17,6% da descoberta, quando o arquivo certo nunca é aberto; 19,8% dos 891 valores numéricos esperados que apareceram nas observações do agente ficaram fora do entregável (p. 4, Figura 2). A proposta, o *RunningTab*, mantém fora do modelo e da janela de contexto uma «aba» por tarefa, escrita pelo ambiente: os requisitos declarados pelo agente, um registro de leituras com o trecho como exibido e sua âncora (caminho do arquivo e comando) e os arquivos listados e não abertos, ordenados por BM25 (pp. 4-6). Para dar um requisito como cumprido, o agente cita a entrada de leitura que o contém, e a checagem recusa citação sem termo em comum; ao tentar encerrar, recebe uma verificação final (p. 6). Em três benchmarks e três modelos, a aba obtém o melhor resultado em todas as métricas (p. 8); no Workspace-Bench, a taxa de aprovação de rubricas passa de 41,63 para 44,73 (GPT-5.4 nano) e de 53,28 para 59,99 (DeepSeek V4 Flash) (p. 7, Tabela 1). Com o GPT-5.4 nano, a aba guarda 94,8% dos valores vistos e omitidos (p. 8), e a ablação sem a captura pelo ambiente leva o resultado ao nível da linha de base, 41,36 contra 41,63 (p. 9, Tabela 4).
+
+Para a tese que desenvolvo, interessa a trilha de proveniência mantida pelo ambiente: cada requisito do entregável fecha contra o trecho literal lido, com caminho e comando. A transposição é leitura minha, porque o trabalho não trata de direito: numa minuta montada a partir de autos e acórdãos de um acervo, exigir que cada citação aponte a entrada de leitura correspondente poderia reduzir omissões e citações sem lastro, em comparação com uma lista de pendências mantida pelo próprio modelo. O diagnóstico também me serve, pois indica que a maior parcela da perda ocorre com os arquivos certos já abertos (extração, 51,1%) e uma parcela menor antes disso (descoberta, 17,6%). A checagem de evidência (p. 6) exige apenas termo em comum, e na minha leitura não afere fidelidade semântica; o registro guarda só conteúdo de arquivo, não valores calculados nem vistos apenas em listagem (p. 8, nota 2). O ganho com o GPT-5.4 nano é modesto, de 3,10 pontos na taxa de aprovação, e os experimentos usam subconjuntos de dois dos três benchmarks, com médias de três execuções. Os autores não trazem seção de limitações; na declaração de ética, registram que os agentes conservam vieses e erros dos modelos e que a aba armazena trechos possivelmente sensíveis, e encorajam manter a aba sob os mesmos controles de acesso do acervo (p. 10). Esse ponto me toca pelo sigilo profissional, interpretação minha: um registro paralelo de trechos de autos é, ele mesmo, material sigiloso. A aferição, por fim, mede rubricas de tarefas de escritório e não a correção de citações jurisprudenciais.
+
+**Texto integral:** [arXiv:2610.10444, na fonte](https://arxiv.org/abs/2610.10444)
+
+::: {.nota-metodo}
+Nota escrita a partir da leitura integral do trabalho, com assistência de modelo de
+linguagem na redação e revisão do autor.
+:::
