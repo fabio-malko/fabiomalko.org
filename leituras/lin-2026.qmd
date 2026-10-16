@@ -1,0 +1,21 @@
+---
+title: "Lin et al. (2026): agentes de código chegam às páginas certas, mas erram ao transcrever o que leram"
+description: "Em 150 protocolos de ensaios clínicos, agentes de código visitam quase todas as páginas de evidência e ainda assim alteram números e operadores ao estruturar a saída; uma auditoria da saída contra a fonte eleva o F1 dos critérios de elegibilidade."
+categories: [Estado da arte em IA, Método de pesquisa]
+---
+
+LIN, Jiacheng et al. The last mile of coding agents for long-document tasks: an empirical
+study on clinical trial protocol digitization. **arXiv**, 2026. Depósito arXiv:2610.18507
+[cs.CL], versão 1, de 13 out. 2026. DOI:
+[10.48550/arXiv.2610.18507](https://doi.org/10.48550/arXiv.2610.18507).
+
+Os autores constroem o TrialPD-Bench, conjunto de 150 protocolos públicos de ensaios clínicos (mediana de 122 páginas, 106 patrocinadores), e medem como agentes de código transformam esses PDFs em saída estruturada em JSON, em quatro tarefas: indicação, critérios de elegibilidade, objetivos e desfechos e cronograma de atividades (pp. 2-3). Avaliam nove modelos em cinco ambientes de agente, com métricas de acerto, revocação das páginas de evidência visitadas no rastro do agente, comportamento e custo (pp. 4-5). O achado central é que localizar a evidência não é o gargalo: salvo o Kimi-K3 em objetivos e desfechos (72,4%), os sete agentes de fronteira visitam ao menos 84,8% das páginas necessárias em todas as tarefas e, no cronograma estruturado, ao menos 98,3%, e ainda assim a revocação de encontros não passa de 23,2% (p. 5, Tabela 2). O F1 de desfechos chega a 67,4%, e nenhuma métrica final, exceto a revocação de atividades do cronograma, ultrapassa 88% (p. 4). A falha dominante nos critérios de elegibilidade é de fidelidade: 88,0% das execuções com defeito não reproduzem o texto com exatidão, com 167 operadores de comparação e 308 números alterados em transcrições quase literais, como «≥100 meters» vertido para «> 100 meters» (p. 7). O TrialScribe, camada com instruções por tarefa e uma auditoria da saída contra a fonte feita por sessão independente, eleva um modelo aberto local em 6,2 a 59,4 pontos (p. 8), e a verificação sozinha leva o F1 de critérios de 72,2% para 82,3% (p. 8).
+
+Interessa-me porque o trabalho separa duas etapas que costumo ver confundidas, achar a passagem e reproduzi-la. Na minha pesquisa, a pergunta é se a extração automatizada de campos de decisões do STJ e do CARF é confiável e reprodutível, e o resultado de Lin e colegas sugere que a taxa de páginas relevantes lidas não prediz a exatidão do que se extrai: nos critérios de elegibilidade a falha dominante é de fidelidade, com alteração de números e de operadores de comparação (p. 7). Na advocacia, isso equivaleria a trocar um «até» por um «acima de» e, com ele, um prazo, uma alíquota ou um valor, transposição que é interpretação minha. O desenho é reaproveitável, com correspondência exata após normalização (p. 14), salvo na revocação de atividades e de encontros do cronograma. A auditoria por sessão independente rendeu mais onde dominava a infidelidade de transcrição (p. 8), o que apoia, como argumento empírico, a conferência contra a fonte primária; essa ponte também é interpretação minha. Os limites são os dos autores: o estudo se circunscreve a protocolos clínicos, e eles esperam que alguns achados, em especial o de que os agentes localizam a evidência e perdem exatidão ao transcrevê-la, sirvam a outros documentos longos, como contratos e documentos regulatórios (p. 9); o cronograma estruturado foi avaliado em só três protocolos (p. 9). Observo que as referências, salvo as do cronograma, partiram de rascunho de modelo conferido por especialistas (pp. 13-14) e que cada agente rodou uma vez por instância (p. 14).
+
+**Texto integral:** [arXiv:2610.18507, na fonte](https://arxiv.org/abs/2610.18507)
+
+::: {.nota-metodo}
+Nota escrita a partir da leitura integral do trabalho, com assistência de modelo de
+linguagem na redação e revisão do autor.
+:::

@@ -5,6 +5,18 @@ toc: false
 listing:
   id: fichas
   contents:
+    - leituras/lin-2026.qmd
+    - leituras/google-deepmind-2026.qmd
+    - leituras/grynets-2026.qmd
+    - leituras/anthropic-2026.qmd
+    - leituras/sun-2026.qmd
+    - leituras/quan-2026.qmd
+    - leituras/kumar-2026.qmd
+    - leituras/florin-2026.qmd
+    - leituras/al-negheimish-2026.qmd
+    - leituras/yun-2026.qmd
+    - leituras/yang-2026.qmd
+    - leituras/yu-2026.qmd
     - leituras/ravideshik-2026.qmd
     - leituras/meng-2026.qmd
     - leituras/baek-2026.qmd

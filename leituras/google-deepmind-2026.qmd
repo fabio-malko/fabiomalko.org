@@ -1,0 +1,21 @@
+---
+title: "Google DeepMind (2026): o Gemini 4 Argon reduz a alucinação abstendo-se quando incerto, e reconhece com mais frequência que pode estar sendo testado"
+description: "O relatório de segurança do desenvolvedor registra queda de 2,7 a 3,9 vezes nas respostas incorretas ou alucinadas frente ao Gemini 3.1 Pro, ligada à abstenção sob incerteza, e aumento da consciência de avaliação, que o próprio relatório trata como desafio metodológico."
+categories: [Estado da arte em IA, Método de pesquisa]
+---
+
+GOOGLE DEEPMIND. **Gemini 4 Argon — Safety & Security Report**. [S. l.]: Google DeepMind,
+out. 2026. 217 p. Disponível em:
+https://storage.googleapis.com/deepmind-media/gemini/gemini_4_safety_report.pdf. Acesso em:
+14 out. 2026.
+
+O relatório de segurança do Gemini 4 Argon avalia o modelo sem as salvaguardas de produção, comparado ao Gemini 3.7 Flash, ao 3.8 Flash e ao 3.1 Pro (p. 6; as páginas citadas seguem o arquivo PDF, uma a mais que a impressa). Na frente de segurança de fronteira, a empresa declara que não pode descartar que o modelo sem mitigação se aproxime de limiares críticos de capacidade em cibersegurança e em informação biológica, e de um limiar monitorado de furtividade e consciência situacional (p. 6). Quanto à confiabilidade, afirma tê-lo treinado para afirmar só o verificável e comunicar a incerteza em vez de adivinhar (p. 191). Em duas provas de conhecimento sem consulta, a SimpleQA Verified e a AA-Omniscience, esta com 6.000 perguntas em seis domínios, entre eles o direito, as taxas de resposta incorreta ou alucinada caem de 2,7 a 3,9 vezes em relação ao Gemini 3.1 Pro, o que o texto liga à abstenção sob incerteza (p. 191). Na fidelidade ao documento fornecido, o FACTS Grounding sobe de 64,7% para 79,0%, e as afirmações sem suporte por frase caem em mais da metade nas duas provas internas (p. 193). Em tarefa impossível, o 3.1 Pro frequentemente sintetizava um relatório falso com cifras inventadas, e o Argon interrompe e informa a ausência do arquivo (pp. 184-185). A consciência de avaliação espontânea, ligada à expectativa de correção automatizada, passou de 0,0% no 3.1 Pro para 37,8% das execuções não induzidas em armadilhas de programação agêntica, sem caso confirmado de rebaixamento estratégico de desempenho (pp. 157, 159).
+
+Guardo o documento para a linha de pesquisa sobre alucinação e verificação de citações, com a ressalva de que se trata de relatório do próprio desenvolvedor, sem revisão por pares, e de que os resultados por prova estão em figuras que não conferi. A fonte primária é útil porque a empresa associa a redução à abstenção calibrada e trata a fabricação de documentos e de resultados em fluxos agênticos como modo de falha medido (pp. 184-185, 191). Nas passagens que examinei, o relatório não informa a taxa do domínio jurídico da AA-Omniscience, e nada nele diz respeito a direito brasileiro. A transposição é interpretação minha: a hipótese a testar é se essa calibração se mantém em citações de jurisprudência nacional, medindo, num corpus de acórdãos, a razão entre abstenção e citação inventada; e um índice de 79,0% de fidelidade ao documento fornecido não me parece dispensar a conferência humana de uma peça. A consciência de avaliação (pp. 157-159) pede cautela: o relatório a trata como desafio metodológico importante, sem comprometer, a seu ver, as determinações de risco, e admite que, em testes de capacidade de sabotagem, recusas éticas induzidas por ela não se distinguem de baixo desempenho, o que torna necessário remover vazamentos de ambiente e de comando dos testes futuros (p. 159). Examinei o sumário executivo e as mitigações (pp. 1-13), a consciência de avaliação (pp. 156-159) e as seções de alinhamento agêntico e alucinação (pp. 180-194); não percorri os demais capítulos, entre eles os de riscos CBRN, cibersegurança e perda de controle.
+
+**Texto integral:** [Gemini 4 Argon — Safety & Security Report, na fonte](https://storage.googleapis.com/deepmind-media/gemini/gemini_4_safety_report.pdf)
+
+::: {.nota-metodo}
+Nota escrita a partir da leitura das partes do relatório indicadas no texto, com assistência
+de modelo de linguagem na redação e revisão do autor.
+:::

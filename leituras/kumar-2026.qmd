@@ -1,0 +1,18 @@
+---
+title: "Kumar (2026): consistência de 100% não torna confiável o juiz de IA, cujo caso extremo acertou apenas 51%"
+description: "Auditoria de seis modelos usados como juízes mostra que o veredito muda com a repetição e, sobretudo, com a troca de ordem dos candidatos, e propõe uma taxa de veredito confiável que combina estabilidade, invariância à ordem e acerto."
+categories: [Estado da arte em IA, Método de pesquisa]
+---
+
+KUMAR, Vineet; RATHORE, Darshita; MOITRA, Anindya. All verdicts are not equal: rethinking LLM judge reliability. **arXiv**, 2026. Depósito arXiv:2610.12083 [cs.CL], versão 1, de 8 out. 2026. DOI: [10.48550/arXiv.2610.12083](https://doi.org/10.48550/arXiv.2610.12083).
+
+Os autores, da PayPal, em Bengaluru, auditam seis modelos usados como juízes (GPT-5.2, GPT-4o, Gemini-2.5-Pro, Gemini-2.0-Flash, Claude-Sonnet-4.6 e Llama-3.3-70B) em quatro conjuntos de pares de preferência (MT-Bench, AlpacaFarm, JudgeBench e LLMBar), com cinco formatos de saída, duas ordens de apresentação, três temperaturas e dez repetições por condição (p. 4). Definem a taxa de veredito confiável T, a probabilidade conjunta de o veredito ser reprodutível, invariante à troca de ordem e correto, que no desenho binário forçado se reduz a T = C · (A − φ/2), em que C é a consistência entre repetições, φ a taxa de inversão com a troca de ordem e A a acurácia (p. 3). Daí decorre um teto: nesse desenho, a acurácia observável não ultrapassa 1 − φ/2 (p. 3). O caso mais nítido é o do Gemini-2.0-Flash com veredito primeiro em XML no JudgeBench, com C de 100%, φ de 98,0%, acurácia de 51,0% e T de 2,0% (p. 4). Entre 7% e 17% dos vereditos mudam em réplicas idênticas, e até 98% se invertem quando se troca a ordem dos candidatos (p. 1). A interação entre juiz e conjunto de dados é a maior fonte de variação de T (η² = 28,1%), de modo que nenhum juiz domina os demais (p. 6). A pontuação holística em prompt único elevou o T do Gemini-2.5-Pro no JudgeBench de 28,9% para 77,9%, ao passo que a decomposição no estilo FLASK deixou T abaixo do formato direto nos seis juízes no LLMBar e em três deles no JudgeBench (Tabela 2, p. 8).
+
+Interessa-me porque o trabalho enfrenta, fora do direito, o problema que a minha tese coloca ao juiz que confere citações: o resultado de uma única passagem não diz se a mesma pergunta, reexecutada, devolve a mesma resposta. A decomposição de T em estabilidade e acurácia líquida do viés de posição é a parte mais útil, porque a temperatura reduz a consistência em 12,1 pontos e move em apenas 0,3 ponto a acurácia líquida (p. 7), o que indica que ruído e viés respondem a intervenções distintas. A recomendação de relatar C, φ, A e T por célula, de escolher o juiz por T e não pela acurácia e de tratar como subespecificado o protocolo que avalia uma única ordem (p. 8) acompanha a linha segundo a qual acurácia agregada não implica idoneidade decisória. A ponte para o direito é interpretação minha. Verificar uma citação isolada classifica um único texto, sem comparar duas respostas, e por isso a taxa de inversão por troca de posição exigiria uma adaptação conceitual que o trabalho não faz. Os limites são os declarados pelos autores: quatro conjuntos em inglês, que podem não se generalizar a línguas de menos recursos, modelos fechados sem acesso a probabilidades internas e apenas preferência pareada, sem ordenação de listas (p. 8). Não há conteúdo jurídico, e qualquer afirmação sobre decisões do STJ ou do CARF, em português, dependeria de medição própria.
+
+**Texto integral:** [arXiv:2610.12083, na fonte](https://arxiv.org/abs/2610.12083)
+
+::: {.nota-metodo}
+Nota escrita a partir da leitura integral do trabalho, com assistência de modelo de
+linguagem na redação e revisão do autor.
+:::

@@ -1,0 +1,18 @@
+---
+title: "Quan (2026): o melhor detector de reward hacking chega a AUROC de 0,962, mas quatro detectores perdem de 10,7 a 15,9 pontos de acurácia em trajetórias com ferramentas"
+description: "Benchmark que reúne onze conjuntos públicos mostra que um escore agregado alto esconde a queda de desempenho em trajetórias longas com ferramentas, a dependência da forma de entrada e a transferência desigual do ajuste supervisionado."
+categories: [Estado da arte em IA, Método de pesquisa]
+---
+
+QUAN, Junwei; OPRYSHKO, Evgenii; SUBRAMANI, Rohan; GILITSCHENSKI, Igor. RH-Detect: a unified benchmark for reward hacking detection. **arXiv**, 2026. Depósito arXiv:2610.10947 [cs.LG], versão 1, de 7 out. 2026. DOI: [10.48550/arXiv.2610.10947](https://doi.org/10.48550/arXiv.2610.10947).
+
+Os autores reúnem, num esquema comum, subconjuntos de onze conjuntos públicos sobre *reward hacking*, o comportamento em que o modelo explora o sinal de avaliação sem cumprir a tarefa pretendida, num total de 92.761 linhas e seis categorias de comportamento (p. 1). Sobre 5.021 unidades abertas de seis fontes, avaliam seis modelos de cinco famílias como detectores, sem treino adicional, com temperatura zero e um prompt fixo que devolve uma probabilidade de 0 a 100 (p. 4). A melhor AUROC agregada é a do Qwen 3.5 Flash, 0,962, com acurácia de 0,931; a pior, a do GPT-5 Nano, 0,817, com taxa de falso positivo de 0,353 no limiar de 0,5 (p. 4, Tabela 2). Nos quatro detectores mais fortes com cobertura completa, a acurácia em MALT e TRACE, trajetórias longas com uso de ferramentas, é de 10,7 a 15,9 pontos percentuais menor que nas demais fontes (p. 5, Tabela 4); o GPT-5 Nano segue o sentido oposto, com +9,4. A forma de entregar a transcrição também pesa: retirar o raciocínio eleva o Qwen3.5-4B de 0,779 para 0,849 e reduz o Qwen Flash de 0,977 para 0,950 (p. 5, Tabela 5). O ajuste supervisionado de um token, com uma fonte excluída a cada rodada, eleva a AUROC média por fonte em 0,036, mas a reduz em 0,140 em School of Reward Hacks (p. 6, Tabela 6), e não há transferência entre as trilhas aberta e de múltipla escolha (p. 6, Tabela 7).
+
+Retenho a lição de método para o juiz que, na minha tese, confere citações: uma AUROC agregada alta esconde variação por fonte, por forma de entrada e por treino, e os autores concluem que o monitoramento confiável exige avaliação estratificada por fonte e especificação completa da entrada do detector, da leitura do escore e do treino (p. 7). Isso sustenta, por analogia minha, avaliar o verificador de citações de modo estratificado por tribunal, base e tipo de peça, declarando com precisão a entrada, a leitura do escore e o limiar. A hipótese que extraio, e que o trabalho não testa, é a de que um verificador com bom desempenho sobre texto isolado perca acurácia ao avaliar trajetórias de agentes de pesquisa de jurisprudência com uso de ferramentas. Os próprios autores advertem que a diferença em MALT e TRACE é uma associação no nível da fonte, pois comprimento, formato de ferramenta, mistura de categorias, elicitação e verificação variam juntos (p. 7). Os rótulos são herdados e de procedência heterogênea; os negativos, quando não há par limpo, são sorteados da mesma tarefa, sem excluir pistas de estilo; o estudo de treino cobre um só modelo; e o benchmark é estático (p. 7). O objeto é *reward hacking*, e não alucinação de citação. A transposição ao direito brasileiro, com acórdãos do STJ e do CARF em português, exigiria validação própria.
+
+**Texto integral:** [arXiv:2610.10947, na fonte](https://arxiv.org/abs/2610.10947)
+
+::: {.nota-metodo}
+Nota escrita a partir da leitura integral do trabalho, com assistência de modelo de
+linguagem na redação e revisão do autor.
+:::

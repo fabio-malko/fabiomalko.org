@@ -1,0 +1,21 @@
+---
+title: "Grynets (2026): a acurácia de três juízes de linguagem não se distingue da de uma regra de comprimento da especificação"
+description: "Os autores testam três modelos de linguagem como avaliadores de especificações de código Oracle PL/SQL e mostram que, em 247 registros de teste, nenhum deles se separa estatisticamente de uma regra baseada no comprimento do texto; o que os distingue é a capacidade de apontar categoria e evidência do defeito."
+categories: [Estado da arte em IA, Método de pesquisa]
+---
+
+GRYNETS, Oleg; FEDORCHUK, Ivan; LYASHKEVYCH, Vasyl. Leakage-resistant evaluation of
+AI-generated database specifications in specification-driven migration. **arXiv**, 2026.
+Depósito arXiv:2610.12778 [cs.SE], versão 1, de 8 out. 2026. DOI:
+[10.48550/arXiv.2610.12778](https://doi.org/10.48550/arXiv.2610.12778).
+
+A equipe da EPAM Systems propõe o LRFB, um arcabouço e *benchmark* para medir avaliadores de especificações de código Oracle PL/SQL produzidas por inteligência artificial, sem propor novo gerador de especificações (p. 1). O conjunto reúne 494 pares código-especificação, em 19 métricas, e reserva metade dos registros de cada métrica para teste, com três limpos e dez defeituosos por metade (p. 5). O gabarito é isolado da inferência por testes de canário e de permutação de rótulos, providência adotada depois de os autores constatarem que os identificadores originais dos registros traziam os próprios rótulos (p. 5). Nos 247 registros de teste, 190 defeituosos e 57 limpos, três modelos de linguagem usados como juízes (GPT-4o, DeepSeek V4 Pro e Claude Sonnet 4.5) obtiveram acurácia balanceada de 0,87, 0,89 e 0,81, com sensibilidade de 0,99 a 1,00 e especificidade de 0,61 a 0,79 (p. 6, Tabela III). Uma regra que apenas compara o comprimento da especificação com um limiar alcançou 0,88, e o teste exato de McNemar não separou nenhum juiz dessa regra, com p de 0,38 a 0,74 (p. 7, Tabela IV). Os autores atribuem o atalho à construção do conjunto, em que defeitos de omissão encurtavam o texto (p. 7). Além do veredito, a categoria rotulada do defeito apareceu entre os achados em 159, 168 e 174 dos 190 registros defeituosos, e a evidência citada coincidiu com o trecho rotulado em 130, 130 e 129 de 140 registros (p. 8, Tabela V).
+
+Interessa-me menos o objeto, que é migração de código sem relação com texto jurídico, e mais o desenho do experimento, que se transpõe à minha pesquisa sobre extração automatizada de campos de decisões tributárias. Três lições me parecem aproveitáveis. A primeira é incluir sempre uma linha de base trivial: se uma regra de comprimento iguala o avaliador, a acurácia agregada não demonstra, por si, que ele leia a fonte, o que se aproxima da tese de que acurácia agregada não implica idoneidade decisória. A segunda é selar o gabarito, porque o vazamento de rótulos pelos identificadores (p. 5) é risco que também corre qualquer conjunto de decisões cujo nome de arquivo traga a classe esperada. A terceira é conferir as citações do avaliador contra o texto de entrada, que os autores classificam como fundamentadas, ausentes ou infundadas (p. 5), e que dialoga com a verificação de citação e a alucinação de citação. Registro ainda a instabilidade em temperatura zero: as três execuções divergiram em 6, 3 e 2 dos 247 registros de teste, respectivamente no GPT-4o, no DeepSeek V4 Pro e no Claude Sonnet 4.5 (p. 9), o que reforça a necessidade de reexecutar o mesmo comando, como prevê o protocolo de replicabilidade. Os limites são os declarados pelos autores: dados sintéticos, sem verificação exaustiva por especialistas, artefatos pequenos, 13 registros de teste por métrica e apenas 57 limpos (p. 9). A aproximação ao direito brasileiro é interpretação minha, pois o trabalho não contém dado jurídico.
+
+**Texto integral:** [arXiv:2610.12778, na fonte](https://arxiv.org/abs/2610.12778)
+
+::: {.nota-metodo}
+Nota escrita a partir da leitura integral do trabalho, com assistência de modelo de
+linguagem na redação e revisão do autor.
+:::
