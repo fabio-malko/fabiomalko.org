@@ -1,0 +1,72 @@
+# Artigos publicados em portais jurídicos (Migalhas e Jusbrasil).
+# Não são produção científica: não passaram por avaliação por pares nem têm DOI.
+# Cada item aponta para o texto no próprio portal; nada é reproduzido aqui.
+# Ficam de fora as duas republicações no Jusbrasil de artigos científicos já listados
+# na seção principal («Direito e Economia», 20/09/2024, e «A nova tributação sobre o
+# consumo», 13/08/2024). Levantamento conferido nos portais em 30/10/2026.
+
+- title: "O empresário que morre de acerto: Split payment, crédito condicionado e caixa"
+  path: https://www.migalhas.com.br/depeso/467031/o-empresario-que-morre-de-acerto-split-payment-e-credito-condicionado
+  date: 2026-10-28
+  subtitle: "Migalhas · 28 de outubro de 2026"
+  description: "Com o split payment, o imposto sai na liquidação do pagamento e o crédito do comprador passa a depender do fornecedor; quem não controla margem e cadeia pode quebrar sem errar."
+
+- title: "As primeiras ações judiciais sobre a reforma tributária do consumo"
+  path: https://www.migalhas.com.br/depeso/466214/as-primeiras-acoes-judiciais-sobre-a-reforma-tributaria-do-consumo
+  date: 2026-10-15
+  subtitle: "Migalhas · 15 de outubro de 2026"
+  description: "O que o STF já decidiu nas ações contra a reforma tributária do consumo, o que está pendente e o que acompanhar, a partir dos dados do Observatório da Reforma."
+
+- title: "O tema 1.232 do STF e os limites da execução trabalhista para grupos econômicos"
+  path: https://www.migalhas.com.br/depeso/442214/tema-1-232-e-limites-da-execucao-trabalhista-para-grupos-economicos
+  date: 2025-10-15
+  subtitle: "Migalhas · 15 de outubro de 2025"
+  description: "Os limites fixados pelo STF à inclusão automática de empresas do grupo econômico na execução trabalhista e seus efeitos sobre a segurança jurídica."
+
+- title: "IBS e CBS na reforma: Desafios para a precificação dos serviços"
+  path: https://www.migalhas.com.br/depeso/441882/ibs-e-cbs-na-reforma-desafios-para-a-precificacao-dos-servicos
+  date: 2025-10-11
+  subtitle: "Migalhas · 11 de outubro de 2025"
+  description: "O aumento da carga do IBS e da CBS sobre o setor de serviços e a necessidade de rever a precificação, a gestão e as margens durante a transição."
+
+- title: "A Reforma Tributária e os Serviços Profissionais"
+  path: https://www.jusbrasil.com.br/artigos/a-reforma-tributaria-e-os-servicos-profissionais/5039700360
+  date: 2025-10-10
+  subtitle: "Jusbrasil · 10 de outubro de 2025"
+  description: "A substituição de PIS, Cofins, ISS e ICMS pelo IBS e pela CBS, nos termos da LC 214/2025, e o que ela muda na tributação dos serviços profissionais."
+
+- title: "Opinião: A Justiça no Centro do Palco"
+  path: https://www.jusbrasil.com.br/artigos/opiniao-a-justica-no-centro-do-palco/2760064990
+  date: 2024-10-01
+  subtitle: "Jusbrasil · 1 de outubro de 2024"
+  description: "O protagonismo crescente dos tribunais em decisões de grande repercussão política e social e o risco que medidas extremas trazem à credibilidade do Judiciário."
+
+- title: "Opinião: STF confirma que o Fisco estadual pode acessar dados bancários dos contribuintes sem ordem judicial"
+  path: https://www.jusbrasil.com.br/artigos/opiniao-stf-confirma-que-o-fisco-estadual-pode-acessar-dados-bancarios-dos-contribuintes-sem-ordem-judicial/2752960712
+  date: 2024-09-25
+  subtitle: "Jusbrasil · 25 de setembro de 2024"
+  description: "A decisão do STF sobre o acesso do Fisco estadual a dados bancários e o que ela exige das empresas em disciplina financeira e governança."
+
+- title: "Opinião: A Crise do Controle"
+  path: https://www.jusbrasil.com.br/artigos/opiniao-a-crise-do-controle/2705295803
+  date: 2024-09-05
+  subtitle: "Jusbrasil · 5 de setembro de 2024"
+  description: "A polarização do debate público nas redes sociais e a dificuldade das instituições tradicionais, como o Judiciário e o Congresso, de se adaptarem ao ambiente digital."
+
+- title: "IA e o futuro do trabalho: desafios, oportunidades e um novo horizonte para o potencial humano"
+  path: https://www.jusbrasil.com.br/artigos/ia-e-o-futuro-do-trabalho-desafios-oportunidades-e-um-novo-horizonte-para-o-potencial-humano/1841748486
+  date: 2023-05-21
+  subtitle: "Jusbrasil · 21 de maio de 2023"
+  description: "O futuro do mercado de trabalho diante dos avanços recentes da inteligência artificial, com atenção ao direito e à contabilidade."
+
+- title: "A Importância da Integração entre as Áreas Jurídica e Contábil no meio empresarial"
+  path: https://www.jusbrasil.com.br/artigos/a-importancia-da-integracao-entre-as-areas-juridica-e-contabil-no-meio-empresarial/1837265330
+  date: 2023-05-16
+  subtitle: "Jusbrasil · 16 de maio de 2023"
+  description: "O alinhamento entre os domínios jurídico e contábil da empresa diante de desafios cíveis, tributários e criminais."
+
+- title: "Os impactos do crime organizado e corrupção no ambiente empresarial: desafios para os advogados criminalistas"
+  path: https://www.jusbrasil.com.br/artigos/os-impactos-do-crime-organizado-e-corrupcao-no-ambiente-empresarial-desafios-para-os-advogados-criminalistas/1835633237
+  date: 2023-05-15
+  subtitle: "Jusbrasil · 15 de maio de 2023"
+  description: "O crime organizado e a corrupção no ambiente empresarial e os desafios que impõem à advocacia criminal."

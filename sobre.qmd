@@ -113,11 +113,13 @@ Constitucional 132/2023 e de seus impactos no ambiente empresarial brasileiro.
 DOI: [10.55905/revconv.17n.7-390](https://doi.org/10.55905/revconv.17n.7-390).
 [Página no sítio](artigos/reforma-tributaria-consumo-ec-132-2023.qmd).
 
-### Textos de opinião
+### Artigos em portais jurídicos
 
-Mantenho publicação de textos de opinião sobre matéria tributária, penal econômica e
-empresarial no Jusbrasil, reunidos em
-[malko.jusbrasil.com.br](https://malko.jusbrasil.com.br).
+Publico artigos sobre matéria tributária, penal econômica e empresarial no Migalhas,
+na seção Migalhas de Peso, e no Jusbrasil. Estão reunidos em
+[Publicações](artigos.qmd#portais), em espaço separado da produção científica, e nos
+perfis de autor em [migalhas.com.br](https://www.migalhas.com.br/autor/fabio-andre-malko)
+e [malko.jusbrasil.com.br](https://malko.jusbrasil.com.br).
 
 ### Dissertação
 

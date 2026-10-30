@@ -1,9 +1,9 @@
 ---
 title: "Publicações"
-subtitle: "Artigos em periódico, dissertação e notas escritas para este sítio"
+subtitle: "Produção científica e artigos em portais jurídicos"
 toc: false
 listing:
-  id: producao
+- id: producao
   contents: artigos
   type: default
   sort: "date desc"
@@ -13,6 +13,16 @@ listing:
   filter-ui: true
   sort-ui: false
   date-format: "MMMM [de] YYYY"
+- id: portais
+  contents: portais.yml
+  type: default
+  sort: "date desc"
+  fields: [title, subtitle, description]
+  categories: false
+  feed: false
+  filter-ui: false
+  sort-ui: false
+  date-format: "D [de] MMMM [de] YYYY"
 ---
 
 Reúno aqui o que escrevo, do artigo submetido a periódico à nota curta redigida para
@@ -24,5 +34,19 @@ caso concreto sob patrocínio. Nenhum dado de cliente aparece em qualquer deles,
 o art. 7º, II, da Lei 8.906/1994. A leitura de qualquer um deles não substitui consulta
 sobre situação determinada, que depende do exame dos documentos e dos fatos.
 
+## Produção científica
+
+Artigos em periódico, dissertação e notas escritas para este sítio.
+
 ::: {#producao}
+:::
+
+## Artigos em portais jurídicos {#portais}
+
+Textos escritos para portais jurídicos de grande circulação, o Migalhas e o Jusbrasil,
+dirigidos a advogados, empresários e gestores. Não são produção científica: não passaram
+por avaliação por pares e não têm DOI. Cada título leva ao texto no próprio portal, onde
+fica a versão de referência para citação.
+
+::: {#portais}
 :::
