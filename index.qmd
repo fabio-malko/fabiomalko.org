@@ -7,9 +7,9 @@ listing:
     # Ordem manual: as três notas mais recentes, na mesma ordem do topo de leituras.qmd.
     # Ao publicar nota nova, atualizar aqui também.
     contents:
-      - leituras/choi-2024.qmd
-      - leituras/cui-alexander-2026.qmd
-      - leituras/tornberg-2024.qmd
+      - leituras/lin-2026.qmd
+      - leituras/google-deepmind-2026.qmd
+      - leituras/grynets-2026.qmd
     type: grid
     grid-columns: 3
     sort: false
@@ -54,7 +54,7 @@ Econômico. Advogado e contabilista; o que escrevo nasce de problemas reais e vo
 [decisões do STJ no corpus da dissertação (ICMS, ISS, ITBI e ITCMD)]{.legenda}
 :::
 ::: {.indicador}
-[31]{.numero}
+[78]{.numero}
 [notas de leitura sobre trabalhos de outros autores]{.legenda}
 :::
 ::: {.indicador}
@@ -62,8 +62,8 @@ Econômico. Advogado e contabilista; o que escrevo nasce de problemas reais e vo
 [publicações próprias com referência, veículo e DOI]{.legenda}
 :::
 ::: {.indicador}
-[5 + 26]{.numero}
-[ações no STF e processos no DataJud acompanhados pelo Observatório]{.legenda}
+[5 + 20]{.numero}
+[ações no STF e processos nos tribunais com a reforma por objeto, acompanhados pelo Observatório]{.legenda}
 :::
 :::
 
@@ -129,11 +129,11 @@ de IBS e CBS no DataJud, cada um com ficha, cronologia e link para a íntegra.
 [já julgadas no mérito]{.legenda}
 :::
 ::: {}
-[26]{.numero}
-[processos localizados no DataJud]{.legenda}
+[20]{.numero}
+[processos nos tribunais com a reforma por objeto]{.legenda}
 :::
 ::: {}
-[25]{.numero}
+[20]{.numero}
 [ajuizados em 2026]{.legenda}
 :::
 :::
