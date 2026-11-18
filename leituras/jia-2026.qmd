@@ -1,0 +1,18 @@
+---
+title: "Jia et al. (2026): no Qwen3-8B com raciocínio ligado, parte da decisão de seguir uma injeção de instruções forma-se depois da leitura"
+description: "Com reexecuções ramificadas no AgentDojo, a parcela da variância do desfecho fixada na leitura da injeção cai de 0,91 para 0,62 em um agente Qwen3 quando o raciocínio é ligado, e uma única execução por tarefa passa a ser rótulo ruidoso."
+categories: [Estado da arte em IA, Método de pesquisa]
+---
+
+JIA, Haoxuan et al. The Window Is in the Reasoning: When LLM Agents Decide to Follow Prompt Injections. **arXiv**, 2026. Depósito arXiv:2610.24048 [cs.CL], versão 1, de 16 out. 2026. DOI: [10.48550/arXiv.2610.24048](https://doi.org/10.48550/arXiv.2610.24048).
+
+Os autores testam a premissa, comum a monitores de execução e a benchmarks de execução única, de que a decisão de um agente de seguir uma injeção de instruções está selada quando ele a lê (p. 1). O método reproduz episódios do AgentDojo de forma exata até o estado de exposição, o passo em que o agente lê pela primeira vez a saída de ferramenta que contém a injeção, e reamostra o restante muitas vezes; a medida V é a parcela da variância do desfecho que está entre estados (pp. 2-3). No Qwen3-8B, V é 0,91 nas quatro suítes sem raciocínio e 0,62 com ele (queda pareada com IC 95% de −0,38 a −0,22) (pp. 4-5, Tabela 3). O efeito depende do modelo: o raciocínio reduz a taxa de sucesso do ataque no Qwen3-8B (0,42 para 0,32) e a eleva no Nemotron (0,06 para 0,51, no banking) e no Gemini 2.5 Flash (0,62 para 0,80, em banking e slack) (p. 5). No banking, o prefixo do raciocínio determina 0,36, 0,55 e 0,62 da variância em aberto na leitura, a 30%, 50% e 70% do raciocínio (p. 5). Monitores zero-shot sobre modelos mais baratos ficam significativamente abaixo do teto de decisão em 15 de 15 células, os fortes em 3 de 18 e o de antecipação com GPT-5 em nenhuma de 9, estes dois acrescentados depois dos resultados (p. 6, Tabela 4). Duas execuções da mesma tarefa concordam em 0,90 a 0,99 dos casos sem raciocínio (Qwen3, Nemotron e Llama-3.1) e em 0,65 a 0,94 com ele (p. 7).
+
+Interessa-me por dois motivos. O primeiro é a advocacia: um agente que leia petições da parte contrária, anexos e correspondência consome conteúdo de terceiros, e o risco de instrução plantada nesse material toca o sigilo profissional. Essa ponte é interpretação minha, porque o AgentDojo não tem suíte jurídica e o experimento usa dados sintéticos (pp. 3, 8). O segundo é metodológico e aproxima-se do protocolo de replicabilidade da minha tese: com modelos que raciocinam, uma execução por tarefa é rótulo ruidoso, e um rótulo majoritário com 90% de probabilidade de acerto exige de 3 a 11 execuções por tarefa no Qwen3-8B com raciocínio em três das quatro suítes (p. 7). Os limites são os declarados: um único benchmark; premissa de decisão na leitura que vale com força só para os Qwen3, em parte para Nemotron e Gemini e não para o SmolLM3; estados transplantados de episódios de outro agente; K = 4 ramos com raciocínio e 32 a 39 estados mistos na reamostragem aninhada; monitores fortes e de antecipação acrescentados depois de vistos os resultados; rótulo de cumprimento próprio dos autores; e ausência de teste causal do mecanismo (p. 8). Duas das quatro hipóteses registradas de antemão falharam (p. 4, Tabela 1).
+
+**Texto integral:** [arXiv:2610.24048, na fonte](https://arxiv.org/abs/2610.24048)
+
+::: {.nota-metodo}
+Nota escrita a partir da leitura integral do trabalho, com assistência de modelo de
+linguagem na redação e revisão do autor.
+:::

@@ -5,6 +5,26 @@ toc: false
 listing:
   id: fichas
   contents:
+    - leituras/jia-2026.qmd
+    - leituras/ghosh-2026.qmd
+    - leituras/asgari-2026.qmd
+    - leituras/zarif-2026.qmd
+    - leituras/krishna-2026.qmd
+    - leituras/fischer-2026.qmd
+    - leituras/dolev-2026.qmd
+    - leituras/cai-2026.qmd
+    - leituras/qin-2026.qmd
+    - leituras/nguyen-2026.qmd
+    - leituras/kou-2026.qmd
+    - leituras/dey-2026.qmd
+    - leituras/demirkiran-2026.qmd
+    - leituras/xu-2026-mcair.qmd
+    - leituras/xu-2026-auditing.qmd
+    - leituras/rao-2026.qmd
+    - leituras/qian-2026.qmd
+    - leituras/kulkarni-2026.qmd
+    - leituras/sanayei-2026.qmd
+    - leituras/moshood-2026.qmd
     - leituras/lin-2026.qmd
     - leituras/google-deepmind-2026.qmd
     - leituras/grynets-2026.qmd

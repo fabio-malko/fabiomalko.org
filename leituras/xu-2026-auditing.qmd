@@ -1,0 +1,18 @@
+---
+title: "Xu e Gao (2026): placares de atribuição de falha podem ser alcançados por pistas de superfície, sem verificação entre passos"
+description: "Em três benchmarks de atribuição de falha, preditores que não comparam os passos entre si igualam ou superam o GPT-4.1; os autores propõem quatro testes, sem nova anotação, para separar verificação de uso de pista."
+categories: [Estado da arte em IA, Método de pesquisa]
+---
+
+XU, Tianyang; GAO, Jing. Auditing Failure Attribution: Label Predictability and Judge Behavior. **arXiv**, 2026. Depósito arXiv:2610.17747 [cs.CL], versão 1, de 13 out. 2026. DOI: [10.48550/arXiv.2610.17747](https://doi.org/10.48550/arXiv.2610.17747).
+
+Os autores, da Purdue University, auditam três benchmarks de atribuição de falha, nos quais um modelo juiz deve apontar o passo ou o agente que causou o erro de uma execução: Who&When Pro, AFTraj e Aegis (pp. 1-2). Propõem quatro testes que dispensam nova anotação, a saber, restrição de entrada, seguimento de pista, acurácia residual e agregação (pp. 2-4). Nos três conjuntos, um preditor sem verificação entre passos iguala ou supera o GPT-4.1. No ALFAgent, um classificador que lê cada passo isoladamente indica o passo com erro nas 311 trajetórias, ao passo que o GPT-4.1 acerta 58,8%, e a regra do último passo com raciocínio acerta 99,7%, porque a injeção do erro deixa sem raciocínio os passos seguintes (pp. 1 e 4, Tabela 2). Juízes ajustados nos rótulos chegam a 99,7-100%, 41 pontos acima do GPT-4.1, mas perdem de 31 a 99 pontos quando se acrescenta raciocínio pertinente após o erro, enquanto os juízes sem ajuste perdem no máximo 9 (p. 5). No AFTraj, o TF-IDF do turno corrente e o GPT-4.1 acertam 82 de 163 falhas, mas o primeiro lidera nas falhas injetadas (65,7% contra 48,1%) e o segundo nas naturais (54,5% contra 20,0%), de modo que o empate depende da mistura publicada (p. 6, Tabela 3). No Aegis, rotular todos os agentes como falhos dá micro-F1 de 49,2%, contra 50,0% do GPT-4.1, mas a acurácia de conjunto exato é de 1,5% contra 20,7% (pp. 7-8, Tabela 4).
+
+Interessa-me porque o trabalho oferece método para um problema que a minha pesquisa também enfrenta, o de saber se um placar alto mede a tarefa que se pretende medir. Na tese, a pergunta é se a extração automatizada de campos de decisões do STJ e do CARF é confiável, e a acurácia agregada, tomada sozinha, pode refletir pistas do conjunto de teste e não a leitura do conteúdo. A transposição é interpretação minha, pois os benchmarks auditados não envolvem dado jurídico. Os autores sustentam que, se um preditor incapaz de comparar passos recupera o rótulo, a nota alta não mostra que o juiz o tenha feito (p. 3), e mostram que o preditor por turno acerta bem mais nas falhas injetadas do que nas naturais (p. 6, Tabela 3). Por analogia, que também é minha, o mesmo risco alcança a verificação de citações: se um preditor ingênuo, que veja apenas a posição, a extensão ou o vocabulário do trecho, já recupera o rótulo, o desempenho do modelo não demonstra a conferência contra a fonte, e proponho testar minutas com erros de citação colhidos de peças reais. Os limites são os declarados pelos autores: o seguimento de pista foi executado só no ALFAgent, que provém de um único procedimento de injeção; os juízes responderam ao prompt dos autores, e não ao do benchmark; os juízes ajustados cobrem um subconjunto, dois tamanhos de modelo e duas sementes; e só vale o rótulo publicado, de modo que outra atribuição igualmente válida conta como erro (pp. 8-9).
+
+**Texto integral:** [arXiv:2610.17747, na fonte](https://arxiv.org/abs/2610.17747)
+
+::: {.nota-metodo}
+Nota escrita a partir da leitura integral do trabalho, com assistência de modelo de
+linguagem na redação e revisão do autor.
+:::

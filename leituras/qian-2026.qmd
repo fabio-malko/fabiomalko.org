@@ -1,0 +1,18 @@
+---
+title: "Qian (2026): na extração de entidades por modelo de linguagem, só 1,2% dos falsos positivos não têm suporte no texto, e a confiança ordena a revisão sem atestar a verdade"
+description: "Um estudo pré-registrado decompõe os erros de extração em relatórios longos de inteligência de ameaças e mostra que os sinais de confiança ranqueiam os resultados sem verificá-los."
+categories: [Estado da arte em IA, Método de pesquisa]
+---
+
+QIAN, Jiahong. From unreliable to usable: decomposing failure modes and confidence signals in LLM entity extraction — evidence from cyber threat intelligence. **arXiv**, 2026. Depósito arXiv:2610.20417 [cs.CL], versão 1, de 14 out. 2026. DOI: [10.48550/arXiv.2610.20417](https://doi.org/10.48550/arXiv.2610.20417).
+
+O autor avalia, com protocolo pré-registrado e congelado, a extração de grupos de ameaça, identificadores de vulnerabilidade (CVE) e técnicas de ataque em relatórios longos de inteligência de ameaças cibernéticas (354 campanhas, 630 execuções modelo-relatório), com dois modelos de baixo custo e um de topo como controle (pp. 1, 3). O resumo informa, para treino e teste, precisão micro de 0,03 a 0,34 e erro de calibração da confiança verbalizada de 0,53 a 0,94 (p. 1); a Tabela 1, só do conjunto de teste, traz precisão micro de 0,06 a 0,34 e revocação de 0,81 a 0,98 (p. 5). Numa anotação em três níveis de 360 candidatos do teste, feita por dois modelos de linguagem alheios aos avaliados (κ = 0,79 sem os casos limítrofes; 0,68 em três classes), 65,6% dos falsos positivos, ponderados pela amostragem, são menções de contexto, 19,9% são entidades pertinentes ao evento fora do gabarito e 1,2% não têm suporte textual, valor que o autor trata como limite inferior (Tabela 2, p. 5; p. 4). A frequência de autoconsistência cumpre o critério pré-registrado de ganho de precisão nos 30% superiores de confiança nas seis células do teste (p. 1; Tabela 3, p. 6). Nos contrafactuais dos dois modelos de baixo custo, porém, uma única frase de atribuição falsa leva a vincular a vulnerabilidade injetada em 95,6% a 100% dos alvos, e uma frase marcada como alheia ao caso ainda vincula uma vulnerabilidade falsa em até 26,7% (Tabela 4, p. 7). O autor conclui que a confiança pode fixar prioridade de revisão, nunca a verdade (p. 1).
+
+Interessa-me porque o trabalho desmonta o rótulo de alucinação para o erro de extração em documento longo: quase todo falso positivo de CVE tem fonte no texto (99,7% a 99,8%, p. 4), e o autor descreve o erro como menção tomada por uso (p. 5). Na minha pesquisa sobre a extração de campos de decisões do STJ e do CARF, a hipótese correspondente, que é minha e não do autor, é que o modelo confunda o precedente apenas citado em relatório, em voto vencido ou na petição com o fundamento do julgado; a taxonomia e a anotação em três níveis seriam reaproveitáveis para medi-lo. O resultado sobre a confiança acompanha a tese de que acurácia agregada não implica idoneidade decisória: o sinal de consistência serve para ordenar a fila de conferência, e a revisão humana permanece. Os limites são os do próprio autor: um só domínio e uma só convenção de gabarito, com a replicação em outros domínios, o jurídico entre eles, deixada para trabalho futuro (p. 7); anotação feita por modelos, com conferência humana de amostra apenas planejada (p. 8); contrafactuais e verificação sem o modelo de topo (p. 8); e revisão simulada, sem medida de esforço humano real (pp. 7-8).
+
+**Texto integral:** [arXiv:2610.20417, na fonte](https://arxiv.org/abs/2610.20417)
+
+::: {.nota-metodo}
+Nota escrita a partir da leitura integral do trabalho, com assistência de modelo de
+linguagem na redação e revisão do autor.
+:::

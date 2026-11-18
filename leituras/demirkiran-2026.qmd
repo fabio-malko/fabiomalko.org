@@ -1,0 +1,18 @@
+---
+title: "Demirkiran e Ernstberger (2026): a forma de apresentar o benchmark pode alterar a decisão do guarda e a acurácia medida, mas só em algumas configurações"
+description: "Uma escada de auditoria em três degraus, aplicada a avaliações de guardas de agentes, mostra rótulos previsíveis por regras pobres e um efeito de edições pareadas sobre o Claude Haiku 4.5 que não se reproduz em outros dois guardas."
+categories: [Estado da arte em IA, Método de pesquisa]
+---
+
+DEMIRKIRAN, Hasan; ERNSTBERGER, Jens. Shortcut Sensitivity in Agent-Safety Evaluations. **arXiv**, 2026. Depósito arXiv:2610.22243 [cs.AI], versão 1, de 15 out. 2026. DOI: [10.48550/arXiv.2610.22243](https://doi.org/10.48550/arXiv.2610.22243).
+
+Os autores, da Kontext, propõem uma escada de auditoria de atalhos com três degraus, a saber, previsibilidade do rótulo por uma regra deliberadamente pobre, associação observacional entre a pista e a decisão do guarda e sensibilidade em pares editados, nos quais só a pista muda, e a aplicam a avaliações de guardas que aprovam ou bloqueiam chamadas de agentes a ferramentas (pp. 1-2). No LinuxArena, o comprimento médio dos comandos de shell prediz o rótulo com AUC de 0,910; no AgentDojo-Traj, a consulta por nome exato de ferramenta cai de F1 de 0,901 para 0,495 quando um domínio inteiro é retirado do treino; no AgentHarm-Traj, o F1 do TS-Guard cai de 0,902, com peso por linha, para 0,719, com peso igual por interação, enquanto a acurácia balanceada passa de 0,754 para 0,776 (p. 6, Tabela 1 e seção 4.3; p. 14, Tabela 6). Em uma coorte congelada de 64 passos do AgentDojo-Traj, o Claude Haiku 4.5, com três chamadas intercaladas por condição, bloqueou 8,33 pontos percentuais menos quando o marcador `<INFORMATION>` foi reescrito e 11,46 pontos a mais quando as ferramentas receberam apelidos opacos; descontado o placebo de formatação, os efeitos são de −6,77 e +13,02 pontos, e a acurácia medida contra os rótulos herdados vai de 73,44% para 81,77% ou 61,98% (p. 7, Tabela 2). Todas as chamadas inseguras continuaram bloqueadas. O efeito não se reproduziu no GPT-5.6 Luna (0,00 e +1,04 ponto) e, na reprodução determinística Q8 do TS-Guard, a decisão mudou em 3 dos 64 pares de edição do marcador (pp. 2 e 7).
+
+Interessa-me porque o trabalho entrega um desenho de validação que a minha pesquisa pode aproveitar ao avaliar ferramentas de IA em tarefas jurídicas: a nota de um avaliador automático de peças ou de citações pode depender de marcas formais, como cabeçalhos, rótulos de fonte ou extensão, e não do acerto jurídico, e a transposição é interpretação minha, já que o trabalho não contém dado jurídico. Dois pontos servem à tese. A escolha da unidade de medida, por passo, por interação ou por tarefa, altera a conclusão sobre o sistema, e os autores tratam a regra trivial que prediz o rótulo como gatilho para investigar e a propriedade previsível do benchmark como hipótese sobre o guarda (p. 8). Os limites são declarados: a coorte de 64 passos não é amostra probabilística e os intervalos são exploratórios e não ajustados; as edições não tiveram validação humana cega de equivalência, e a reescrita do marcador altera a redação da proveniência; o Q8 é quantizado e o GPT-5.5 não teve repetições; e o estudo trata da validade da avaliação, não da segurança em produção (pp. 5 e 8). Para o direito brasileiro, parece-me aproveitável a recomendação dos autores de testar com edições pareadas e placebo (pp. 1 e 8), e essa avaliação de utilidade é minha.
+
+**Texto integral:** [arXiv:2610.22243, na fonte](https://arxiv.org/abs/2610.22243)
+
+::: {.nota-metodo}
+Nota escrita a partir da leitura integral do trabalho, com assistência de modelo de
+linguagem na redação e revisão do autor.
+:::

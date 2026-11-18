@@ -7,9 +7,9 @@ listing:
     # Ordem manual: as três notas mais recentes, na mesma ordem do topo de leituras.qmd.
     # Ao publicar nota nova, atualizar aqui também.
     contents:
-      - leituras/lin-2026.qmd
-      - leituras/google-deepmind-2026.qmd
-      - leituras/grynets-2026.qmd
+      - leituras/jia-2026.qmd
+      - leituras/ghosh-2026.qmd
+      - leituras/asgari-2026.qmd
     type: grid
     grid-columns: 3
     sort: false
@@ -54,7 +54,7 @@ Econômico. Advogado e contabilista; o que escrevo nasce de problemas reais e vo
 [decisões do STJ no corpus da dissertação (ICMS, ISS, ITBI e ITCMD)]{.legenda}
 :::
 ::: {.indicador}
-[78]{.numero}
+[98]{.numero}
 [notas de leitura sobre trabalhos de outros autores]{.legenda}
 :::
 ::: {.indicador}

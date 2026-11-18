@@ -1,0 +1,18 @@
+---
+title: "Kou et al. (2026): com o raciocínio estendido ligado, a maioria dos modelos abertos passa a ler «alguns» e «ou» pela lógica estrita"
+description: "Mantidos fixos os pesos e variada só a quantidade de raciocínio, os autores mostram que as implicaturas de «alguns» e «ou» são canceladas em 30 de 40 modelos abertos e no GPT-5, enquanto inferências dependentes de contexto melhoram."
+categories: [Estado da arte em IA, Método de pesquisa]
+---
+
+KOU, Zhizhuo; YANG, Jian; HAO, Pengfei; LUO, Junyu; PENG, Jingshu; HAN, Sirui et al. Entertain, then Cancel: How Thinking Makes Reasoning Models Read Some and Or Literally. **arXiv**, 2026. Depósito arXiv:2610.21204 [cs.AI], versão 1, de 15 out. 2026. DOI: [10.48550/arXiv.2610.21204](https://doi.org/10.48550/arXiv.2610.21204).
+
+Os autores, da Hong Kong University of Science and Technology (inclusive o campus de Guangzhou) e da Universidade de Pequim, mantêm fixos os pesos do modelo e variam apenas a quantidade de raciocínio, como numa curva dose-resposta, registrando qual leitura o modelo escolhe; uma segunda ferramenta corta o raciocínio do próprio modelo após t tokens e força a resposta (pp. 1-2). Em 40 modelos abertos de raciocínio e sete fechados, o raciocínio prolongado cancela as implicaturas de «alguns» (*some*, «não todos») e de «ou» («não ambos») em 30 dos 40 modelos abertos e no GPT-5 (pp. 2 e 4). No Qwen3-8B, a leitura pragmática de *some* cai 28,2 pontos percentuais (IC de 95% de −41,0 a −16,7) e a de *or* cai 36,4; no Qwen3-32B, 51,3 e 46,5; no GPT-5, 20,6 e 18,8 (pp. 4-5, Tabela 1). Em contrapartida, melhoram inferências que dependem do contexto, como as respostas indiretas do Circa, com ganho de 17,5 pontos no Qwen3-8B (p. 5). No traço do raciocínio, o modelo acolhe primeiro a leitura enriquecida e depois a cancela: no Qwen3-8B, a leitura pragmática de *some* sobe de 35,8% para 52,0% após 128 tokens e cai a 1,1% ao final, e 67,4% dos traços seguem essa trajetória (p. 6). Responder a partir dos primeiros 128 tokens, remédio exploratório, elevou de 1,2% para 20,5% a acurácia nos itens de felicidade escalar do Qwen3-8B, sem perda na acurácia literal (p. 8, Tabela 4).
+
+Interessa-me porque o trabalho mede, com protocolo declarado e código e dados divulgados (p. 1), um comportamento que toca a interpretação de textos normativos e contratuais por modelos de raciocínio. A transposição é interpretação minha e pede cautela, pois nada no trabalho envolve linguagem jurídica: a hipótese a testar é se, com o modo de raciocínio ligado, o modelo lê «ou» em cláusula de alternatividade e «alguns» em norma de isenção ou de benefício fiscal pela lógica estrita, afastando o sentido que o emissor normalmente pretende. Os autores observam que, como ambas as leituras são admissíveis, a acurácia de resposta única não distingue mudança de interpretação de perda de competência, e que as avaliações devem registrar a leitura escolhida ao lado da acurácia (p. 8); o ponto me serve diretamente, porque a minha tese sustenta que acurácia agregada não implica idoneidade decisória. Os limites são extensos. O efeito não é universal, pois 4 dos 40 modelos abertos se movem em sentido contrário (p. 4) e o formato do item inverte a direção nos modelos Claude (p. 9). A dose-resposta graduada repousa sobretudo em Qwen3 e gpt-oss, os itens principais estão em inglês, só se mediram respostas de escolha forçada, os resultados por etapa de treinamento são correlacionais e o remédio foi testado em dois modelos de 8B de mesma base (pp. 8-9).
+
+**Texto integral:** [arXiv:2610.21204, na fonte](https://arxiv.org/abs/2610.21204)
+
+::: {.nota-metodo}
+Nota escrita a partir da leitura integral do trabalho, com assistência de modelo de
+linguagem na redação e revisão do autor.
+:::

@@ -1,0 +1,18 @@
+---
+title: "Kulkarni e Vaideeswaran (2026): em inferência padrão, nenhum modelo passa de 37% ao listar fatos de memória"
+description: "Um benchmark de 9.045 perguntas de resposta em lista mede o acerto de cada elemento e mostra que fornecer a página-fonte pesa mais que o raciocínio estendido."
+categories: [Estado da arte em IA, Método de pesquisa]
+---
+
+KULKARNI, Mayank; VAIDEESWARAN, Rakesh. ListQA: a benchmark for evaluating list-formatted factual knowledge retrieval in large language models. **arXiv**, 2026. Depósito arXiv:2610.19165 [cs.AI], versão 1, de 13 out. 2026. DOI: [10.48550/arXiv.2610.19165](https://doi.org/10.48550/arXiv.2610.19165).
+
+Os autores constroem o ListQA, com 9.045 perguntas cuja resposta é uma lista de 3 a 10 elementos, extraídas de 3.765 tabelas da Wikipédia e divididas em listas simples (59,5%) e hierárquicas, com subatributos (40,5%) (pp. 1, 3, 5). A auditoria de 481 perguntas encontrou erro em 8 (1,7%) (p. 5). A métrica principal, LLM-Judge-F1, extrai os elementos por expressão regular, pareia cada elemento previsto ao de referência por atribuição ótima sobre o ROUGE e faz um modelo julgar cada par como correto ou incorreto, de modo que o elemento inventado é punido item a item (pp. 6-7); validada contra 3.313 elementos avaliados por humanos, correlaciona-se com o F1 humano em r = 0,965 (p. 7). Avaliados 34 modelos em 42 configurações, o melhor em inferência padrão, o GPT-5.4, marca 36,5%, com 44,5% nas listas simples e 24,9% nas hierárquicas, e a maioria fica abaixo de 20% (Tabela 2, p. 8). Em nove modelos testados com a página-fonte da Wikipédia em contexto (*oracle RAG*), o acerto sobe entre 34,3 e 64,5 pontos conforme o modelo; o Claude Opus 4.6 passa de 34,6% para 84,7% (Tabela 3, p. 10). Esse ganho supera o do raciocínio estendido e leva os autores a apontar a memória paramétrica como gargalo (pp. 9-10). Acerto factual e acerto de formato se desacoplam: há modelos que cumprem a estrutura pedida e a preenchem com fatos errados (p. 9).
+
+Interessa-me porque a consulta jurídica típica pede uma lista, e o fato único é exceção: quais precedentes de um tribunal sobre certo tema em dado período, com relator, data e resultado de cada um. Os próprios autores citam a pesquisa jurídica entre os domínios em que cada elemento da lista tem consequência própria (pp. 1-2). A ponte é interpretação minha: o pareamento ótimo elemento a elemento, seguido de juízo por item, serviria à conferência de listas de julgados e de citações, e a observação dos autores de que o avaliador que recebe a lista inteira tende a aceitá-la em bloco quando a maioria dos itens parece plausível (p. 3) reforça a regra de verificar item a item. O achado de que a página-fonte em contexto eleva o resultado mais que o raciocínio (p. 9) apoia, como dado empírico em outro domínio, a exigência de buscar o inteiro teor na fonte primária antes de citar; essa transposição também é minha. Os limites são os dos autores: base apenas em inglês e concentrada nos Estados Unidos (78% das amostras), sem recompensa à abstenção, com custo e ruído do avaliador automático e com a completude da referência conferida só contra uma tabela da Wikipédia (p. 10; Apêndice A, p. 17). Não há dado jurídico nem em português. O desenho privilegia fatos estáveis (p. 4), e o teto de dez elementos por lista deixa a enumeração exaustiva fora do escopo (p. 4).
+
+**Texto integral:** [arXiv:2610.19165, na fonte](https://arxiv.org/abs/2610.19165)
+
+::: {.nota-metodo}
+Nota escrita a partir da leitura integral do trabalho, com assistência de modelo de
+linguagem na redação e revisão do autor.
+:::
